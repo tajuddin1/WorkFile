@@ -317,6 +317,8 @@ section{
     color: #ffffff;
     background-color: #ff6600;
     border: 1px solid #ff6600;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 .overflow-hidden>img{
@@ -401,12 +403,16 @@ section{
     color: #ffffff;
     background-color: #ff6600;
     border: 1px solid #ffffff;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 .btn_orange:hover{
     color: #ff6600;
     background-color: #fff;
     border: 1px solid #ff6600;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 
