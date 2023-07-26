@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+	 style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D1D3D4;}
+	.st2{fill:#05539D;}
+	.st3{fill:#DF3A3D;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50" width="50" x="0" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_2_00000123403691739621316350000017975105315266775208_">
+	<g id="Layer_2_00000009549042599903514300000009786033506733176249_">
+		<g>
+			<circle class="st0" cx="24.9998" cy="25.0002" r="24.7525"/>
+			<path class="st1" d="M25,50C11.215,50,0,38.785,0,25S11.215,0,25,0s25,11.215,25,25S38.785,50,25,50z M25,0.495
+				C11.4881,0.495,0.495,11.4881,0.495,25S11.4881,49.505,25,49.505S49.505,38.5119,49.505,25S38.5119,0.495,25,0.495z"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_9897_">
+	<path id="XMLID_9900_" class="st0" d="M25.0005,0.5005c-10.6475,0-19.7282,6.8276-23.0991,16.3333h46.1973
+		C44.7278,7.3281,35.647,0.5005,25.0005,0.5005z"/>
+	<path id="XMLID_9899_" class="st2" d="M49.5,25c0-2.8619-0.4951-5.611-1.4014-8.1662H1.9014C0.9951,19.389,0.5,22.1381,0.5,25
+		c0,2.8628,0.4951,5.611,1.4014,8.1671h46.1973C49.0049,30.611,49.5,27.8628,49.5,25z"/>
+	<path id="XMLID_9898_" class="st3" d="M1.9014,33.1671c3.3709,9.5057,12.4516,16.3324,23.0991,16.3324
+		c10.6466,0,19.7273-6.8267,23.0982-16.3324H1.9014z"/>
+</g>
+</svg>

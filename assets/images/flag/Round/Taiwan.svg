@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+	 style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D1D3D4;}
+	.st2{clip-path:url(#SVGID_00000173149457453735805100000012283085399926325179_);}
+	.st3{fill:#D80027;}
+	.st4{fill:#0052B4;}
+	.st5{fill:#EEEEEE;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50" width="50" x="0" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_2_00000123403691739621316350000017975105315266775208_">
+	<g id="Layer_2_00000009549042599903514300000009786033506733176249_">
+		<g>
+			<circle class="st0" cx="24.9998" cy="25.0002" r="24.7525"/>
+			<path class="st1" d="M25,50C11.215,50,0,38.785,0,25S11.215,0,25,0s25,11.215,25,25S38.785,50,25,50z M25,0.495
+				C11.4881,0.495,0.495,11.4881,0.495,25S11.4881,49.505,25,49.505S49.505,38.5119,49.505,25S38.5119,0.495,25,0.495z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="24.9998" cy="25.0002" r="24.7525"/>
+	</defs>
+	<clipPath id="SVGID_00000099650725221724979430000002558874306340925105_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000099650725221724979430000002558874306340925105_);">
+		<path class="st3" d="M0.5,24.9841l24.5-24.5h24.5v49h-49V24.9841z"/>
+		<path class="st4" d="M25,24.9841v-24.5H0.5v24.5H25z"/>
+		<path class="st5" d="M21.8035,14.8204l-2.9955,1.4068l1.5982,2.8998l-3.2539-0.6221l-0.4115,3.2826l-2.2586-2.4117l-2.2682,2.4117
+			l-0.4115-3.2826L8.5486,19.127l1.5982-2.8998l-2.9859-1.4068l2.9859-1.4068l-1.5887-2.8998l3.2539,0.6221l0.402-3.2826
+			l2.2682,2.4213l2.2586-2.4213l0.4115,3.2826l3.2539-0.6221l-1.5982,2.8998L21.8035,14.8204z"/>
+		<circle class="st4" cx="14.4822" cy="14.8204" r="4.565"/>
+		<circle class="st5" cx="14.4822" cy="14.8204" r="3.9717"/>
+	</g>
+</g>
+</svg>

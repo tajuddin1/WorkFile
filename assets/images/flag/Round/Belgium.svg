@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D1D3D4;}
+	.st2{fill:#010101;}
+	.st3{fill:#EB2D39;}
+	.st4{fill:#F9DF47;}
+</style>
+<g>
+	<circle class="st0" cx="25" cy="25" r="24.8"/>
+	<path class="st1" d="M25,50C11.2,50,0,38.8,0,25S11.2,0,25,0s25,11.2,25,25S38.8,50,25,50z M25,0.5C11.5,0.5,0.5,11.5,0.5,25
+		s11,24.5,24.5,24.5s24.5-11,24.5-24.5S38.5,0.5,25,0.5z"/>
+</g>
+<g id="XMLID_12058_">
+	<path id="XMLID_12061_" class="st2" d="M0.5,25c0,10.6,6.8,19.7,16.3,23.1V1.9C7.3,5.3,0.5,14.4,0.5,25z"/>
+	<path id="XMLID_12060_" class="st3" d="M49.5,25c0-10.6-6.8-19.7-16.3-23.1v46.2C42.7,44.7,49.5,35.6,49.5,25z"/>
+	<path id="XMLID_12059_" class="st4" d="M25,0.5c-2.9,0-5.6,0.5-8.2,1.4v46.2c2.6,0.9,5.3,1.4,8.2,1.4c2.9,0,5.6-0.5,8.2-1.4V1.9
+		C30.6,1,27.9,0.5,25,0.5z"/>
+</g>
+</svg>

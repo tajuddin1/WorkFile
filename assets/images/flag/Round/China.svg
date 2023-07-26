@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+	 style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D1D3D4;}
+	.st2{fill:#DD2911;}
+	.st3{fill:#FEDD19;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50" width="50" x="0" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_2_00000123403691739621316350000017975105315266775208_">
+	<g id="Layer_2_00000009549042599903514300000009786033506733176249_">
+		<g>
+			<circle class="st0" cx="24.9998" cy="25.0002" r="24.7525"/>
+			<path class="st1" d="M25,50C11.215,50,0,38.785,0,25S11.215,0,25,0s25,11.215,25,25S38.785,50,25,50z M25,0.495
+				C11.4881,0.495,0.495,11.4881,0.495,25S11.4881,49.505,25,49.505S49.505,38.5119,49.505,25S38.5119,0.495,25,0.495z"/>
+		</g>
+	</g>
+</g>
+<g id="XMLID_10080_">
+	<g id="XMLID_10087_">
+		<path id="XMLID_10088_" class="st2" d="M25.0005,49.5C11.4908,49.5,0.5,38.5092,0.5,25.0005C0.5,11.4908,11.4908,0.5,25.0005,0.5
+			C38.5092,0.5,49.5,11.4908,49.5,25.0005C49.5,38.5092,38.5092,49.5,25.0005,49.5z"/>
+	</g>
+	<g id="XMLID_10081_">
+		<polygon id="XMLID_10086_" class="st3" points="14.5139,9.3135 15.9275,13.6653 20.5028,13.6653 16.8019,16.3541 18.2156,20.705 
+			14.5139,18.0162 10.813,20.705 12.2267,16.3541 8.5259,13.6653 13.1002,13.6653 		"/>
+		<polygon id="XMLID_10085_" class="st3" points="25.7428,7.4271 25.6062,8.9377 27.0014,9.5342 25.5222,9.8712 25.3855,11.3818 
+			24.608,10.0799 23.1297,10.4169 24.1279,9.2747 23.3504,7.9728 24.7447,8.5693 		"/>
+		<polygon id="XMLID_10084_" class="st3" points="30.608,12.0799 29.8943,13.4187 30.9469,14.5111 29.4538,14.2461 28.7401,15.5849 
+			28.5305,14.0826 27.0365,13.8176 28.4003,13.1537 28.1907,11.6514 29.2433,12.7438 		"/>
+		<polygon id="XMLID_10083_" class="st3" points="31.0623,19.0799 29.8629,20.0078 30.3744,21.4363 29.1214,20.5822 27.922,21.5102 
+			28.3467,20.054 27.0928,19.1999 28.609,19.1537 29.0338,17.6976 29.5462,19.126 		"/>
+		<polygon id="XMLID_10082_" class="st3" points="27.0217,24.0697 25.5582,24.4705 25.4881,25.9857 24.6542,24.7179 
+			23.1916,25.1196 24.139,23.9349 23.3061,22.6681 24.7253,23.2027 25.6727,22.0189 25.6025,23.5342 		"/>
+	</g>
+</g>
+</svg>
