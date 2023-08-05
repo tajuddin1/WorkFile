@@ -1462,10 +1462,64 @@ select.form-select {
     .job_vacancies_card h4 {
         font-size: 20px;
     }
+    .about_occ .content_Slide h3 {
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        font-size: 16px;
+        padding: .375rem 2.25rem .375rem .75rem;
+    }
 }
 
 
 @media only screen and (max-width: 590px){
+    .distbute-products label {
+        font-size: 16px;
+    }
+    select.form-select {
+        font-size: 16px;
+    }
+    .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+        font-size: 16px;
+    }
+    .iti__flag-box, .iti__country-name {
+        font-size: 16px;
+    }
+    input.btn.btn-light.py-2.fw-medium {
+        font-size: 14px;
+    }
+    .card_wrap p.description {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .download-list li {
+        border-bottom: solid 1px #ccc;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+    .Card_heading_text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .Card_heading_text h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .card_wrap {
+        min-height: unset;
+    }
+    .about_occ .content_Slide h3 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+    .owl-item .content_Slide h4 {
+        margin: 0 20px;
+    }
     .desk-border-end{
         border-right: 0 ;
         border-bottom: 1px solid #ff6600;
