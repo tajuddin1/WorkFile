@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#CD2E3A;}
+	.st2{fill:#0047A0;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-216.8095"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<rect y="-0.1905" class="st0" width="660" height="440"/>
+<g>
+	<g>
+		<path class="st0" d="M0-0.1905h660v440H0V-0.1905z"/>
+	</g>
+	<g transform="rotate(-56.31)">
+		<g id="b">
+			<g id="a">
+				<path d="M-54.842,167.3383l110,0 M-54.842,194.8383l110,0 M-54.8421,222.3383l110,0"/>
+				<path d="M-54.8407,231.5034l0-18.3329l109.9975,0.0002l0,18.3329L-54.8407,231.5034z M-54.8407,204.0041l0-18.3329
+					l109.9975,0.0002l0,18.3329L-54.8407,204.0041z M-54.8407,176.5047l0-18.3329l109.9975,0.0002l0,18.3329L-54.8407,176.5047z"/>
+			</g>
+			<g>
+				<g id="a_00000077326089392291220630000010671093592092152724_">
+					<path d="M-54.8421,570.6717h110 M-54.8421,598.1717h110 M-54.8421,625.6717h110"/>
+					<path d="M-54.8425,634.8338l0-18.3329l110.0025,0.0076l0,18.3329L-54.8425,634.8338z M-54.8425,607.3344l0-18.3329
+						L55.16,589.0091l0,18.3329L-54.8425,607.3344z M-54.8425,579.835l0-18.3329l109.9975,0.0001l0,18.3329L-54.8425,579.835z"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<path d="M0.1579,552.3384l0,91.6667"/>
+			
+				<rect x="-4.4245" y="552.3358" transform="matrix(0.5547 -0.8321 0.8321 0.5547 -497.6562 266.5248)" class="st0" width="9.1665" height="91.672"/>
+		</g>
+		<g>
+			<circle class="st1" cx="0.1579" cy="396.505" r="110"/>
+		</g>
+		<g>
+			<path class="st2" d="M0.1579,286.505c-30.3757,0-55,24.6243-55,55c0,30.3757,24.6243,55,55,55c30.3757,0,55,24.6243,55,55
+				c0,30.3757-24.6243,55-55,55c-60.7513,0-110-49.2487-110-110S-60.5934,286.505,0.1579,286.505z"/>
+		</g>
+	</g>
+	<g transform="rotate(-123.69)">
+		<g>
+			<g id="b_00000083774878750550151460000006466833059190805934_">
+				<g id="a_00000123423260106181229270000017486859896165508998_">
+					<path d="M-420.9435-76.5179l110,0 M-420.9435-49.0179l110,0 M-420.9435-21.5179l110,0"/>
+					<path d="M-420.9415-85.6838l109.9975-0.0002l0,18.3329l-109.9975,0.0002L-420.9415-85.6838z M-420.9414-58.1844
+						l109.9975-0.0002l0,18.3329l-109.9975,0.0002L-420.9414-58.1844z M-420.9414-30.685l109.9975-0.0002l0,18.3329
+						l-109.9975,0.0002V-30.685z"/>
+				</g>
+				<g>
+					<g id="a_00000013158426907670263620000010610503883054972038_">
+						<path d="M-420.9434,326.8154h110 M-420.9434,354.3154l110,0 M-420.9434,381.8154l110,0"/>
+						<path d="M-420.9397,317.6466l109.9975-0.0002l0,18.3329l-109.9975,0.0002L-420.9397,317.6466z M-420.9446,345.1534
+							l110.0024-0.0076l0,18.3329l-110.0024,0.0076L-420.9446,345.1534z M-420.9445,372.6528l110.0024-0.0076l0,18.3329
+							l-110.0024,0.0076L-420.9445,372.6528z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g>
+			<path d="M-365.9435-62.768v27.5 M-365.9434,308.4821v32.0833 M-365.9434,368.0654v27.5"/>
+			<path class="st0" d="M-370.5259-62.7677l9.1664,0l0.0001,27.4994l-9.1665,0L-370.5259-62.7677z M-370.5242,308.4801l9.1665,0
+				l0,32.0826h-9.1664L-370.5242,308.4801z M-370.5241,368.062l9.1665,0l-0.0049,27.5068h-9.1664L-370.5241,368.062z"/>
+		</g>
+	</g>
+</g>
+</svg>

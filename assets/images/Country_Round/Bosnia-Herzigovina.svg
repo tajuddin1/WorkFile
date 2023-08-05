@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_00000155137483851559839710000008927991909719849640_);fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	
+		.st1{clip-path:url(#SVGID_00000155137483851559839710000008927991909719849640_);mask:url(#a_00000043454147729838954790000017747715528896036788_);}
+	.st2{fill:#FFDA44;}
+	.st3{fill:#0052B4;}
+	.st4{fill:#EEEEEE;}
+	.st5{fill:#D1D3D4;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50.6436" width="50.7883" x="-0.7883" y="-0.6436"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="25" cy="25" r="24.8"/>
+	</defs>
+	<clipPath id="SVGID_00000129885459373271468200000004002348406723915195_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-0.7883" y="0.4225" width="50.2883" height="50.2211">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	
+		<mask maskUnits="userSpaceOnUse" x="-0.7883" y="0.4225" width="50.2883" height="50.2211" id="a_00000043454147729838954790000017747715528896036788_">
+		
+			<circle style="clip-path:url(#SVGID_00000129885459373271468200000004002348406723915195_);fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);" cx="24.9129" cy="25.0096" r="24.5871"/>
+	</mask>
+	
+		<g style="clip-path:url(#SVGID_00000129885459373271468200000004002348406723915195_);mask:url(#a_00000043454147729838954790000017747715528896036788_);">
+		<path class="st2" d="M0.3258,0.4225h42.7681l3.2559,24.4911l-3.2559,24.6832L12.0047,36.6981L0.3258,6.8382V0.4225z"/>
+		<path class="st3" d="M0.3258,6.8382v42.7585h42.7777L0.3258,6.8382z"/>
+		<path class="st3" d="M43.0939,0.4225H49.5v49.1742h-6.4061V0.4225z"/>
+		<path class="st4" d="M34.3828,44.2183l-0.7972,2.4587h-2.574l2.0841,1.5175l-0.7972,2.4491l2.0841-1.5175l2.0841,1.5175
+			l-0.7972-2.4491l2.0841-1.5175h-2.574L34.3828,44.2183z M29.1004,38.8975l-0.7972,2.4491h-2.574l2.0841,1.5175l-0.7972,2.4491
+			l2.0841-1.5175l2.0841,1.5175l-0.7972-2.4491l2.0841-1.5175h-2.574L29.1004,38.8975z M23.7988,33.5575l-0.7972,2.4491h-2.574
+			l2.0841,1.5175l-0.7972,2.4491l2.0841-1.5175l2.0841,1.5175l-0.7972-2.4491l2.0841-1.5175h-2.574L23.7988,33.5575z
+			 M18.5068,28.2078l-0.7972,2.4491h-2.574l2.0841,1.5175l-0.7972,2.4491l2.0841-1.5175l2.0841,1.5079l-0.7972-2.4491l2.0841-1.5175
+			h-2.574L18.5068,28.2078z M13.186,22.8582l-0.7972,2.4491h-2.574l2.0841,1.5175l-0.7972,2.4491l2.0841-1.5175l2.0841,1.5175
+			l-0.7972-2.4491l2.0841-1.5271h-2.574L13.186,22.8582z M7.8844,17.5182l-0.7972,2.4491h-2.574l2.0841,1.5175l-0.7972,2.4491
+			l2.0841-1.5175l2.0841,1.5175l-0.7972-2.4491l2.0841-1.5175h-2.574L7.8844,17.5182z M2.5828,12.1686l-0.7972,2.4491h-2.574
+			l2.0841,1.5175l-0.7972,2.4395l2.0841-1.5175l2.0841,1.5175l-0.7972-2.4491l2.0841-1.5175H3.38L2.5828,12.1686z"/>
+	</g>
+</g>
+<g>
+	<path class="st5" d="M25,50C11.2,50,0,38.8,0,25S11.2,0,25,0s25,11.2,25,25S38.8,50,25,50z M25,0.5C11.5,0.5,0.5,11.5,0.5,25
+		s11,24.5,24.5,24.5s24.5-11,24.5-24.5S38.5,0.5,25,0.5z"/>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E70013;}
+	.st1{fill:#FFFFFF;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-216.8095"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<rect y="-0.1905" class="st0" width="660" height="440"/>
+	<circle class="st1" cx="330" cy="219.8095" r="110"/>
+	<circle class="st0" cx="330" cy="219.8095" r="82.5"/>
+	<circle class="st1" cx="352" cy="219.8095" r="66"/>
+	<path class="st0" d="M302.5,219.8095l89.5465-29.0956l-55.343,76.1731v-94.155l55.343,76.1731L302.5,219.8095z"/>
+</g>
+</svg>

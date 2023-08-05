@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000111185859782880493820000018216239773369442182_);}
+	.st1{fill:#D82126;}
+	.st2{fill:#F8E92E;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="880" x="-110" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="660" height="440"/>
+	</defs>
+	<clipPath id="SVGID_00000137093010486191659870000005430713889988225954_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000137093010486191659870000005430713889988225954_);">
+		<path class="st1" d="M-110,0h880v440h-880V0z"/>
+		<path class="st2" d="M-110,264v-88l880,88v-88L-110,264z M286,0h88l-44,172.8571L286,0z M374,440h-88l44-172.8571L374,440z
+			 M-110,0H22l348.4171,244.2629L-110,0z M-110,440H22l348.4171-244.2629L-110,440z M770,0H638L289.5829,244.2629L770,0z M770,440
+			H638L289.5829,195.7371L770,440z"/>
+		<circle class="st1" cx="330" cy="220" r="78.5714"/>
+		<circle class="st2" cx="330" cy="220" r="62.8571"/>
+	</g>
+</g>
+</svg>

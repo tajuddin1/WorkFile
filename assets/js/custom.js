@@ -10,24 +10,7 @@ for (var i = 0; i < btns.length; i++) {
 
 // Video Play Pause
 
-const videoElement = document.querySelector('video');
-const playPauseButton = document.querySelector('.video-control');
-var overly_content = document.getElementById('video_overly_content');
 
-playPauseButton.addEventListener('click', () => {
-	playPauseButton.classList.toggle('playing');
-  overly_content.classList.toggle('hide');
-	if (playPauseButton.classList.contains('playing')) {
-		videoElement.play();
-	}
-	else {
-		videoElement.pause();
-	}
-});
-
-videoElement.addEventListener('ended', () => {
-	playPauseButton.classList.remove('playing');
-});
 
 
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000086650510482519631280000008512682872096849331_);}
+	.st1{clip-path:url(#SVGID_00000093855760831113965330000002788087385049711757_);}
+	.st2{fill:#012169;}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_00000126290906886028012870000013543682645927243652_);}
+	.st5{fill:#C8102E;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="521.0694" width="923.5383" x="-131.7691" y="-40.541"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="660" height="440"/>
+	</defs>
+	<clipPath id="SVGID_00000051343338305115138680000017681307484356816558_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000051343338305115138680000017681307484356816558_);">
+		<g>
+			<defs>
+				<rect id="SVGID_00000121273962970320911240000001171947593565070977_" x="-112" y="-1" width="884" height="442"/>
+			</defs>
+			<clipPath id="SVGID_00000069371668428757596530000000996303943183955627_">
+				<use xlink:href="#SVGID_00000121273962970320911240000001171947593565070977_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000069371668428757596530000000996303943183955627_);">
+				<g>
+					<path class="st2" d="M-112-1v442h884V-1H-112z"/>
+				</g>
+				<g>
+					<path d="M-112-1l884,442 M772-1l-884,442"/>
+					<polygon class="st3" points="752.2308,480.541 330,269.4255 -92.2309,480.541 -131.7691,401.4644 231.1687,220.0027 
+						-131.7691,38.5338 -92.2309,-40.5284 330,170.587 752.2308,-40.5284 791.7692,38.5338 428.8313,220.0027 791.7692,401.4644 
+											"/>
+				</g>
+				<g>
+					<defs>
+						<polygon id="SVGID_00000178886834734789605020000014007507844855144895_" points="330,220 772,220 772,441 330,441 -112,441 
+							-112,220 -112,-1 330,-1 772,-1 						"/>
+					</defs>
+					<clipPath id="SVGID_00000034809541007499754200000008341342046643196846_">
+						<use xlink:href="#SVGID_00000178886834734789605020000014007507844855144895_"  style="overflow:visible;"/>
+					</clipPath>
+					<g style="clip-path:url(#SVGID_00000034809541007499754200000008341342046643196846_);">
+						<path d="M-112-1l884,442 M772-1l-884,442"/>
+						<polygon class="st5" points="758.8206,467.3615 330,252.9513 -98.8206,467.3615 -125.1794,414.6438 264.11,220.0027 
+							-125.1794,25.3616 -98.8206,-27.3562 330,187.0613 758.8206,-27.3562 785.1794,25.3616 395.8828,220.0027 785.1794,414.6438 
+													"/>
+					</g>
+				</g>
+				<g>
+					<path d="M330-1v442 M-112,220h884"/>
+					<polygon class="st3" points="403.6667,441.0027 256.3333,441.0027 256.3333,293.6694 -112,293.6694 -112,146.336 
+						256.3333,146.336 256.3333,-0.9973 403.6667,-0.9973 403.6667,146.336 772,146.336 772,293.6694 403.6667,293.6694 					"/>
+				</g>
+				<g>
+					<path d="M330-1v442 M-112,220h884"/>
+					<polygon class="st5" points="374.2,441.0027 285.8,441.0027 285.8,264.2027 -112,264.2027 -112,175.8027 285.8,175.8027 
+						285.8,-0.9973 374.2,-0.9973 374.2,175.8027 772,175.8027 772,264.2027 374.2,264.2027 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

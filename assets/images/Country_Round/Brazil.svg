@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D1D3D4;}
+	.st2{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{mask:url(#a_00000040554037150782226640000008316543637469401508_);}
+	.st4{fill:#6DA544;}
+	.st5{fill:#FFDA44;}
+	.st6{fill:#EEEEEE;}
+	.st7{fill:#0052B4;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50" width="50" x="0" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_2_00000142873634925117560710000001888913512934112658_">
+	<g>
+		<circle class="st0" cx="24.9998" cy="25.0002" r="24.7525"/>
+		<path class="st1" d="M25,50C11.215,50,0,38.785,0,25S11.215,0,25,0s25,11.215,25,25S38.785,50,25,50z M25,0.495
+			C11.4881,0.495,0.495,11.4881,0.495,25S11.4881,49.505,25,49.505S49.505,38.5119,49.505,25S38.5119,0.495,25,0.495z"/>
+	</g>
+</g>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.5" y="0.5" width="49" height="49">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0.5" y="0.5" width="49" height="49" id="a_00000040554037150782226640000008316543637469401508_">
+	<circle class="st2" cx="25" cy="25" r="24.5"/>
+</mask>
+<g class="st3">
+	<path class="st4" d="M0.5,0.5h49v49h-49V0.5z"/>
+	<path class="st5" d="M25,10.0895L45.2412,25L25,39.9105L4.7588,25L25,10.0895z"/>
+	<path class="st6" d="M17.1715,21.6504c-0.4762,1.0952-0.7112,2.28-0.6891,3.474l15.5039,4.766
+		c0.683-0.9757,1.1526-2.0844,1.3781-3.2539c-3.8855-6.2494-11.4557-7.685-16.1834-4.9766L17.1715,21.6504z"/>
+	<path class="st7" d="M24.9713,16.4824c-1.3997,0.0035-2.777,0.352-4.01,1.0145c-1.697,0.9156-3.0331,2.3799-3.7898,4.1535
+		c5.8957-1.2519,12.0192,0.6384,16.1834,4.9957c0.3805-1.9375,0.076-3.947-0.8613-5.6848
+		C31.004,18.1954,28.1128,16.4739,24.9713,16.4824L24.9713,16.4824z M20.7891,24.4736c-1.4604-0.0049-2.9129,0.2146-4.3066,0.6508
+		c0.0161,1.3665,0.3608,2.709,1.0049,3.9143c2.2279,4.1431,7.3926,5.6956,11.5357,3.4677c0.002-0.0011,0.004-0.0022,0.0061-0.0033
+		c1.1697-0.6298,2.1759-1.5246,2.9381-2.6127C29.2468,26.4939,25.1406,24.5041,20.7891,24.4736z"/>
+</g>
+</svg>

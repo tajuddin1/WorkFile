@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#0038B8;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-217"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<g>
+		<path class="st0" d="M0,0h660v440H0V0z"/>
+	</g>
+	<g>
+		<path class="st1" d="M0,41.25h660V110H0V41.25z M0,330h660v68.75H0V330z"/>
+	</g>
+	<g>
+		<path class="st1" d="M330,315.2629l-27.5-47.6314h-54.9997l27.5-47.6314l-27.5-47.6317h55L330,124.7373l27.4995,47.6311h55
+			l-27.5,47.6317l27.5,47.6314H357.5L330,315.2629z M319.9649,267.6315L330,285.0129l10.0348-17.3814H319.9649z M366.2323,252.5065
+			h20.0702l-10.0353-17.3814L366.2323,252.5065z M311.2326,252.5065h37.5345l18.7677-32.5064l-18.7677-32.5067h-37.5345
+			l-18.7677,32.5067L311.2326,252.5065z M273.6972,252.5065h20.0704l-10.0351-17.3814L273.6972,252.5065z M273.6972,187.4934
+			l10.0354,17.3817l10.0351-17.3817H273.6972z M366.2323,187.4934l10.0348,17.3814l10.0353-17.3814H366.2323z M319.9649,172.3684
+			h20.0699L330,154.9873L319.9649,172.3684z"/>
+	</g>
+</g>
+</svg>

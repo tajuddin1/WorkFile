@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
+	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D52B1E;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#0039A6;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-217"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<path class="st0" d="M660,440H0V0h660V440z"/>
+	<path class="st1" d="M220,220h440V0H0L220,220z"/>
+	<path class="st2" d="M220,220H0V0h220V220z"/>
+	<g id="f">
+		<g id="t">
+			<path id="o" class="st1" d="M110,55l-16.9959,52.3081l26.1541,8.498L110,55z"/>
+			<g transform="scale(-1,1)">
+				<path id="o_00000147915309884617575670000011547182905584356015_" class="st1" d="M110,55l16.9959,52.3081l-26.1541,8.498
+					L110,55z"/>
+			</g>
+		</g>
+		<g transform="rotate(72)">
+			<g id="t_00000119833041388371151920000008447840175255930300_">
+				<path id="o_00000121271543498479636310000015497511178952549564_" class="st1" d="M162.3081,93.0041h-55v27.5L162.3081,93.0041z
+					"/>
+				<g transform="scale(-1,1)">
+					<path id="o_00000145044644348892311440000001161025364715261880_" class="st1" d="M162.3081,93.0041l-44.4959,32.3282
+						l-16.1641-22.248L162.3081,93.0041z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g transform="rotate(-72)">
+		<g id="t_00000160183716941630756050000010599159820779235238_">
+			<path id="o_00000156549045070307799310000007831796909401182354_" class="st1" d="M57.6919,93.0041l44.4959,32.3282
+				l16.1641-22.248L57.6919,93.0041z"/>
+			<g transform="scale(-1,1)">
+				<path id="o_00000097468176213712029860000009690458672020112516_" class="st1" d="M57.6919,93.0041h55v27.5L57.6919,93.0041z"/>
+			</g>
+		</g>
+	</g>
+	<g transform="rotate(144)">
+		<g id="f_00000036228718094204810880000012251678216460314785_">
+			<g id="t_00000177467126633065753440000004747188984836320949_">
+				<path id="o_00000143590415054273458640000007931679413775984038_" class="st1" d="M142.3282,154.4959l-16.9959-52.3081
+					l-26.1541,8.498L142.3282,154.4959z"/>
+				<g transform="scale(-1,1)">
+					<path id="o_00000062879512067445546760000016092474771613139603_" class="st1" d="M142.3282,154.4959l-44.4959-32.3282
+						l16.1641-22.248L142.3282,154.4959z"/>
+				</g>
+			</g>
+			<g transform="rotate(72)">
+				<g id="t_00000157270509251408696610000006200694098471355321_">
+					<path id="o_00000065781341962503298140000015168459365364232586_" class="st1" d="M77.6718,154.4959l44.4959-32.3282
+						l-16.1641-22.248L77.6718,154.4959z"/>
+					<g transform="scale(-1,1)">
+						<path id="o_00000036949536116433307820000013372924772777713596_" class="st1" d="M77.6718,154.4959l16.9959-52.3081
+							l26.1541,8.498L77.6718,154.4959z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
