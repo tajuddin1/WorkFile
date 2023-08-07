@@ -210,24 +210,27 @@ button.video-control {
     position: absolute;
     z-index: 99;
     top: 50%;
-    right: 10%;
-    -webkit-transform: translate(-10%, -50%);
-        -ms-transform: translate(-10%, -50%);
-            transform: translate(-10%, -50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: none;
 }
-
-.video-control:not(.playing) .video-control-pause::after,
-.video-control.playing .video-control-play::after {
-	display: none;
-}
-.video-control.playing button.video-control-pause::after{
+.video-control.playing{
+    display: block;
     opacity: 0;
 }
-.hero_section_wrapper:hover button.video-control-pause::after{
+/* .video-control:not(.playing) .video-control-pause::after{
+	display: none;
+} */
+/* .video-control.playing button#pauseButton>.video-control-pause::after{
+    opacity: 0;
+} */
+.hero_section_wrapper:hover .video-control.playing{
     opacity: 1;
 }
-
-.video-control-play::after {
+.flip_H{ transform: scale(-1, 1);}
+/* .video-control-play::after {
     content: '';
     background-image: url(../images/icons/play-icon.png);
     background-size: cover;
@@ -236,7 +239,7 @@ button.video-control {
     height: 100px;
     top: 0;
     left: 0;
-}
+} */
 .video-control-pause::after {
     content: '';
     background-image: url(../images/icons/pause.png);
@@ -748,12 +751,7 @@ footer .accordion-button::after {
 section.counter_sec {
     background: #f2f2f2;
 }
-button.video-control.playing {
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
+
 .bg_wrap {
     max-height: 625px;
     min-height: 520px;

@@ -3455,7 +3455,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-6 mb-3">
                                 <label>Phone number</label>
-                                <input id="intlTel1" class="form-control" name="phone" type="phone" />
+                                <input class="form-control intlTel" name="phone" type="phone" />
                             </div>
                             <div class="col-12 col-lg-6 mb-3">
                                 <label>Email</label>
@@ -3564,7 +3564,7 @@
                             </div>
                             <div class="col-12 col-lg-6 mb-3">
                                 <label>Phone number</label>
-                                <input id="intlTel2" class="form-control" name="phone" type="tel" />
+                                <input class="form-control intlTel" name="phone" type="tel" />
                             </div>
                         </div>
                         <div class="text-left text-lg-center">
@@ -3923,59 +3923,21 @@
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/intlTelInput.js"></script>
     <script>
-        var input = document.querySelector("#intlTel1");
-        window.intlTelInput(input, {
-          allowDropdown: true,
-        //   autoInsertDialCode: true,
-        //   autoPlaceholder: "on",
-        //   dropdownContainer: document.body,
-        //   excludeCountries: ["us"],
+        var inputs = document.getElementsByClassName("intlTel");
+
+        Array.from(inputs).forEach((element, index) => {
+          window.intlTelInput(element, {
+            allowDropdown: true,
           formatOnDisplay: false,
-        //   geoIpLookup: function(callback) {
-        //     fetch("https://ipapi.co/json")
-        //       .then(function(res) { return res.json(); })
-        //       .then(function(data) { callback(data.country_code); })
-        //       .catch(function() { callback("us"); });
-        //   },
           hiddenInput: "full_number",
-        //   initialCountry: "auto",
-        //   localizedCountries: { 'de': 'Deutschland' },
           nationalMode: true,
-        //   onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
           placeholderNumberType: "MOBILE",
           preferredCountries: ['ch', 'us'],
           separateDialCode: true,
           showFlags: true,
-        //   utilsScript: "build/js/utils.js"
+          });
         });
-      </script>
-    <script>
-        var input = document.querySelector("#intlTel2");
-        window.intlTelInputX(input, {
-          allowDropdown: true,
-        //   autoInsertDialCode: true,
-        //   autoPlaceholder: "on",
-        //   dropdownContainer: document.body,
-        //   excludeCountries: ["us"],
-          formatOnDisplay: false,
-        //   geoIpLookup: function(callback) {
-        //     fetch("https://ipapi.co/json")
-        //       .then(function(res) { return res.json(); })
-        //       .then(function(data) { callback(data.country_code); })
-        //       .catch(function() { callback("us"); });
-        //   },
-          hiddenInput: "full_number",
-        //   initialCountry: "auto",
-        //   localizedCountries: { 'de': 'Deutschland' },
-          nationalMode: true,
-        //   onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-          placeholderNumberType: "MOBILE",
-          preferredCountries: ['ch', 'us'],
-          separateDialCode: true,
-          showFlags: true,
-        //   utilsScript: "build/js/utils.js"
-        });
-      </script>
+    </script>
 </body>
 
 </html>
