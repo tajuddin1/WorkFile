@@ -311,7 +311,7 @@ section{
     font-weight: 500;
     line-height: 28px;
     padding: 5px 30px;
-    border-radius: 25px;
+    border-radius: 5px;
     color: #ff6600;
     background-color: transparent;
     border: 1px solid #ff6600;
@@ -383,7 +383,7 @@ section{
     font-weight: 500;
     line-height: 28px;
     padding: 5px 30px;
-    border-radius: 25px;
+    border-radius: 5px;
     display: inline-block;
     color: #ffffff;
     background-color: #ff6600;
@@ -395,7 +395,7 @@ section{
     font-weight: 500;
     line-height: 28px;
     padding: 5px 30px;
-    border-radius: 25px;
+    border-radius: 5px;
     color: #ff6600;
     display: inline-block;
     background-color: #ffffff;
@@ -961,11 +961,20 @@ section.counter_sec {
     max-width: 765px;
 }
 .about_occ .content_Slide h4{
-    padding: 7px 0;
+    padding: 15px 0 10px;
     margin-bottom: 0;
-    color: #FF6600;
+    color: #000000;
     font-size: 26px;
     font-weight: 600;
+}
+.d-flex.gap-2.gap-lg-3.mt-5 {
+    box-shadow: 0 0 0 1px #ff6600;
+    min-height: 220px;
+}
+.box_info p {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 0px !important;
 }
 .fluid-width-video-wrapper {
     width: 100%;
@@ -1020,10 +1029,10 @@ section.counter_sec {
 .job_vacancies_card p{
     margin-bottom: 30px !important;
 }
-.icon_box {
+/* .icon_box {
     box-shadow: inset 30px 20px 20px #efefef;
     background: transparent;
-}
+} */
 
 .jqvmap-region {
     cursor: pointer;
@@ -1107,11 +1116,25 @@ select.form-select {
     .right_side_content p {
         width: 100%;
     }
+    .box_info p {
+        font-size: 16px !important;
+    }
     .accordion.accordion-flush.footer-menu {
         padding-bottom: 40px;
     }
     footer{
         padding-bottom: 0px !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .about_occ .content_Slide h3 {
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .d-flex.gap-2.gap-lg-3.mt-5 {
+        min-height: 280px;
     }
 }
 @media only screen and (max-width: 1024px){
@@ -1192,10 +1215,19 @@ select.form-select {
         font-size: 16px;
         line-height: 22px;
     }
+
+    .about_occ .content_Slide {
+        padding: 0;
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 840px){
-    
-
+    .d-flex.gap-2.gap-lg-3.mt-5 {
+        min-height: 330px;
+    }
+    .container-lg{
+        width: 98% !important;
+    }
     .map_svg_wrapper svg{
         width: 700px;
         height: 450px;
@@ -1334,16 +1366,16 @@ select.form-select {
     .mobile-menu{
         display: block;
     }
-    .overlay_content {
+    /* .overlay_content {
         width: 75%;
-    }
+    } */
     .overlay_content p {
         font-size: 24PX;
         font-weight: 300;
         line-height: 30px;
     }
     .overlay_content h1 {
-        font-size: 50PX;
+        font-size: 46PX;
         line-height: 60px;
     }
     .overlay_content h1 br,
@@ -1632,9 +1664,7 @@ select.form-select {
     ul#myTab li a, .langlink a, ul#myTab li a:visited {
         font-size: 14px;
     }
-    .container{
-        width: 95%;
-    }
+    
     .logo img{
         width: 180px !important;
     }
