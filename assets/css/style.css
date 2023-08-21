@@ -257,13 +257,14 @@ button.video-control {
 }
 
 section{
-    padding: 30px 0;
+    padding: 50px 0 60px;
 }
 .section_2 h2{
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
     color: #111;
+    margin-bottom: 60px;
 }
 .section_2 p{
     margin-top: 20px;
@@ -412,7 +413,7 @@ section{
 .btn_orange_ng:hover{
     color: #ffffff;
     background-color: #ff6600;
-    border: 1px solid #ff6600;
+    border: 1px solid #ffffff;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
@@ -1184,6 +1185,305 @@ select.form-select {
 .m-h-4{
     min-height: 400px;
 }
+.mt-30{
+    margin-top: 30px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.bg-orange{
+    background-color: #ff6600 !important;
+}
+.text-orange{
+    color: #ff6600;
+}
+.form-select:focus {
+    border-color: #999;
+    outline: 0;
+    box-shadow: none;
+}
+.form-control, .form-select {
+    border-radius: 3px;
+}
+.botttom form label span{
+    color: red;
+    margin-top: -5px;
+}
+.card_description {
+    min-height: 195px;
+}
+.botttom{
+    display: none;
+}
+.card_description .heading_5 {
+    font-weight: 400;
+    text-align: justify;
+}
+.card-body {
+    padding: 15px 32px;
+}
+.modal-backdrop {
+    background-color: #ffffff8f;
+}
+.modal-content.pb-30.pt-30.rounded-0.border-0 {
+    box-shadow: 0px 0px 20px 0px #c7c7c7;
+}
+
+.nav-pills .nav-item .nav-link {
+    width: 100%;
+    background: #f3f3f3;
+    color: #8f8f8f;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 12px 0;
+}
+.nav-pills .nav-item .nav-link.active {
+    width: 100%;
+    background: #ff6600;
+    color: #fff;
+}
+.nav-pills .nav-item .nav-link img {
+    width: 100px;
+}
+
+.nav-pills .nav-item .nav-link .img_icon_show {
+    display: block;
+}
+.nav-pills .nav-item .nav-link.active .img_icon_show {
+    display: none;
+}
+.nav-pills .nav-item .nav-link .img_icon_hide {
+    display: none;
+}
+.nav-pills .nav-item .nav-link.active .img_icon_hide {
+    display: block;
+}
+
+.faq_tabs h2.accordion-header {
+    margin-bottom: 0px;
+}
+
+.faq_tabs .accordion-item.border-0 {
+    box-shadow: 0px 0px 10px #ddd;
+    margin-bottom: 30px;
+}
+
+.faq_tabs .accordion-item .accordion-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.faq_tabs .accordion-item .accordion-button:focus {
+    z-index: 3;
+    border-color: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.faq_tabs .accordion-item .accordion-button img {
+    width: 35px;
+    margin-right: 15px;
+}
+.faq_tabs .accordion-item .accordion-button .img_icon_show{
+    display: block;
+}
+.faq_tabs .accordion-item .accordion-button::after{
+    background-image: url(../images/FAQ/faq-plus.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+}
+.faq_tabs .accordion-item .accordion-button:not(.collapsed)::after{
+    background-image: url(../images/FAQ/faq-minus.svg);
+    transform: none;
+}
+.faq_tabs .accordion-item .accordion-button:not(.collapsed) .img_icon_show{
+    display: none;
+}
+.faq_tabs .accordion-item .accordion-button .img_icon_hide{
+    display: none;
+}
+.faq_tabs .accordion-item .accordion-button:not(.collapsed) .img_icon_hide {
+    display: block;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #ff6600;
+    box-shadow: none;
+}
+
+.faq_tabs .accordion-item .accordion-body {
+    padding: 0;
+}
+
+.faq_tabs .accordion-item .question {
+    background: #ccc;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 6px 70px;
+}
+.faq_tabs .accordion-item .answer {
+    padding: 6px 70px;
+}
+.icon_wrap i {
+    font-size: 24px;
+    padding: 10px 15px;
+    color: #595c5f;
+}
+.icon_wrap i.bg-orange {
+    padding: 7px 10px;
+}
+h5.heading_5 a {
+    color: #0ea4ff;
+}
+.drop_down {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    top: 40px;
+    z-index: 99;
+    box-shadow: 0px 0px 15px #b5b5b5;
+    display: none;
+}
+.filter_btn:hover .filter_menu{
+    display: block;
+}
+.filter_menu ul li{
+   position: relative;
+}
+.filter_menu ul li .form-check-label.bb::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    left: 30px;
+    bottom: 7px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+label.form-check-label {
+    margin-left: 5px;
+    font-size: 18px;
+    color: darkgrey;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    width: 18px;
+    height: 18px;
+}
+.filtericon{
+    cursor: pointer;
+}
+.approximatelyTime i{
+    float: left;
+    padding-right: 10px;
+}
+.infection-control-header {
+    background-color: #ff6600;
+    color: #fff;
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+}
+.infection-control-content {
+    padding: 15px 25px 30px;
+    background-color: #fff;
+}
+.infection-control {
+    margin: 0 35px;
+    padding: 0;
+}
+.inputGroup label{
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+.inputGroup {
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+}
+.question-step .inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+.question-step .inputGroup label {
+    padding: 12px 30px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #3c454c;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 1px #ff6600;
+    border-radius: 4px;
+}
+.question-step .inputGroup input:checked~label {
+    color: #fff;
+    background-color: #ff6600;
+}
+.question-step p.q_no{
+    margin-top: 0;
+    font-size: 20px;
+    color: #ff6600;
+    font-family: Roboto;
+    margin-bottom: 10px;
+}
+.question-step label {
+    font-size: 18px;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.dot ul li {
+    width: 15px;
+    height: 15px;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 10px 20px;
+}
+.percentage {
+    font-size: 46px !important;
+    font-weight: 500 !important;
+    line-height: 36px !important;
+}
+.mcqQuestion input[type="radio"]:checked + .form-group {
+    background-color: orange;
+}
+.q_breadcrumb{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 5px;
+    color: #ff6600;
+}
+.question_title{
+    margin-bottom: 25px;
+}
+.text_orange{
+    color: #ff6600 !important;
+}
 /* ///////////////////////////// */
 
 @media only screen and (max-width: 1440px){
@@ -1201,17 +1501,15 @@ select.form-select {
     }
 }
 @media only screen and (max-width: 1200px){
-    /* .about_occ .content_Slide h3 {
-        font-size: 28px;
-        line-height: 35px;
-        font-weight: 600;
-        margin-bottom: 5px;
-    } */
+
     .d-flex.gap-2.gap-lg-3.align-items-stretch {
         min-height: 280px;
     }
 }
 @media only screen and (max-width: 1024px){
+    .card-body {
+        padding: 15px 20px;
+    }
     .about_occ .section_2 p {
         font-size: 16px;
         line-height: 20px;
@@ -1283,6 +1581,7 @@ select.form-select {
     .section_2 h2 {
         font-size: 38px;
         line-height: 40px;
+        margin-bottom: 30px;
     }
     .heading_2 {
         font-size: 38px !important;
@@ -1313,6 +1612,14 @@ select.form-select {
     .about_occ .content_Slide {
         padding: 0;
         width: 100%;
+    }
+    .modal-dialog {
+        max-width: 800px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    section {
+        padding: 30px 0 30px;
     }
     
 }
@@ -1489,6 +1796,7 @@ select.form-select {
         font-weight: 600;
         line-height: 47px;
         color: #111;
+        margin-bottom: 30px;
     }
     .section_logo_wrap br{
         display: none;
@@ -1605,9 +1913,12 @@ select.form-select {
         font-size: 24px;
         font-weight: 600;
         line-height: 28px;
-        color: #111;
     }
-    
+    .modal-dialog {
+        max-width: 700px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 
@@ -1616,8 +1927,51 @@ select.form-select {
         min-height: unset;
         padding-bottom: 20px;
     }
+    .modal-dialog {
+        max-width: 580px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
 }
+
 @media only screen and (max-width: 590px){
+    .faq_tabs .accordion-item.border-0 {
+        box-shadow: 0px 0px 10px #ddd;
+        margin-bottom: 15px;
+    }
+    section {
+        padding: 20px 0 20px;
+    }
+    .mb-30 {
+        margin-bottom: 15px !important;
+    }
+    .mt-30 {
+        margin-top: 15px !important;
+    }
+    .nav-pills .nav-item .nav-link img {
+        width: 50px;
+    }
+    .nav-pills .nav-item .nav-link {
+        height: 170px;
+        font-size: 16px;
+    }
+    .faq_tabs .accordion-item .question {
+        font-size: 18px;
+        padding: 5px 20px;
+        line-height: 22px;
+    }
+    .faq_tabs .accordion-item .answer {
+        padding: 5px 20px;
+    }
+    .modal-dialog {
+        max-width: 90% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .modal-lg, .modal-xl {
+        width: 700px;
+    }
     .about_occ .section_2 p {
         font-size: 14px;
         line-height: 18px;
@@ -1877,6 +2231,7 @@ select.form-select {
         margin-top: 0;
         font-size: 24px;
         line-height: 28px;
+        margin-bottom: 15px;
     }
     .video-control.playing .video-control-pause::after {
         opacity: 1;
@@ -1976,6 +2331,10 @@ select.form-select {
     }
 }
 @media only screen and (max-width: 390px){
+    .heading_4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
     .cart_items {
         right: 56px;
     }

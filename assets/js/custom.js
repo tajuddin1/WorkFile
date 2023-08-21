@@ -44,18 +44,3 @@ navIcon.addEventListener('click' , function(){
     navIcon.classList.toggle('active');
     leftmenu.classList.toggle('fitMenu');
 });
-
-
-
-// var lang_btn = document.getElementById("lang_btn");
-// var lang_page =document.getElementById("lang_page");
-
-// document.onclick= function(e){
-//   if(e.target.id !=='lang_page' && e.target.id !=='lang_btn'){
-//     lang_page.classList.remove('active');
-//   }
-// };
-
-// lang_btn.addEventListener('click' , function(){
-//   lang_page.classList.toggle('active');
-// });
