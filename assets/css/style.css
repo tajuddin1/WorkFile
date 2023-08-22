@@ -1484,6 +1484,29 @@ label.form-check-label {
 .text_orange{
     color: #ff6600 !important;
 }
+
+.calculator_wrapper{
+    max-width: 1040px;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+.calculator_wrapper ul{
+   padding: 40px 40px 0;
+}
+
+.calc-w-bottom {
+    background-color: #ff6600;
+    padding: 40px 40px 30px;
+}
+.dosage-sp {
+    padding:20px 40px 40px;
+}
+
+.cw-label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* ///////////////////////////// */
 
 @media only screen and (max-width: 1440px){
