@@ -1172,6 +1172,10 @@ select.form-select {
     font-size: 18px;
     color: #fff;
 }
+.inq_form label.form-check-label{
+    font-size: 18px;
+    color: #fff;
+}
 
 .left_side_image {
     float: left;
