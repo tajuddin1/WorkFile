@@ -12,8 +12,46 @@
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
-    <title>FAQs</title>
-
+    <title>Infection Control Glossary</title>
+    <style>
+        .memu_item ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .brand_list_link {
+            text-decoration: none;
+            font-size: 26px;
+            margin: 0 10px;
+            display: block;
+            text-align: center;
+            color: #212529;
+            -webkit-transition: 0.4s ease;
+            -o-transition: 0.4s ease;
+            transition: 0.4s ease;
+        }
+        .brand_list_link:hover{
+            color: #ff6600;
+        }
+        .brand_list_link.disabled {
+            color: #b4b4b4;
+            cursor: default;
+        }
+        .memu_item ul li {
+            border-right: 1px solid #ddd;
+            margin: 15px 0;
+            min-width: 75px;
+        }
+        .icon_wrap i.bg-orange {
+            padding: 5px 10px;
+        }
+        .call_to_data_container{
+            padding: 30px;
+            background-color: #f1f1f1;
+        }
+        .pb-30{
+            padding-bottom: 30px;
+        }
+    </style>
 </head>
 
 <body class="resourses">
@@ -3217,15 +3255,15 @@
         <div class="container-fluid">
             <div class="row position-relative hero_section_wrapper">
                 <div class="bg_wrap p-0"
-                    style="background-image:url(../assets/images/FAQ/FAQ_Page\ Header_2560px_x_520px.jpg);">
+                    style="background-image:url(../assets/images/Glossary/Glossary_Page\ Header_2560px_x_520px_Opt\ 2.jpg);">
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
                     <div class="container-lg ps-md-4 ps-lg-0 mt-5">
                         <div class="overlay_content mt-lg-4">
-                            <h1 class="mb-3 mb-md-4">Frequently Asked Questions<span style="color: #ff6600;">.</span>
+                            <h1 class="mb-3 mb-md-4">Infection Control <br> Glossary<span style="color: #ff6600;">.</span>
                             </h1>
-                            <p class="mb-4 mb-xl-5">OCC Switzerland has been developing and manufacturing disinfectants for the dental and medical industry for more than 50 years.</p>
+                            <p class="mb-4 mb-xl-5">Have you ever wondered what a Bowie-Dick test is? Do you know the difference between disinfection and sterilisation? </p>
                         </div>
                     </div>
                 </div>
@@ -3249,1437 +3287,121 @@
                         <i class='bx bxs-chevron-right'></i>
                     </div>
                     <div class="crumbs_items">
-                        <span>FAQs</span>
+                        <span>Infection Control Glossary</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="section_2">
+        <section class="section_2 mb-30" >
             <div class="container-lg px-md-4 px-lg-0">
-                <h2 class="fw-bold text-left text-lg-center mt-0">FAQs</h2>
+                <h2 class="fw-bold text-left text-lg-center mt-0">Infection Control Glossary</h2>
                 <h4 class="heading_4 fw-normal">
-                    Unlock the treasure trove of knowledge at your fingertips! Discover intriguing insights about our products, services, and more - all in one place.
+                    Ever wondered what a Bowie & Dick test is, or what the difference is between disinfection and sterilisation? We realise that infection control terminology can sometimes be confusing. Let us help you understand better!
                 </h4>
                 <div class="mt-30">
-                    <ul class="row nav nav-pills mb-3" id="faq-tab" role="tablist">
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link active" id="faq-general-tab" data-bs-toggle="pill" data-bs-target="#faq-general" type="button" role="tab" aria-controls="faq-general" aria-selected="true">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/All.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/white/All.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        Business Transactions
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link" id="faq-disinfectants-tab" data-bs-toggle="pill" data-bs-target="#faq-disinfectants" type="button" role="tab" aria-controls="faq-disinfectants" aria-selected="false">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/Disinfectants and Cleaners.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/white/Disinfectants and Cleaners.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        Disinfectants and Cleaners
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link" id="faq-medical-tab" data-bs-toggle="pill" data-bs-target="#faq-medical" type="button" role="tab" aria-controls="faq-medical" aria-selected="false">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/Medical Disposables.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/white/Medical Disposables.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        Medical Disposables
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link" id="faq-application-aid-tab" data-bs-toggle="pill" data-bs-target="#faq-application-aid" type="button" role="tab" aria-controls="faq-application-aid" aria-selected="false">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/Application Aids and Accessories.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/white/Accessories and Application Aids.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        Application Aids and Accessories
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link" id="faq-oroclean-tab" data-bs-toggle="pill" data-bs-target="#faq-oroclean" type="button" role="tab" aria-controls="faq-oroclean" aria-selected="false">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/OROCLEAN Hyigiene Club.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/white/OROCLEAN Hyigiene Club.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        OROCLEAN Hygiene Club
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="nav-item col-6 col-lg-4" role="presentation">
-                            <button class="nav-link" id="faq-infection-control-tab" data-bs-toggle="pill" data-bs-target="#faq-infection-control" type="button" role="tab" aria-controls="faq-infection-control" aria-selected="false">
-                                <div>
-                                    <div>
-                                        <i class="img_icon_show"><img src="../assets/images/FAQ/Grey/Infection Control and Prevention.svg" alt="image"></i>
-                                        <i class="img_icon_hide"><img src="../assets/images/FAQ/White/Infection Control and Prevention.svg" alt="image"></i>
-                                    </div>
-                                    <div class="mt-4">
-                                        Infection Control and Prevention Inquiries
-                                    </div>
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
+                    <div class="d-flex align-items-center mb-30 border overflow-hidden">
+                        <div class="icon_wrap">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search by keywords">
+                        <div class="icon_wrap bg-orange h-100">
+                            <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
+                                <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
+                            </i>
+                        </div>
+                    </div>
+                    <div class="memu_item">
+                        <ul class="list-unstyled mb-0">
+                            <li><a class="brand_list_link" title="A" href="#A">A</a></li>
+                            <li><a class="brand_list_link" title="B" href="#B">B</a></li>
+                            <li><a class="brand_list_link" title="C" href="#C">C</a></li>
+                            <li><a class="brand_list_link" title="D" href="#D">D</a></li>
+                            <li><a class="brand_list_link" title="E" href="#E">E</a></li>
+                            <li><a class="brand_list_link" title="F" href="#F">F</a></li>
+                            <li><a class="brand_list_link" title="G" href="#G">G</a></li>
+                            <li><a class="brand_list_link" title="H" href="#H">H</a></li>
+                            <li><a class="brand_list_link" title="I" href="#I">I</a></li>
+                            <li><a class="brand_list_link" title="J" href="#J">J</a></li>
+                            <li><a class="brand_list_link" title="K" href="#K">K</a></li>
+                            <li><a class="brand_list_link" title="L" href="#L">L</a></li>
+                            <li><a class="brand_list_link" title="M" href="#M">M</a></li>
+                            <li><a class="brand_list_link" title="N" href="#N">N</a></li>
+                            <li><a class="brand_list_link" title="O" href="#">O</a></li>
+                            <li><a class="brand_list_link" title="P" href="#P">P</a></li>
+                            <li><a class="brand_list_link" title="Q" href="#">Q</a></li>
+                            <li><a class="brand_list_link" title="R" href="#R">R</a></li>
+                            <li><a class="brand_list_link" title="S" href="#S">S</a></li>
+                            <li><a class="brand_list_link" title="T" href="#T">T</a></li>
+                            <li><a class="brand_list_link" title="U" href="#U">U</a></li>
+                            <li><a class="brand_list_link" title="V" href="#V">V</a></li>
+                            <li><a class="brand_list_link" title="W" href="#W">W</a></li>
+                            <li><a class="brand_list_link" title="X" href="#">X</a></li>
+                            <li><a class="brand_list_link" title="Y" href="Y">Y</a></li>
+                            <li><a class="brand_list_link" title="Z" href="#Z">Z</a></li>
+                            <li class="border-0"><a class="brand_list_link" title="0-9" href="#0-9">0-9</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-content faq_tabs" id="faq-tabContent">
-                    <div class="tab-pane fade show active" id="faq-general" role="tabpanel" aria-labelledby="faq-general-tab" tabindex="0">
-                        <div class="d-flex align-items-center mb-30 border">
-                            <div class="icon_wrap">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search..">
-                            <div class="icon_wrap bg-orange h-100">
-                                <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                    <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                </i>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-general">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseOne" aria-expanded="false" aria-controls="general-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/General Inquiry/grey/Shipping and Order.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/General Inquiry/white/Shipping and Order.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Order and Shipping</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="general-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-general">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">How can I place an order for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">You can place an order for our disinfectant products by visiting our website and using our online ordering system. Simply select the products you want, add them to your cart, and proceed to checkout.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">What is the minimum order quantity for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">The minimum order quantity for our disinfectant products may vary depending on the specific product. Please refer to the product details or contact our sales team for more information.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">How long does it take to process and ship an order?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">We strive to process and ship orders as quickly as possible. Typically, orders are processed within 1-2 business days. Shipping times may vary depending on the destination and shipping method chosen.</h5>
-                                                <h5 class="heading_5 fw-normal m-0 mt-2">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseTwo" aria-expanded="false" aria-controls="general-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/General Inquiry/grey/Become a dealer.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/General Inquiry/white/Become a dealer.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Become a Dealer</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="general-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-general">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">How can I place an order for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">You can place an order for our disinfectant products by visiting our website and using our online ordering system. Simply select the products you want, add them to your cart, and proceed to checkout.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">What is the minimum order quantity for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">The minimum order quantity for our disinfectant products may vary depending on the specific product. Please refer to the product details or contact our sales team for more information.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">How long does it take to process and ship an order?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">We strive to process and ship orders as quickly as possible. Typically, orders are processed within 1-2 business days. Shipping times may vary depending on the destination and shipping method chosen.</h5>
-                                                <h5 class="heading_5 fw-normal m-0 mt-2">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseThree" aria-expanded="false" aria-controls="general-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/General Inquiry/grey/Exchange and Return.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/General Inquiry/white/Exchange and Return.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Exchange and Return</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="general-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-general">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">How can I place an order for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">You can place an order for our disinfectant products by visiting our website and using our online ordering system. Simply select the products you want, add them to your cart, and proceed to checkout.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">What is the minimum order quantity for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">The minimum order quantity for our disinfectant products may vary depending on the specific product. Please refer to the product details or contact our sales team for more information.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">How long does it take to process and ship an order?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">We strive to process and ship orders as quickly as possible. Typically, orders are processed within 1-2 business days. Shipping times may vary depending on the destination and shipping method chosen.</h5>
-                                                <h5 class="heading_5 fw-normal m-0 mt-2">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapseFour" aria-expanded="false" aria-controls="general-collapseFour">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/General Inquiry/grey/Payment.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/General Inquiry/white/Payment.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Payment</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="general-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-general">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">How can I place an order for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">You can place an order for our disinfectant products by visiting our website and using our online ordering system. Simply select the products you want, add them to your cart, and proceed to checkout.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">What is the minimum order quantity for your disinfectant products?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">The minimum order quantity for our disinfectant products may vary depending on the specific product. Please refer to the product details or contact our sales team for more information.</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">How long does it take to process and ship an order?</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">We strive to process and ship orders as quickly as possible. Typically, orders are processed within 1-2 business days. Shipping times may vary depending on the destination and shipping method chosen.</h5>
-                                                <h5 class="heading_5 fw-normal m-0 mt-2">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
+                <div>
+                    <div class="call_to_list">
+                        <h1 id="#">#</h1>
+                        <div class="call_to_data_container">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">100 CFU/ml Water</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">Literally signifies one hundred colony forming units (CFU) per milliliter of water. Bacteria usually require a minimum number of individual organisms to be located in a given region in order to produce a colony. The minimum number of bacteria is called a colony forming unit. The bacterial burden or infective potential of a sample of water is often listed as the number of CFU in each ml. One common cutoff is 100 CFU per ml of water.</h5></div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="faq-disinfectants" role="tabpanel" aria-labelledby="faq-disinfectants-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex align-items-center mb-30 border">
-                                    <div class="icon_wrap">
-                                        <i class="fa-solid fa-bars"></i>
-                                    </div>
-                                    <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
-                                    <div class="icon_wrap bg-orange h-100">
-                                        <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                            <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                        </i>
-                                    </div>
-                                </div>
+                    <div class="call_to_list">
+                        <h1 id="A">A</h1>
+                        <div class="call_to_data_container">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Activity</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">Activity refers to the type of microorganism(s) that a disinfectant can kill, inhibit, or inactivate. Possible terms that describe the activity of a disinfectant are bactericidal, yeasticidal, fungicidal, mycobactericidal, tuberculocidal, limited virucidal (virucidal against enveloped viruses), virucidal and sporicidal.</h5></div>
                             </div>
-                            <div class="col-12 col-md-4 position-relative">
-                                <div class="d-flex align-items-center mb-30 border position-relative dropdown-button" style="min-height: 46px;">
-                                    <div class="icon_wrap h-100">
-                                        <i class="filtericon">
-                                            <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
-                                        </i>
-                                    </div>
-                                    <input class="form-control border-0 px-0" type="text" placeholder="Filter" style="background-color: #fff;" disabled>
-                                    <div class="dropdown-content" id="checkboxContainer2.3">
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Application Aids</label>
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Sanitizer Dispensers</label>
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Soaking Trays</label>
-                                        <label class="form-check-label"><input class="form-check-input m-0" type="checkbox">Dispensing Systems</label>
-                                    </div>
-                                </div>
+                            <hr class="mt-30 mb-30">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Adenovirus</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">Double-stranded DNA viruses that lack an envelope, are medium in size (roughly 100 nm), and are icosohedral in shape. So far over 50 different adenoviruses have been identified that cause human disease. These viruses are well known causes of respiratory illnesses but can affect the gut, eye, ear, throat, and skin. Less common sites of infection are the urinary bladder and the meninges of the brain. There is no curative treatment for adenovirus infection. Reducing the spread of adenoviruses involves contact and droplet precautions and meticulous infection control practices.</h5></div>
                             </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-disinfectants">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseOne" aria-expanded="false" aria-controls="disinfectants-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Dental Impression.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Dental Impression.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Dental Impression</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseTwo" aria-expanded="false" aria-controls="disinfectants-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Hand Hygiene.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Hand hygiene.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Hand Hygiene</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseThree" aria-expanded="false" aria-controls="disinfectants-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Instruments - Burs.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Instruments- Burs.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Instruments Burs</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseFour" aria-expanded="false" aria-controls="disinfectants-collapseFour">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Instruments.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Instruments.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Instruments</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseFive" aria-expanded="false" aria-controls="disinfectants-collapseFive">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Suction.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Suction.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Suction</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseSix" aria-expanded="false" aria-controls="disinfectants-collapseSix">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Surfaces - Floor.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Surfaces - Floor.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Surfaces - Floor</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#disinfectants-collapseSaven" aria-expanded="false" aria-controls="disinfectants-collapseSaven">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Disinfectants and Cleaners/grey/Surfaces.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Disinfectants and Cleaners/white/Surfaces.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Surfaces</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="disinfectants-collapseSaven" class="accordion-collapse collapse" data-bs-parent="#accordion-disinfectants">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
+                            <hr class="mt-30 mb-30">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Aerosol</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">Ultrafine particles or droplets of liquid that are dispersed and carried in the air. May refer to industrial or medical products that are contained under pressure and intended to be inhaled, used topically, or meant to cover a wide area or volume. Theoretically, any substance of an appropriately small size and carried in the proper aerodynamic disturbance could become an aerosol. An aerosol may also carry infectious material as can occur in dental procedures involving rotary instruments or expelled by sneezes and coughs. An aerosolized pathogen can carry on the air and contaminate surfaces or infect individuals.</h5></div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="faq-medical" role="tabpanel" aria-labelledby="faq-medical-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex align-items-center mb-30 border">
-                                    <div class="icon_wrap">
-                                        <i class="fa-solid fa-bars"></i>
-                                    </div>
-                                    <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
-                                    <div class="icon_wrap bg-orange h-100">
-                                        <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                            <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                        </i>
-                                    </div>
-                                </div>
+                    <div class="call_to_list">
+                        <h1 id="B">B</h1>
+                        <div class="call_to_data_container">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Bacillus sp.</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">A genus of aerobic or facultatively anaerobic Gram-positive bacteria occurring in the shape of rods and capable of forming spores. Bacillus species are primarily found free-living in soil and few are pathogenic to humans. The two major pathogenic species are Bacillus anthracis (causes Anthrax) and Bacillus cereus (causes food-borne illness). Bacillus bacteria are identified in part by their ability to secrete certain enzymes, including catalase; a phenotype that is helpful for laboratory diagnosis.</h5></div>
                             </div>
-                            <div class="col-12 col-md-4 position-relative">
-                                <div class="d-flex align-items-center mb-30 border position-relative dropdown-button" style="min-height: 46px;">
-                                    <div class="icon_wrap h-100">
-                                        <i class="filtericon">
-                                            <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
-                                        </i>
-                                    </div>
-                                    <input class="form-control border-0 px-0" type="text" placeholder="Filter" style="background-color: #fff;" disabled>
-                                    <div class="dropdown-content" id="checkboxContainer2.3">
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Face Masks</label>
-                                        <label class="form-check-label"><input class="form-check-input m-0" type="checkbox">Gloves</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-medical">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medical-collapseOne" aria-expanded="false" aria-controls="medical-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Medical Disposables/grey/Face Mask.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Medical Disposables/white/Face Mask.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Face Mask</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="medical-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-medical">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medical-collapseTwo" aria-expanded="false" aria-controls="medical-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Medical Disposables/grey/Gloves.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Medical Disposables/white/Gloves.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Gloves</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="medical-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-medical">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medical-collapseThree" aria-expanded="false" aria-controls="medical-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Medical Disposables/grey/Paper roll.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Medical Disposables/white/Paper roll.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Paper Roll</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="medical-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-medical">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
+                            <hr class="mt-30 mb-30">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Bacteria</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal mb-0">Single-celled organisms that lack an organized cell nucleus or chlorophyll. They reproduce by binary fission (mitosis). Bacteria may be aerobic, anaerobic; commensal, parasitic or pathogenic. Bacteria can by differentiated in a laboratory setting be their morphological, structural, and physiological traits.</h5></div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="faq-application-aid" role="tabpanel" aria-labelledby="faq-application-aid-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex align-items-center mb-30 border">
-                                    <div class="icon_wrap">
-                                        <i class="fa-solid fa-bars"></i>
-                                    </div>
-                                    <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
-                                    <div class="icon_wrap bg-orange h-100">
-                                        <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                            <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                        </i>
-                                    </div>
-                                </div>
+                    <div class="call_to_list">
+                        <h1 id="C">C</h1>
+                        <div class="call_to_data_container">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Term Title</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dicta aut iste dolores, ut recusandae tempora delectus dolor optio. Perferendis consequatur repellat deleniti quis distinctio autem id ullam, minima amet quia fuga hic, voluptatem qui?</h5></div>
                             </div>
-                            <div class="col-12 col-md-4 position-relative">
-                                <div class="d-flex align-items-center mb-30 border position-relative dropdown-button" style="min-height: 46px;">
-                                    <div class="icon_wrap h-100">
-                                        <i class="filtericon">
-                                            <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
-                                        </i>
-                                    </div>
-                                    <input class="form-control border-0 px-0" type="text" placeholder="Filter" style="background-color: #fff;" disabled>
-                                    <div class="dropdown-content" id="checkboxContainer2.3">
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Application Aids</label>
-                                        <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Sanitizer Dispensers</label>
-                                        <label class="form-check-label"><input class="form-check-input m-0" type="checkbox">Soaking Trays</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-application-aids">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#application-aids-collapseOne" aria-expanded="false" aria-controls="application-aids-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Accessories and Application Aids/grey/Accesories.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Accessories and Application Aids/white/Accesories.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Product Name</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="application-aids-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-application-aids">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#application-aids-collapseTwo" aria-expanded="false" aria-controls="application-aids-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Accessories and Application Aids/grey/Accesories.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Accessories and Application Aids/white/Accesories.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Product Name</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="application-aids-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-application-aids">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#application-aids-collapseThree" aria-expanded="false" aria-controls="application-aids-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Accessories and Application Aids/grey/Accesories.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Accessories and Application Aids/white/Accesories.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Product Name</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="application-aids-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-application-aids">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="tab-pane fade" id="faq-oroclean" role="tabpanel" aria-labelledby="faq-oroclean-tab" tabindex="0">
-                        <div class="d-flex align-items-center mb-30 border">
-                            <div class="icon_wrap">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
-                            <div class="icon_wrap bg-orange h-100">
-                                <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                    <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                </i>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-oroclean">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oroclean-collapseOne" aria-expanded="false" aria-controls="oroclean-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/grey/Hygine Club.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/white/Hygine Club.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Membership Information</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="oroclean-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-oroclean">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oroclean-collapseTwo" aria-expanded="false" aria-controls="oroclean-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/grey/Hygine Club.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/white/Hygine Club.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Membership Information</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="oroclean-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-oroclean">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oroclean-collapseThree" aria-expanded="false" aria-controls="oroclean-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/grey/Hygine Club.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/white/Hygine Club.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Membership Information</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="oroclean-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-oroclean">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oroclean-collapseFour" aria-expanded="false" aria-controls="oroclean-collapseFour">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/grey/Hygine Club.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/OROCLEAN Hygiene Club/white/Hygine Club.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Membership Information</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="oroclean-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-oroclean">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="faq-infection-control" role="tabpanel" aria-labelledby="faq-infection-control-tab" tabindex="0">
-                        <div class="d-flex align-items-center mb-30 border">
-                            <div class="icon_wrap">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
-                            <div class="icon_wrap bg-orange h-100">
-                                <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
-                                    <img width="25" src="../assets/images/FAQ/White/All.svg" alt="">
-                                </i>
-                            </div>
-                        </div>
-                        <div class="accordion accordion-flush" id="accordion-infection">
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseOne" aria-expanded="false" aria-controls="infection-collapseOne">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Beauty and Wellness.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Beauty and Wellness.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Beauty and Wellness</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseTwo" aria-expanded="false" aria-controls="infection-collapseTwo">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Dental.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Dental.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Dental</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseThree" aria-expanded="false" aria-controls="infection-collapseThree">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Infection Control and Prevention main icon.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Infection Control and Prevention main icon.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Infection Control and Prevention</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseFour" aria-expanded="false" aria-controls="infection-collapseFour">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Medical.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Medical.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Medical</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseFive" aria-expanded="false" aria-controls="infection-collapseFive">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Professional Care.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Professional care.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Professional care</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infection-collapseSix" aria-expanded="false" aria-controls="infection-collapseSix">
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <i class="img_icon_show"><img src="../assets/images/FAQ/Infection Control and Prevention Category/Grey/Veterinary.svg" alt="image"></i>
-                                            <i class="img_icon_hide"><img src="../assets/images/FAQ/Infection Control and Prevention Category/White/Veterinary.svg" alt="image"></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="heading_4 mb-0">Veterinary</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                              </h2>
-                              <div id="infection-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion-infection">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled p-0">
-                                        <li class="mb-3 active">
-                                            <div class="question">Question 1</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="mb-3">
-                                            <div class="question">Question 2</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                            </div>
-                                        </li>
-                                        <li class="pb-3">
-                                            <div class="question">Question 3</div>
-                                            <div class="answer">
-                                                <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                <h5 class="heading_5 fw-normal m-0">
-                                                    <a class="text-decoration-none" href="#">
-                                                        Learn More
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                              </div>
+                            <hr class="mt-30 mb-30">
+                            <div class="row">
+                                <div class="col-12 col-md-4"><h4 class="heading_4">Term Title</h4></div>
+                                <div class="col-12 col-md-8"><h5 class="heading_5 fw-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dicta aut iste dolores, ut recusandae tempora delectus dolor optio. Perferendis consequatur repellat deleniti quis distinctio autem id ullam, minima amet quia fuga hic, voluptatem qui?</h5></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <section class="p-0" style="background-color: #ff6600;" id="feedback_wrap">
@@ -5033,34 +3755,14 @@
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    
     <script>
         $(document).ready(function(){
             $(".myInput").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
-                $(".accordion-item").filter(function() {
+                $(".call_to_list").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-        });
-    </script>
-    <script>
-        const dropdownButtons = document.querySelectorAll('.dropdown-button');
-        const dropdownContents = document.querySelectorAll('.dropdown-content');
-      
-        dropdownButtons.forEach((button, index) => {
-          button.addEventListener('click', () => {
-            dropdownContents[index].classList.toggle('show-dropdown');
-          });
-        });
-      
-        // Close the dropdowns when clicking outside of them
-        document.addEventListener('click', (event) => {
-          dropdownButtons.forEach((button, index) => {
-              if (!button.contains(event.target) && !dropdownContents[index].contains(event.target)) {
-              dropdownContents[index].classList.remove('show-dropdown');
-              }
-          });
         });
 
         const feedback_wrap = document.getElementById('feedback_wrap');
@@ -5074,7 +3776,7 @@
           First_step.style.display = 'none';
           second_step.style.display = 'flex';
         });
-      </script>
+    </script>
 </body>
 
 </html>
