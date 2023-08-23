@@ -258,16 +258,32 @@ button.video-control {
 }
 
 section{
-    padding: 50px 0 60px;
+    padding: 60px 0;
 }
-.section_2 h2{
+/* .section_2 h2{
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
     color: #111;
     margin-bottom: 60px;
+} */
+h2.heading_2{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #111;
+    margin-bottom: 60px;
+    margin-top: 0;
 }
 .section_2 p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 0;
+}
+.section_1 p{
     margin-top: 20px;
     font-size: 20px;
     line-height: 24px;
@@ -358,11 +374,12 @@ section{
     width: 100%;
 }
 
-.heading_2{
-    font-size: 42px;
+h2.heading_3 {
+    font-size: 34px;
     font-weight: 600;
-    line-height: 46px;
+    line-height: 30px;
     color: #111;
+    margin-bottom: 60px;
 }
 .heading_3 {
     font-size: 28px;
@@ -812,9 +829,9 @@ section.counter_sec {
             align-items: center;
     margin-right: 0px;
 }
-.breadcrumbs{
+/* .breadcrumbs{
     padding: 10px 0;
-}
+} */
 .number_wrap {
     width: 35px;
     height: 40px;
@@ -976,6 +993,14 @@ section.counter_sec {
 }
 
 .about_occ .section_2 p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Roboto;
+    color: #111;
+    margin-bottom: 0;
+}
+.about_occ .section_1 p {
     margin-top: 20px;
     font-size: 20px;
     line-height: 26px;
@@ -1248,7 +1273,7 @@ select.form-select {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 19px;
+    font-size: 20px;
     flex-direction: column;
     border-radius: 0;
     margin: 12px 0;
@@ -1572,6 +1597,10 @@ h5.heading_5 a {
         font-size: 16px;
         line-height: 20px;
     }
+    .about_occ .section_1 p {
+        font-size: 16px;
+        line-height: 20px;
+    }
     .heading_4{
         font-size: 22px;
         line-height: 26px;
@@ -1645,6 +1674,11 @@ h5.heading_5 a {
         font-size: 38px !important;
         line-height: 40px;
     }
+    h2.heading_2 {
+        font-size: 38px !important;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
     .mainlangmenu ul li {
         float: left;
         width: 160px;
@@ -1677,9 +1711,11 @@ h5.heading_5 a {
         margin-left: auto;
     }
     section {
-        padding: 30px 0 30px;
+        padding: 40px;
     }
-    
+    h2.heading_2  br{
+        display: none;
+    }
 }
 @media only screen and (max-width: 840px){
     .brand_list_link {
@@ -1993,6 +2029,9 @@ h5.heading_5 a {
         margin-right: auto;
         margin-left: auto;
     }
+    .breadcrumbs {
+        padding: 5px 0;
+    }
 }
 
 
@@ -2006,6 +2045,7 @@ h5.heading_5 a {
         margin-right: auto;
         margin-left: auto;
     }
+    
     
 }
 
@@ -2034,7 +2074,7 @@ h5.heading_5 a {
         margin-bottom: 15px;
     }
     section {
-        padding: 20px 0 20px;
+        padding: 20px 0;
     }
     .mb-30 {
         margin-bottom: 15px !important;
@@ -2066,6 +2106,10 @@ h5.heading_5 a {
         width: 700px;
     }
     .about_occ .section_2 p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .about_occ .section_1 p {
         font-size: 14px;
         line-height: 18px;
     }
@@ -2141,6 +2185,10 @@ h5.heading_5 a {
         font-size: 14px;
     }
     .contact .section_2 p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contact .section_1 p {
         font-size: 14px;
         line-height: 18px;
     }
@@ -2268,6 +2316,12 @@ h5.heading_5 a {
         line-height: 18px;
         font-family: Roboto;
     }
+    .section_1 p {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Roboto;
+    }
     .w-100.overlay_content {
         margin-bottom: 50px;
     }
@@ -2359,6 +2413,11 @@ h5.heading_5 a {
         margin-top: 0px;
         font-size: 24px !important;
         line-height: 26px;
+    }
+    h2.heading_2 {
+        font-size: 24px !important;
+        line-height: 26px;
+        margin-bottom: 20px;
     }
     /* .right_side_content h3 {
         font-size: 20px;
