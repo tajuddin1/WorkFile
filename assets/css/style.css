@@ -164,6 +164,7 @@ nav#navbar {
   line-height: 70px;
   color: #fff;
   text-shadow: 2px 2px 10px #002e4fbf !important;
+  margin-bottom: 45px !important;
 }
 .overlay_content p {
   font-size: 26px;
@@ -172,6 +173,7 @@ nav#navbar {
   color: #fff;
   text-shadow: 2px 2px 10px #002e4fbf !important;
   max-width: 665px;
+  margin-bottom: 45px !important;
 }
 .overlay_content a.btn {
   font-size: 18px;
@@ -186,12 +188,15 @@ nav#navbar {
   color: #ff6600;
   background-color: #ffffff;
 }
+.overlay_content{
+  margin-top: 90px;
+}
 .hero_section_wrapper {
   overflow: hidden;
 }
 .video_wrap video {
-  max-height: 520px;
-  min-height: 520px;
+  max-height: 540px;
+  min-height: 540px;
   width: 100vw;
   -o-object-fit: cover;
   object-fit: cover;
@@ -275,7 +280,7 @@ button.video-control {
 }
 
 section {
-  padding: 60px 0;
+  padding: 45px 0;
 }
 /* .section_2 h2{
     font-size: 42px;
@@ -289,11 +294,11 @@ h2.heading_2 {
   font-weight: 600;
   line-height: 50px;
   color: #111;
-  margin-bottom: 60px;
+  margin-bottom: 30px !important;
   margin-top: 0;
 }
 .section_2 p {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 20px;
   line-height: 24px;
   color: #111;
@@ -301,11 +306,9 @@ h2.heading_2 {
   margin-bottom: 0;
 }
 .section_1 p {
-  margin-top: 20px;
   font-size: 20px;
   line-height: 24px;
   color: #111;
-  font-family: "PT Sans", sans-serif;
   margin-bottom: 0;
 }
 .number.plus::after {
@@ -396,18 +399,20 @@ h2.heading_3 {
   font-weight: 600;
   line-height: 30px;
   color: #111;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .heading_3 {
   font-size: 28px;
   font-weight: 600;
   line-height: 34px;
   color: #111;
+  margin-bottom: 20px;
 }
 .heading_4 {
   font-size: 26px;
   font-weight: 600;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 .heading_5 {
   font-size: 20px;
@@ -418,7 +423,7 @@ h2.heading_3 {
 .description {
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   font-family: "PT Sans", sans-serif;
 }
 .btn_orange {
@@ -751,7 +756,7 @@ footer .accordion-button::after {
   position: absolute;
   top: 0;
   right: 70px;
-  width: 50px;
+  width: 100px;
   height: 100%;
   display: none;
   -webkit-box-pack: center;
@@ -764,12 +769,12 @@ footer .accordion-button::after {
 .cart_items._desk {
   position: unset;
   right: unset;
-  width: 60px;
+  width: 25px;
   height: 100%;
   display: block;
 }
 .cart_items._desk a span {
-  left: 10px;
+  left: -7px;
 }
 .cart_items a {
   font-size: 20px;
@@ -1011,7 +1016,7 @@ section.counter_sec {
 }
 
 .about_occ .section_2 p {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 20px;
   line-height: 26px;
   font-family: Roboto;
@@ -1019,7 +1024,6 @@ section.counter_sec {
   margin-bottom: 0;
 }
 .about_occ .section_1 p {
-  margin-top: 20px;
   font-size: 20px;
   line-height: 26px;
   font-family: Roboto;
@@ -1039,7 +1043,7 @@ section.counter_sec {
 .about_occ .content_Slide p {
   font-size: 20px;
   line-height: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 /* .about_occ .content_Slide h3{ 
     font-size: 34px;
@@ -1049,13 +1053,13 @@ section.counter_sec {
 } */
 .about_occ .overlay_content {
   max-width: 765px;
+  margin-top: 90px;
 }
 .about_occ .overlay_content p {
   max-width: 765px;
 }
 .about_occ .content_Slide h3 {
-  padding: 15px 0 10px;
-  margin-bottom: 0;
+  padding: 0px;
   color: #000000;
 }
 .d-flex.gap-2.gap-lg-3.align-items-stretch {
@@ -1282,12 +1286,19 @@ select.form-select {
 .card-body {
   padding: 15px 32px;
 }
+.modal{
+  z-index: 999999 !important;
+}
+
 .modal-backdrop {
   background-color: #ffffff8f;
 }
 .modal-content.pb-30.pt-30.rounded-0.border-0 {
   -webkit-box-shadow: 0px 0px 20px 0px #c7c7c7;
   box-shadow: 0px 0px 20px 0px #c7c7c7;
+}
+.mb-20{
+  margin-bottom: 20px !important;
 }
 
 .nav-pills .nav-item .nav-link {
@@ -1480,7 +1491,7 @@ label.form-check-label {
   align-items: center;
 }
 .infection-control-content {
-  padding: 15px 25px 30px;
+  padding: 30px 25px;
   background-color: #fff;
 }
 .infection-control {
@@ -1544,6 +1555,7 @@ label.form-check-label {
 }
 .question-step label {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .shadow {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -1626,6 +1638,30 @@ label.form-check-label {
   -webkit-box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
   box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
 }
+
+span.menu_item_top.before_off:before {
+  display: none;
+}
+.mb-45{
+  margin-bottom: 45px !important;
+}
+footer {
+  padding-top: 45px !important;
+  padding-bottom: 0px !important;
+}
+.breadcrumbs {
+  padding-top: 5px;
+}
+h2.heading_2.tag {
+  margin-bottom: 0px !important;
+}
+.about_occ.i-w-s .content_Slide h3 {
+  padding: 20px 0 0px;
+}
+
+.mask_brand{
+  margin-top: 20px;
+}
 /* ///////////////////////////// */
 
 @media only screen and (max-width: 1440px) {
@@ -1638,9 +1674,6 @@ label.form-check-label {
   .accordion.accordion-flush.footer-menu {
     padding-bottom: 40px;
   }
-  footer {
-    padding-bottom: 0px !important;
-  }
 }
 @media only screen and (max-width: 1200px) {
   .d-flex.gap-2.gap-lg-3.align-items-stretch {
@@ -1648,6 +1681,11 @@ label.form-check-label {
   }
 }
 @media only screen and (max-width: 1024px) {
+
+  footer {
+    padding-top: 40px !important;
+    padding-bottom: 0px !important;
+  }
   .card-body {
     padding: 15px 20px;
   }
@@ -1669,8 +1707,12 @@ label.form-check-label {
   .video_wrap video {
     min-height: 400px;
   }
+  .overlay_content {
+    margin-top: 52px;
+  }
   .about_occ .overlay_content {
     max-width: unset;
+    margin-top: 50px;
   }
   .bg_wrap {
     max-height: 330px;
@@ -1689,8 +1731,12 @@ label.form-check-label {
     display: none;
   }
   .overlay_content h1 {
-    font-size: 50px;
-    line-height: 54px;
+    font-size: 56px;
+    line-height: 58px;
+    margin-bottom: 25px !important;
+  }
+  .overlay_content p {
+    margin-bottom: 25px !important;
   }
   .join_us h2 {
     font-size: 34px;
@@ -1704,6 +1750,7 @@ label.form-check-label {
   }
   .description {
     font-size: 18px;
+    margin-bottom: 12px;
   }
   .footer_last p {
     font-size: 14px;
@@ -1735,7 +1782,7 @@ label.form-check-label {
   h2.heading_2 {
     font-size: 38px !important;
     line-height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px !important;
   }
   .mainlangmenu ul li {
     float: left;
@@ -1751,7 +1798,7 @@ label.form-check-label {
   .right_side_content p {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-family: "PT Sans", sans-serif;
   }
   .about_occ .content_Slide p {
@@ -1774,8 +1821,21 @@ label.form-check-label {
   h2.heading_2 br {
     display: none;
   }
+  .about_occ .content_Slide h3 {
+    padding: 20px 0 0px;
+  }
 }
 @media only screen and (max-width: 840px) {
+  .about_occ .content_Slide h3 {
+    padding: 15px 0 0px;
+  }
+  .about_occ.i-w-s .content_Slide h3 {
+    padding: 15px 0 0px;
+  }
+  footer {
+    padding-top: 35px !important;
+    padding-bottom: 0px !important;
+  }
   .brand_list_link {
     font-size: 20px !important;
     margin: 0 10px !important;
@@ -1963,8 +2023,15 @@ label.form-check-label {
     font-weight: 600;
     line-height: 47px;
     color: #111;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
+  h2.heading_3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #111;
+    margin-bottom: 20px;
+}
   .section_logo_wrap br {
     display: none;
   }
@@ -2081,6 +2148,7 @@ label.form-check-label {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
+    margin-bottom: 10px;
   }
   .modal-dialog {
     max-width: 700px !important;
@@ -2090,6 +2158,7 @@ label.form-check-label {
   .breadcrumbs {
     padding: 5px 0;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2102,9 +2171,26 @@ label.form-check-label {
     margin-right: auto;
     margin-left: auto;
   }
+  h2.heading_2.tag {
+    margin-bottom: 20px !important;
+  }
+  .mb-20 {
+    margin-bottom: 15px !important;
+  }
 }
 
 @media only screen and (max-width: 590px) {
+  .infection-control {
+    margin: 0 0px;
+    padding: 0;
+  }
+  .question-step .inputGroup label {
+    padding: 5px 20px;
+  }
+  footer {
+    padding-top: 30px !important;
+    padding-bottom: 0px !important;
+  }
   .call_to_data_container {
     padding: 20px;
     background-color: #f1f1f1;
@@ -2208,7 +2294,7 @@ label.form-check-label {
   .card_wrap p.description {
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   .download-list li {
     border-bottom: solid 1px #ccc;
@@ -2290,10 +2376,10 @@ label.form-check-label {
   }
   .overlay_content {
     width: 100%;
-    margin-bottom: 15px;
+    margin-top: 45px;
   }
   .about_occ .overlay_content {
-    max-width: 765px;
+    margin-top: 45px;
     margin-bottom: 0;
   }
   .bg_wrap {
@@ -2318,16 +2404,16 @@ label.form-check-label {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 5px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
   /* .about_occ .section_2 h2 {
         margin-top: 0;
         font-size: 26px;
         line-height: 28px;
     } */
-  .about_occ section {
+  /* .about_occ section {
     padding: 15px 0;
-  }
+  } */
   .mobile_menu .langbox .leftlang ul li {
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
@@ -2372,7 +2458,7 @@ label.form-check-label {
     min-height: 300px;
   }
   .section_2 p {
-    margin-top: 12px;
+    /* margin-top: 12px; */
     font-size: 14px;
     line-height: 18px;
     font-family: Roboto;
@@ -2423,11 +2509,13 @@ label.form-check-label {
   }
   .overlay_content h1 {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 38px;
+    margin-bottom: 20px !important;
   }
   .overlay_content p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
+    margin-bottom: 15px !important;
   }
   .menu_item_wrapper.fitMenu {
     top: 64px;
@@ -2454,6 +2542,7 @@ label.form-check-label {
   .heading_3 {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 10px;
   }
   .number {
     font-size: 36px;
@@ -2482,9 +2571,12 @@ label.form-check-label {
   h2.heading_2 {
     font-size: 24px !important;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 15px !important;
   }
-  /* .right_side_content h3 {
+  h2.heading_2.tag {
+    margin-bottom: 15px !important;
+  }
+    /* .right_side_content h3 {
         font-size: 20px;
         line-height: 22px;
         margin-bottom: 10px;
@@ -2492,7 +2584,7 @@ label.form-check-label {
   .right_side_content p {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: roboto;
   }
   .description {
@@ -2547,6 +2639,12 @@ label.form-check-label {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 430px) {
+  .overlay_content h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
 @media only screen and (max-width: 390px) {
   .heading_4 {
     font-size: 18px;
@@ -2555,16 +2653,13 @@ label.form-check-label {
   .cart_items {
     right: 56px;
   }
-  .overlay_content h1 {
-    font-size: 32px;
-    line-height: 34px;
-  }
+  
   .overlay_content p {
     font-size: 16px;
     line-height: 20px;
   }
   .video_wrap video {
-    min-height: 350px;
+    min-height: 335px;
   }
   .section_logo_wrap img {
     height: 25px;

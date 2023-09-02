@@ -27,6 +27,18 @@
             min-height: 200px;
         }
 
+        .progress-bar {
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 0px 1px #ff6600;
+            height: 10px;
+            margin-bottom: 20px;
+        }
+
+        .progress {
+            background: #ff6600 !important;
+            border-radius: 20px;
+        }
+
         @media only screen and (max-width: 1200px) {
             .d-flex.gap-2.gap-lg-3.align-items-stretch {
                 min-height: 260px;
@@ -416,6 +428,22 @@
                             </div>
                         </li>
                         <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/Wishlist_Black outline.svg"
+                                        alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/shopping-cart.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/User_Black.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2 border-start">
                             <span class="menu_item_top lang" id="lang_btn">
                                 <span class="me-2"><img width="20" src="../assets/images/Language_Globe.svg"
                                         alt=""></span>
@@ -1769,10 +1797,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="cart_items">
+            <div class="cart_items gap-4">
                 <a class="position-relative" href="#">
                     <div
-                        style="background-image: url(../assets/images/shopping-cart.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                        style="background-image: url(../assets/images/User_Black.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                    </div>
+                </a>
+                <a class="position-relative" href="#">
+                    <div
+                        style="background-image: url(../assets/images/shopping-cart.svg); width: 28px; height: 24px; background-repeat: no-repeat; background-size: contain;">
                     </div>
                     <span>0</span>
                 </a>
@@ -3256,9 +3289,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="Contact_us">
-                    <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../contact.html"><i
-                            class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                <div class="d-flex gap-5">
+                    <div class="Contact_us">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../contact.html"><i
+                                class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                    </div>
+                    <div class="Contact_us Wishlist">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="#"><i
+                                class="me-2"><img width="20px" src="../assets/images/Wishlist_Black outline.svg" alt=""></i> Liked Products</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3272,8 +3311,8 @@
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
-                    <div class="container-lg ps-md-4 ps-lg-0 mt-5">
-                        <div class="overlay_content mt-lg-4">
+                    <div class="container-lg ps-md-4 ps-lg-0">
+                        <div class="overlay_content">
                             <h1 class="mb-3 mb-md-4">Evaluate Your Infection <br> Control Procedures<span
                                     style="color: #ff6600;">.</span>
                             </h1>
@@ -3312,7 +3351,7 @@
             <div class="container-lg px-md-4 px-lg-0">
                 <h2 class="heading_2 text-left text-lg-center">Comprehensive Hygiene Analysis for Dental Practices.
                 </h2>
-                <div class="row text_image_slide pb-3 pb-md-5">
+                <div class="row text_image_slide mb-30">
                     <div class="col-12 col-lg-6 pe-lg-3">
                         <div class="overflow-hidden position-relative">
                             <img class="w-100"
@@ -3330,7 +3369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-3 mb-0">
+                <div class="row pt-1 mb-0">
                     <div class="col-12 col-lg-6 d-flex align-items-center mt-2 mt-lg-0">
                         <div class="content_Slide p-0">
                             <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-0">
@@ -3452,14 +3491,14 @@
                     </div>
                     <div class="infection-control-content">
                         <form id="myForm">
-                            <div class="form-group mb-30">
+                            <div class="form-group mb-20">
                                 <label for="">
                                     <h5 class="heading_5 fw-normal mb-1">Clinic</h5>
                                 </label>
                                 <input type="text" class="form-control" id="" aria-describedby="" placeholder=""
                                     required="">
                             </div>
-                            <div class="form-group mb-30">
+                            <div class="form-group mb-20">
                                 <label for="">
                                     <h5 class="heading_5 fw-normal mb-1">Title</h5>
                                 </label>
@@ -3475,14 +3514,14 @@
                                 </select>
                             </div>
                             <div class="row mb-30">
-                                <div class=" col-6 form-group">
+                                <div class=" col-12 col-md-6 form-group">
                                     <label for="">
                                         <h5 class="heading_5 fw-normal mb-1">First name</h5>
                                     </label>
                                     <input type="text" class="form-control" id="" aria-describedby="" placeholder=""
                                         required="">
                                 </div>
-                                <div class=" col-6 form-group">
+                                <div class=" col-12 col-md-6  form-group">
                                     <label for="">
                                         <h5 class="heading_5 fw-normal mb-1">Last name</h5>
                                     </label>
@@ -3490,14 +3529,14 @@
                                         required="">
                                 </div>
                             </div>
-                            <div class="form-group mb-30">
+                            <div class="form-group mb-20">
                                 <label for="">
                                     <h5 class="heading_5 fw-normal mb-1">Email</h5>
                                 </label>
                                 <input type="text" id="EvaluateyourInfectionControlProcedures_email1"
                                     class="form-control" aria-describedby="" placeholder="" required="">
                             </div>
-                            <div class="form-group mb-30">
+                            <div class="form-group mb-20">
                                 <label for="">
                                     <h5 class="heading_5 fw-normal mb-1">Number of questions</h5>
                                 </label>
@@ -3552,7 +3591,7 @@
                             <div>
                                 <div class="row ">
                                     <div class="col-md-12 text-left text-xl-center">
-                                        <button id="submitButton" type="submit" class="btn btn_orange">
+                                        <button id="submitButton" type="submit" class="btn btn_orange px-5">
                                             PROCEED
                                         </button>
                                     </div>
@@ -3564,179 +3603,262 @@
                                 <form id="mcqForm1">
                                     <div class="question-step" id="step1-1">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 1</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 1 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 10%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="radio1_1" class="evaluate_question_checkbox" name="q1_1"
-                                                        type="radio">
-                                                    <label for="radio1_1">Yes</label>
+                                                    <input id="question1_option_1" class="evaluate_question_checkbox"
+                                                        name="question1_1" type="radio">
+                                                    <label for="question1_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="radio2_1" class="evaluate_question_checkbox" name="q1_1"
-                                                        type="radio">
-                                                    <label for="radio2_1">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 2</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio1_2" class="evaluate_question_checkbox" name="q2_1"
-                                                        type="radio">
-                                                    <label for="radio1_2">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio2_2" class="evaluate_question_checkbox" name="q2_1"
-                                                        type="radio">
-                                                    <label for="radio2_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 3</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio2_3" class="evaluate_question_checkbox" name="q3_1"
-                                                        type="radio">
-                                                    <label for="radio2_3">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio3_3" class="evaluate_question_checkbox" name="q3_1"
-                                                        type="radio">
-                                                    <label for="radio3_3">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 4</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio3_4" class="evaluate_question_checkbox" name="q4_1"
-                                                        type="radio">
-                                                    <label for="radio3_4">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio4_4" class="evaluate_question_checkbox" name="q4_1"
-                                                        type="radio">
-                                                    <label for="radio4_4">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 5</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio4_5" class="evaluate_question_checkbox" name="q5_1"
-                                                        type="radio">
-                                                    <label for="radio4_5">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio5_5" class="evaluate_question_checkbox" name="q5_1"
-                                                        type="radio">
-                                                    <label for="radio5_5">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 6</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio5_6" class="evaluate_question_checkbox" name="q6_1"
-                                                        type="radio">
-                                                    <label for="radio5_6">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio6_6" class="evaluate_question_checkbox" name="q6_1"
-                                                        type="radio">
-                                                    <label for="radio6_6">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 7</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio6_7" class="evaluate_question_checkbox" name="q7_1"
-                                                        type="radio">
-                                                    <label for="radio6_7">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio7_7" class="evaluate_question_checkbox" name="q7_1"
-                                                        type="radio">
-                                                    <label for="radio7_7">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 8</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio7_8" class="evaluate_question_checkbox" name="q8_1"
-                                                        type="radio">
-                                                    <label for="radio7_8">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio8_8" class="evaluate_question_checkbox" name="q8_1"
-                                                        type="radio">
-                                                    <label for="radio8_8">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 9</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio8_9" class="evaluate_question_checkbox" name="q9_1"
-                                                        type="radio">
-                                                    <label for="radio8_9">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio9_9" class="evaluate_question_checkbox" name="q9_1"
-                                                        type="radio">
-                                                    <label for="radio9_9">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 10</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="radio9_10" class="evaluate_question_checkbox"
-                                                        name="q10_1" type="radio">
-                                                    <label for="radio9_10">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="radio10_10" class="evaluate_question_checkbox"
-                                                        name="q10_1" type="radio">
-                                                    <label for="radio10_10">No</label>
+                                                    <input id="question1_option_2" class="evaluate_question_checkbox"
+                                                        name="question1_1" type="radio">
+                                                    <label for="question1_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <!-- Add more questions for step 2 here -->
-                                        <div class="d-flex justify-content-center">
-                                            <button class="btn btn_orange" type="submit" id="submitMCQ1">SUBMIT</button>
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step2-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 2 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 20%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question2_option_1" class="evaluate_question_checkbox"
+                                                        name="question2_1" type="radio">
+                                                    <label for="question2_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question2_option_2" class="evaluate_question_checkbox"
+                                                        name="question2_1" type="radio">
+                                                    <label for="question2_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step3-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 3 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 30%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question3_option_1" class="evaluate_question_checkbox"
+                                                        name="question3_1" type="radio">
+                                                    <label for="question3_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question3_option_2" class="evaluate_question_checkbox"
+                                                        name="question3_1" type="radio">
+                                                    <label for="question3_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step4-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 4 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 40%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question4_option_1" class="evaluate_question_checkbox"
+                                                        name="question4_1" type="radio">
+                                                    <label for="question4_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question4_option_2" class="evaluate_question_checkbox"
+                                                        name="question4_1" type="radio">
+                                                    <label for="question4_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step5-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 5 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 50%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question5_option_1" class="evaluate_question_checkbox"
+                                                        name="question5_1" type="radio">
+                                                    <label for="question5_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question5_option_2" class="evaluate_question_checkbox"
+                                                        name="question5_1" type="radio">
+                                                    <label for="question5_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step6-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 6 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 60%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question6_option_1" class="evaluate_question_checkbox"
+                                                        name="question6_1" type="radio">
+                                                    <label for="question6_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question6_option_2" class="evaluate_question_checkbox"
+                                                        name="question6_1" type="radio">
+                                                    <label for="question6_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step7-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 7 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 70%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question7_option_1" class="evaluate_question_checkbox"
+                                                        name="question7_1" type="radio">
+                                                    <label for="question7_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question7_option_2" class="evaluate_question_checkbox"
+                                                        name="question7_1" type="radio">
+                                                    <label for="question7_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step8-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 8 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 80%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question8_option_1" class="evaluate_question_checkbox"
+                                                        name="question8_1" type="radio">
+                                                    <label for="question8_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question8_option_2" class="evaluate_question_checkbox"
+                                                        name="question8_1" type="radio">
+                                                    <label for="question8_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step9-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 9 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 90%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question9_option_1" class="evaluate_question_checkbox"
+                                                        name="question9_1" type="radio">
+                                                    <label for="question9_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question9_option_2" class="evaluate_question_checkbox"
+                                                        name="question9_1" type="radio">
+                                                    <label for="question9_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep1 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step10-1">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 10 of 10</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 100%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="question10_option_1" class="evaluate_question_checkbox"
+                                                        name="question10_1" type="radio">
+                                                    <label for="question10_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="question10_option_2" class="evaluate_question_checkbox"
+                                                        name="question10_1" type="radio">
+                                                    <label for="question10_option_2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange px-5" type="submit" id="submitMCQ1">DONE</button>
                                         </div>
                                     </div>
                                 </form>
@@ -3746,469 +3868,106 @@
                                 <form id="mcqForm2">
                                     <div class="question-step" id="step1-2">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 1</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 1 of 25</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 4%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="question1_option_1" class="evaluate_question_checkbox"
-                                                        name="question1_option_1" type="radio">
-                                                    <label for="question1_option_1">Yes</label>
+                                                    <input id="MCQ2_question1_option_1" class="evaluate_question_checkbox"
+                                                        name="question1_2" type="radio">
+                                                    <label for="MCQ2_question1_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="question1_option_2" class="evaluate_question_checkbox"
-                                                        name="question1_option_2" type="radio">
-                                                    <label for="question1_option_2">No</label>
+                                                    <input id="MCQ2_question1_option_2" class="evaluate_question_checkbox"
+                                                        name="question1_2" type="radio">
+                                                    <label for="MCQ2_question1_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 2</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question2_option_1" class="evaluate_question_checkbox"
-                                                        name="question2_option_1" type="radio">
-                                                    <label for="question2_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question2_option_2" class="evaluate_question_checkbox"
-                                                        name="question2_option_2" type="radio">
-                                                    <label for="question2_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 3</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question3_option_1" class="evaluate_question_checkbox"
-                                                        name="question3_option_1" type="radio">
-                                                    <label for="question3_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question3_option_2" class="evaluate_question_checkbox"
-                                                        name="question3_option_2" type="radio">
-                                                    <label for="question3_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 4</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question4_option_1" class="evaluate_question_checkbox"
-                                                        name="question4_option_1" type="radio">
-                                                    <label for="question4_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question4_option_2" class="evaluate_question_checkbox"
-                                                        name="question4_option_2" type="radio">
-                                                    <label for="question4_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 5</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question5_option_1" class="evaluate_question_checkbox"
-                                                        name="question5_option_1" type="radio">
-                                                    <label for="question5_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question5_option_2" class="evaluate_question_checkbox"
-                                                        name="question5_option_2" type="radio">
-                                                    <label for="question5_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 6</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question6_option_1" class="evaluate_question_checkbox"
-                                                        name="question6_option_1" type="radio">
-                                                    <label for="question6_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question6_option_2" class="evaluate_question_checkbox"
-                                                        name="question6_option_2" type="radio">
-                                                    <label for="question6_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 7</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question7_option_1" class="evaluate_question_checkbox"
-                                                        name="question7_option_1" type="radio">
-                                                    <label for="question7_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question7_option_2" class="evaluate_question_checkbox"
-                                                        name="question7_option_2" type="radio">
-                                                    <label for="question7_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 8</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question8_option_1" class="evaluate_question_checkbox"
-                                                        name="question8_option_1" type="radio">
-                                                    <label for="question8_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question8_option_2" class="evaluate_question_checkbox"
-                                                        name="question8_option_2" type="radio">
-                                                    <label for="question8_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 9</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question9_option_1" class="evaluate_question_checkbox"
-                                                        name="question9_option_1" type="radio">
-                                                    <label for="question9_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question9_option_2" class="evaluate_question_checkbox"
-                                                        name="question9_option_2" type="radio">
-                                                    <label for="question9_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 10</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question10_option_1" class="evaluate_question_checkbox"
-                                                        name="question10_option_1" type="radio">
-                                                    <label for="question10_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question10_option_2" class="evaluate_question_checkbox"
-                                                        name="question10_option_2" type="radio">
-                                                    <label for="question10_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Add more questions for step 1 here -->
+
                                         <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li class="bg-orange"></li>
-                                                    <li></li>
-                                                    <li></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn_orange nextStep2" type="button">Next</button>
+                                            <button class="btn btn_orange nextStep2 px-5" type="button">Next</button>
                                         </div>
                                     </div>
-
-                                    <!-- Step 2 --  Add more steps and questions for Option 2 here -->
-                                    <div class="question-step" id="step2-2" style="display: none;">
+                                    <div class="question-step" id="step2-2">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 11</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 2 of 25</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 8%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="question11_option_1" class="evaluate_question_checkbox"
-                                                        name="question11_option_1" type="radio">
-                                                    <label for="question11_option_1">Yes</label>
+                                                    <input id="MCQ2_question2_option_1" class="evaluate_question_checkbox"
+                                                        name="question2_2" type="radio">
+                                                    <label for="MCQ2_question2_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="question11_option_2" class="evaluate_question_checkbox"
-                                                        name="question11_option_2" type="radio">
-                                                    <label for="question11_option_2">No</label>
+                                                    <input id="MCQ2_question2_option_2" class="evaluate_question_checkbox"
+                                                        name="question2_2" type="radio">
+                                                    <label for="MCQ2_question2_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 12</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question12_option_1" class="evaluate_question_checkbox"
-                                                        name="question12_option_1" type="radio">
-                                                    <label for="question12_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question12_option_2" class="evaluate_question_checkbox"
-                                                        name="question12_option_2" type="radio">
-                                                    <label for="question12_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 13</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question13_option_1" class="evaluate_question_checkbox"
-                                                        name="question13_option_1" type="radio">
-                                                    <label for="question13_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question13_option_2" class="evaluate_question_checkbox"
-                                                        name="question13_option_2" type="radio">
-                                                    <label for="question13_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 14</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question14_option_1" class="evaluate_question_checkbox"
-                                                        name="question14_option_1" type="radio">
-                                                    <label for="question14_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question14_option_2" class="evaluate_question_checkbox"
-                                                        name="question14_option_2" type="radio">
-                                                    <label for="question14_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 15</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question15_option_1" class="evaluate_question_checkbox"
-                                                        name="question15_option_1" type="radio">
-                                                    <label for="question15_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question15_option_2" class="evaluate_question_checkbox"
-                                                        name="question15_option_2" type="radio">
-                                                    <label for="question15_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 16</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question16_option_1" class="evaluate_question_checkbox"
-                                                        name="question16_option_1" type="radio">
-                                                    <label for="question16_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question16_option_2" class="evaluate_question_checkbox"
-                                                        name="question16_option_2" type="radio">
-                                                    <label for="question16_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 17</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question17_option_1" class="evaluate_question_checkbox"
-                                                        name="question17_option_1" type="radio">
-                                                    <label for="question17_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question17_option_2" class="evaluate_question_checkbox"
-                                                        name="question17_option_2" type="radio">
-                                                    <label for="question17_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 18</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question18_option_1" class="evaluate_question_checkbox"
-                                                        name="question18_option_1" type="radio">
-                                                    <label for="question18_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question18_option_2" class="evaluate_question_checkbox"
-                                                        name="question18_option_2" type="radio">
-                                                    <label for="question18_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 19</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question19_option_1" class="evaluate_question_checkbox"
-                                                        name="question19_option_1" type="radio">
-                                                    <label for="question19_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question19_option_2" class="evaluate_question_checkbox"
-                                                        name="question19_option_2" type="radio">
-                                                    <label for="question19_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 20</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question20_option_1" class="evaluate_question_checkbox"
-                                                        name="question20_option_1" type="radio">
-                                                    <label for="question20_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question20_option_2" class="evaluate_question_checkbox"
-                                                        name="question20_option_2" type="radio">
-                                                    <label for="question20_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li></li>
-                                                    <li class="bg-orange"></li>
-                                                    <li></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn_orange nextStep2" type="button">Next</button>
+                                            <button class="btn btn_orange nextStep2 px-5" type="button">Next</button>
                                         </div>
                                     </div>
-
-                                    <!-- Step 3 --  Add more steps and questions for Option 3 here -->
-                                    <div class="question-step" id="step3-2" style="display: none;">
+                                    <div class="question-step" id="step3-2">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 21</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 3 of 25</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 12%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="question21_option_1" class="evaluate_question_checkbox"
-                                                        name="question21_option_1" type="radio">
-                                                    <label for="question21_option_1">Yes</label>
+                                                    <input id="MCQ2_question3_option_1" class="evaluate_question_checkbox"
+                                                        name="question3_2" type="radio">
+                                                    <label for="MCQ2_question3_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="question21_option_2" class="evaluate_question_checkbox"
-                                                        name="question21_option_2" type="radio">
-                                                    <label for="question21_option_2">No</label>
+                                                    <input id="MCQ2_question3_option_2" class="evaluate_question_checkbox"
+                                                        name="question3_2" type="radio">
+                                                    <label for="MCQ2_question3_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 22</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question22_option_1" class="evaluate_question_checkbox"
-                                                        name="question22_option_1" type="radio">
-                                                    <label for="question22_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question22_option_2" class="evaluate_question_checkbox"
-                                                        name="question22_option_2" type="radio">
-                                                    <label for="question22_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 23</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question23_option_1" class="evaluate_question_checkbox"
-                                                        name="question23_option_1" type="radio">
-                                                    <label for="question23_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question23_option_2" class="evaluate_question_checkbox"
-                                                        name="question23_option_2" type="radio">
-                                                    <label for="question23_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 24</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question24_option_1" class="evaluate_question_checkbox"
-                                                        name="question24_option_1" type="radio">
-                                                    <label for="question24_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question24_option_2" class="evaluate_question_checkbox"
-                                                        name="question24_option_2" type="radio">
-                                                    <label for="question24_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 25</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="question25_option_1" class="evaluate_question_checkbox"
-                                                        name="question25_option_1" type="radio">
-                                                    <label for="question25_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="question25_option_2" class="evaluate_question_checkbox"
-                                                        name="question25_option_2" type="radio">
-                                                    <label for="question25_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Add more questions for step 3 here -->
+                                        
                                         <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li></li>
-                                                    <li></li>
-                                                    <li class="bg-orange"></li>
-                                                </ul>
+                                            <button class="btn btn_orange nextStep2 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step4-2">
+                                        <div class="row evaluate_question">
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 4 of 25</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 16%;"></div>
+                                                </div>
+                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
+                                                        sterilization specified in a hygiene plan?</strong></label>
+                                                <div class="inputGroup">
+                                                    <input id="MCQ2_question4_option_1" class="evaluate_question_checkbox"
+                                                        name="question4_2" type="radio">
+                                                    <label for="MCQ2_question4_option_1">Yes</label>
+                                                </div>
+                                                <div class="inputGroup">
+                                                    <input id="MCQ2_question4_option_2" class="evaluate_question_checkbox"
+                                                        name="question4_2" type="radio">
+                                                    <label for="MCQ2_question4_option_2">No</label>
+                                                </div>
                                             </div>
-                                            <button class="btn btn_orange" type="submit" id="submitMCQ2">SUBMIT</button>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange px-5" type="submit" id="submitMCQ2">DONE</button>
                                         </div>
                                     </div>
                                 </form>
@@ -4218,825 +3977,125 @@
                                 <form id="mcqForm3">
                                     <div class="question-step" id="step1-3">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 1</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 1 of 40</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 2.5%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question1_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question1_option_1" type="radio">
+                                                    <input id="MCQ3_question1_option_1" class="evaluate_question_checkbox"
+                                                        name="question1_3" type="radio">
                                                     <label for="MCQ3_question1_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question1_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question1_option_2" type="radio">
+                                                    <input id="MCQ3_question1_option_2" class="evaluate_question_checkbox"
+                                                        name="question1_3" type="radio">
                                                     <label for="MCQ3_question1_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep3 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step2-3">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 2</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 2 of 40</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 5%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question2_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question2_option_1" type="radio">
+                                                    <input id="MCQ3_question2_option_1" class="evaluate_question_checkbox"
+                                                        name="question2_3" type="radio">
                                                     <label for="MCQ3_question2_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question2_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question2_option_2" type="radio">
+                                                    <input id="MCQ3_question2_option_2" class="evaluate_question_checkbox"
+                                                        name="question2_3" type="radio">
                                                     <label for="MCQ3_question2_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep3 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step3-3">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 3</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 3 of 40</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 7.5%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question3_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question3_option_1" type="radio">
+                                                    <input id="MCQ3_question3_option_1" class="evaluate_question_checkbox"
+                                                        name="question3_3" type="radio">
                                                     <label for="MCQ3_question3_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question3_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question3_option_2" type="radio">
+                                                    <input id="MCQ3_question3_option_2" class="evaluate_question_checkbox"
+                                                        name="question3_3" type="radio">
                                                     <label for="MCQ3_question3_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="btn btn_orange nextStep3 px-5" type="button">Next</button>
+                                        </div>
+                                    </div>
+                                    <div class="question-step" id="step4-3">
                                         <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 4</p>
+                                            <div class="col-md-12 mb-20">
+                                                <span class="q_breadcrumb">Question 4 of 40</span>
+                                                <div class="progress-bar">
+                                                    <div class="progress" style="width: 10%;"></div>
+                                                </div>
                                                 <label for=""><strong>Are the procedures for disinfection, cleaning and
                                                         sterilization specified in a hygiene plan?</strong></label>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question4_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question4_option_1" type="radio">
+                                                    <input id="MCQ3_question4_option_1" class="evaluate_question_checkbox"
+                                                        name="question4_3" type="radio">
                                                     <label for="MCQ3_question4_option_1">Yes</label>
                                                 </div>
                                                 <div class="inputGroup">
-                                                    <input id="MCQ3_question4_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question4_option_2" type="radio">
+                                                    <input id="MCQ3_question4_option_2" class="evaluate_question_checkbox"
+                                                        name="question4_3" type="radio">
                                                     <label for="MCQ3_question4_option_2">No</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 5</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question5_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question5_option_1" type="radio">
-                                                    <label for="MCQ3_question5_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question5_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question5_option_2" type="radio">
-                                                    <label for="MCQ3_question5_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 6</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question6_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question6_option_1" type="radio">
-                                                    <label for="MCQ3_question6_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question6_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question6_option_2" type="radio">
-                                                    <label for="MCQ3_question6_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 7</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question7_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question7_option_1" type="radio">
-                                                    <label for="MCQ3_question7_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question7_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question7_option_2" type="radio">
-                                                    <label for="MCQ3_question7_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 8</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question8_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question8_option_1" type="radio">
-                                                    <label for="MCQ3_question8_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question8_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question8_option_2" type="radio">
-                                                    <label for="MCQ3_question8_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 9</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question9_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question9_option_1" type="radio">
-                                                    <label for="MCQ3_question9_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question9_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question9_option_2" type="radio">
-                                                    <label for="MCQ3_question9_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 10</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question10_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question10_option_1" type="radio">
-                                                    <label for="MCQ3_question10_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question10_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question10_option_2" type="radio">
-                                                    <label for="MCQ3_question10_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Add more questions for step 1 here -->
+                                        
                                         <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li class="bg-orange"></li>
-                                                    <li></li>
-                                                    <li></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn_orange nextStep3" type="button">Next</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="question-step" id="step2-3" style="display: none;">
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 11</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question11_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question11_option_1" type="radio">
-                                                    <label for="MCQ3_question11_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question11_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question11_option_2" type="radio">
-                                                    <label for="MCQ3_question11_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 12</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question12_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question12_option_1" type="radio">
-                                                    <label for="MCQ3_question12_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question12_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question12_option_2" type="radio">
-                                                    <label for="MCQ3_question12_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 13</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question13_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question13_option_1" type="radio">
-                                                    <label for="MCQ3_question13_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question13_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question13_option_2" type="radio">
-                                                    <label for="MCQ3_question13_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 14</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question14_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question14_option_1" type="radio">
-                                                    <label for="MCQ3_question14_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question14_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question14_option_2" type="radio">
-                                                    <label for="MCQ3_question14_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 15</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question15_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question15_option_1" type="radio">
-                                                    <label for="MCQ3_question15_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question15_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question15_option_2" type="radio">
-                                                    <label for="MCQ3_question15_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 16</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question16_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question16_option_1" type="radio">
-                                                    <label for="MCQ3_question16_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question16_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question16_option_2" type="radio">
-                                                    <label for="MCQ3_question16_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 17</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question17_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question17_option_1" type="radio">
-                                                    <label for="MCQ3_question17_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question17_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question17_option_2" type="radio">
-                                                    <label for="MCQ3_question17_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 18</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question18_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question18_option_1" type="radio">
-                                                    <label for="MCQ3_question18_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question18_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question18_option_2" type="radio">
-                                                    <label for="MCQ3_question18_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 19</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question19_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question19_option_1" type="radio">
-                                                    <label for="MCQ3_question19_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question19_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question19_option_2" type="radio">
-                                                    <label for="MCQ3_question19_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 20</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question20_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question20_option_1" type="radio">
-                                                    <label for="MCQ3_question20_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question20_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question20_option_2" type="radio">
-                                                    <label for="MCQ3_question20_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 21</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question21_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question21_option_1" type="radio">
-                                                    <label for="MCQ3_question21_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question21_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question21_option_2" type="radio">
-                                                    <label for="MCQ3_question21_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 22</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question22_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question22_option_1" type="radio">
-                                                    <label for="MCQ3_question22_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question22_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question22_option_2" type="radio">
-                                                    <label for="MCQ3_question22_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 23</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question23_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question23_option_1" type="radio">
-                                                    <label for="MCQ3_question23_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question23_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question23_option_2" type="radio">
-                                                    <label for="MCQ3_question23_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 24</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question24_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question24_option_1" type="radio">
-                                                    <label for="MCQ3_question24_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question24_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question24_option_2" type="radio">
-                                                    <label for="MCQ3_question24_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 25</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question25_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question25_option_1" type="radio">
-                                                    <label for="MCQ3_question25_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question25_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question25_option_2" type="radio">
-                                                    <label for="MCQ3_question25_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 26</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question26_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question26_option_1" type="radio">
-                                                    <label for="MCQ3_question26_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question26_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question26_option_2" type="radio">
-                                                    <label for="MCQ3_question26_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 27</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question27_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question27_option_1" type="radio">
-                                                    <label for="MCQ3_question27_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question27_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question27_option_2" type="radio">
-                                                    <label for="MCQ3_question27_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 28</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question28_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question28_option_1" type="radio">
-                                                    <label for="MCQ3_question28_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question28_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question28_option_2" type="radio">
-                                                    <label for="MCQ3_question28_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 29</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question29_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question29_option_1" type="radio">
-                                                    <label for="MCQ3_question29_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question29_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question29_option_2" type="radio">
-                                                    <label for="MCQ3_question29_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 30</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question30_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question30_option_1" type="radio">
-                                                    <label for="MCQ3_question30_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question30_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question30_option_2" type="radio">
-                                                    <label for="MCQ3_question30_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Add more questions for step 2 here -->
-                                        <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li></li>
-                                                    <li class="bg-orange"></li>
-                                                    <li></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn_orange nextStep3" type="button">Next</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="question-step" id="step3-3" style="display: none;">
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 31</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question31_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question31_option_1" type="radio">
-                                                    <label for="MCQ3_question31_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question31_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question31_option_2" type="radio">
-                                                    <label for="MCQ3_question31_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 32</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question32_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question32_option_1" type="radio">
-                                                    <label for="MCQ3_question32_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question32_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question32_option_2" type="radio">
-                                                    <label for="MCQ3_question32_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 33</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question33_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question33_option_1" type="radio">
-                                                    <label for="MCQ3_question33_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question33_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question33_option_2" type="radio">
-                                                    <label for="MCQ3_question33_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 34</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question34_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question34_option_1" type="radio">
-                                                    <label for="MCQ3_question34_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question34_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question34_option_2" type="radio">
-                                                    <label for="MCQ3_question34_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 35</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question35_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question35_option_1" type="radio">
-                                                    <label for="MCQ3_question35_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question35_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question35_option_2" type="radio">
-                                                    <label for="MCQ3_question35_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 36</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question36_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question36_option_1" type="radio">
-                                                    <label for="MCQ3_question36_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question36_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question36_option_2" type="radio">
-                                                    <label for="MCQ3_question36_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 37</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question37_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question37_option_1" type="radio">
-                                                    <label for="MCQ3_question37_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question37_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question37_option_2" type="radio">
-                                                    <label for="MCQ3_question37_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 38</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question38_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question38_option_1" type="radio">
-                                                    <label for="MCQ3_question38_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question38_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question38_option_2" type="radio">
-                                                    <label for="MCQ3_question38_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 39</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question39_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question39_option_1" type="radio">
-                                                    <label for="MCQ3_question39_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question39_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question39_option_2" type="radio">
-                                                    <label for="MCQ3_question39_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row evaluate_question">
-                                            <div class="col-md-12 mb-5">
-                                                <p class="mb-0 text-orange q_no">QUESTION 40</p>
-                                                <label for=""><strong>Are the procedures for disinfection, cleaning and
-                                                        sterilization specified in a hygiene plan?</strong></label>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question40_option_1"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question40_option_1" type="radio">
-                                                    <label for="MCQ3_question40_option_1">Yes</label>
-                                                </div>
-                                                <div class="inputGroup">
-                                                    <input id="MCQ3_question40_option_2"
-                                                        class="evaluate_question_checkbox"
-                                                        name="MCQ3_question40_option_2" type="radio">
-                                                    <label for="MCQ3_question40_option_2">No</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Add more questions for step 3 here -->
-
-                                        <div class="text-center">
-                                            <div class="dot d-flex justify-content-center">
-                                                <ul class="list-unstyled d-flex p-0">
-                                                    <li></li>
-                                                    <li></li>
-                                                    <li class="bg-orange"></li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn_orange" type="submit" id="submitMCQ3">SUBMIT</button>
+                                            <button class="btn btn_orange px-5" type="submit" id="submitMCQ3">DONE</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
 
                             <div id="confirmationMessage" style="display: none;">
-                                <h4 class="heading_4 mt-3">Congratulations</h4>
-                                <h5 class="heading_5 fw-normal mb-30">You've successfully completed the evaluation. Your
+                                <h4 class="heading_4">Congratulations</h4>
+                                <h5 class="heading_5 fw-normal mb-20">You've successfully completed the evaluation. Your
                                     report has been generated and sent to your inbox. Additionally, you can download the
                                     report using the button below. We appreciate your participation and hope that you
                                     found this evaluation useful.</h5>
 
                                 <div class="d-flex justify-content-center gap-4 mb-30">
                                     <div class="w-50 text-end">
-                                        <button class="btn btn_orange_ng" type="button" class="btn btn-primary"
+                                        <button class="btn btn_orange_ng px-3" type="button" class="btn btn-primary"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">RESEND EMAIL</button>
                                     </div>
                                     <div class="w-50">
-                                        <button class="btn btn_orange_ng" type="button">DOWNLOAD</button>
+                                        <button class="btn btn_orange_ng px-3" type="button">DOWNLOAD</button>
                                     </div>
                                 </div>
                                 <div class="d-flex gap-2 gap-lg-3" style="border: 1px solid #ff6600;">
@@ -5047,7 +4106,7 @@
                                         </div>
                                     </div>
                                     <div class="pe-4 pt-2 box_info">
-                                        <h4 class="heading_3 mb-2 text-dark">Disclaimer for Infection Control Analysis
+                                        <h4 class="heading_3 mb-20 text-dark">Disclaimer for Infection Control Analysis
                                         </h4>
                                         <h5 class="heading_5 pb-3 fw-normal mt-0">This infection control analysis tool
                                             is designed to provide general guidance based on best practices in infection
@@ -5065,19 +4124,19 @@
                 </div>
             </div>
         </section>
-        <section class="p-0" style="background-color: #ff6600;" id="calToSec">
+        <section style="background-color: #ff6600;" id="calToSec">
             <div class="container-lg px-md-4 px-lg-0">
                 <div class="row">
-                    <div class="col-12 col-md-6 pt-4 pb-0 px-lg-0 ps-lg-5 py-4 py-md-5">
-                        <h2 class="heading_2 text-white m-0 me-lg-4 mb-3 mb-lg-0">Are you ambitious and passionate about
+                    <div class="col-12 col-md-6 pb-0 px-lg-0 ps-lg-5">
+                        <h2 class="heading_2 tag text-white m-0 me-lg-4">Are you ambitious and passionate about
                             infection control?</h2>
                     </div>
-                    <div class="col-12 col-md-6 pb-4 pt-0 px-lg-0 ps-lg-5 py-4 py-md-5">
+                    <div class="col-12 col-md-6 pt-0 px-lg-0 ps-lg-5">
                         <div class="w-100">
-                            <p class="description text-white mb-3 me-lg-5">As a manufacturer of disinfectants, we're on
+                            <p class="description text-white">As a manufacturer of disinfectants, we're on
                                 a mission to protect lives with top-tier disinfectants.</p>
                             <a href="#" class="btn_orange_ng">GET INVOLVED <span
-                                    style="font-size: 24px; line-height:0px; margin-left: 5px;"> › </span></a>
+                                    style="font-size: 24px; line-height:0px; margin-left: 5px;"> &rsaquo; </span></a>
                         </div>
                     </div>
                 </div>
@@ -5146,7 +4205,7 @@
 
 
 
-    <footer style="background-color: #dfdfdf; padding: 50px 0;">
+    <footer style="background-color: #dfdfdf;">
         <div class="container-lg px-md-4 px-lg-0">
             <div class="footer-widgets-wrap">
                 <div class="row pb-3 mb-3 border-bottom">
@@ -5482,10 +4541,10 @@
         const questionSteps = document.querySelectorAll('.question-step');
         let currentStep = 1;
         let currentOption = '';
-
+    
         myForm.addEventListener('submit', function (event) {
             event.preventDefault();
-
+    
             let selectedRadioButton;
             for (const radioButton of radioButtons) {
                 if (radioButton.checked) {
@@ -5493,7 +4552,7 @@
                     break;
                 }
             }
-
+    
             if (selectedRadioButton) {
                 currentOption = selectedRadioButton.value;
                 if (currentOption === '1' || currentOption === '2' || currentOption === '3') {
@@ -5509,7 +4568,7 @@
                 }
             }
         });
-
+    
         function showStep(stepNumber, option) {
             for (const step of questionSteps) {
                 step.style.display = 'none';
@@ -5519,7 +4578,7 @@
                 currentStepElement.style.display = 'block';
             }
         }
-
+    
         const nextButtons1 = document.querySelectorAll('.nextStep1');
         for (const nextButton of nextButtons1) {
             nextButton.addEventListener('click', function () {
@@ -5527,7 +4586,7 @@
                 showStep(currentStep, '1');
             });
         }
-
+    
         mcqForm1.addEventListener('submit', function (event) {
             event.preventDefault();
             mcqSection1.style.display = 'none';
@@ -5535,7 +4594,7 @@
             feedback_wrap.style.display = 'block';
             calToSec.style.display = 'none';
         });
-
+    
         const nextButtons2 = document.querySelectorAll('.nextStep2');
         for (const nextButton of nextButtons2) {
             nextButton.addEventListener('click', function () {
@@ -5543,7 +4602,7 @@
                 showStep(currentStep, '2');
             });
         }
-
+    
         mcqForm2.addEventListener('submit', function (event) {
             event.preventDefault();
             mcqSection2.style.display = 'none';
@@ -5551,7 +4610,7 @@
             feedback_wrap.style.display = 'block';
             calToSec.style.display = 'none';
         });
-
+    
         const nextButtons3 = document.querySelectorAll('.nextStep3');
         for (const nextButton of nextButtons3) {
             nextButton.addEventListener('click', function () {
@@ -5559,7 +4618,7 @@
                 showStep(currentStep, '3');
             });
         }
-
+    
         mcqForm3.addEventListener('submit', function (event) {
             event.preventDefault();
             mcqSection3.style.display = 'none';
@@ -5567,7 +4626,7 @@
             feedback_wrap.style.display = 'block';
             calToSec.style.display = 'none';
         });
-
+    
         share_fdbk.addEventListener('click', function (event) {
             event.preventDefault();
             First_step.style.display = 'none';

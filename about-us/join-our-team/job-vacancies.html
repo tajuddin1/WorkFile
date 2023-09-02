@@ -13,10 +13,120 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Job Vacancies</title>
+    <style>
+        .modal-backdrop {
+            background-color: black !important;
+            z-index: 99999 !important;
+        }
 
+        .modal-content {
+            border-radius: 2px;
+        }
+
+        .modal-header {
+            padding: 20px 30px;
+            border: 0 !important;
+        }
+
+        .modal-body {
+            padding: 30px;
+            background-color: #f2f2f2;
+        }
+
+        .modal-header h3{
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .modal-header p.description {
+            margin-bottom: 5px !important;
+            font-family: Roboto;
+        }
+
+        .modal_apply_form {
+            display: none;
+        }
+
+        .modal-body h4 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .modal-body p {
+            font-size: 20px;
+            line-height: 1.3;
+        }
+        .modal-body ul li {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        @media (max-width:767px) {
+            .modal-header h3 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .modal-header button {
+                margin-top: 10px;
+            }
+            .modal-header {
+                flex-direction: column;
+            }
+            .modal-body h4 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .modal-body p {
+                font-size: 16px;
+                line-height: 1.3;
+            }
+            .modal-body ul li {
+                font-size: 16px;
+                line-height: 1.3;
+            }
+        }
+        @media (max-width:540px) {
+            .modal_apply_form label {
+                font-size: 14px;
+            }
+            .modal-header h3 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .modal-header p.description {
+                margin-bottom: 7px !important;
+                font-family: Roboto;
+            }
+
+            .modal-header button {
+                margin-top: 10px;
+            }
+            .modal-header {
+                flex-direction: column;
+                padding: 20px !important;
+            }
+            .modal-body {
+                padding: 20px !important;
+            }
+            .modal-body h4 {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .modal-body p {
+                font-size: 14px;
+                line-height: 1.2;
+            }
+            .modal-body ul li {
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+    </style>
 </head>
 
-<body class="about_occ">
+<body class="about_occ i-w-s">
     <nav id="navbar">
         <div class="container-lg px-4 px-lg-0  bg-white py-lg-1">
             <div class="row py-2 justify-content-between">
@@ -252,13 +362,15 @@
                                                 <div class="col-4" style="max-width: 433px;">
                                                     <div class="sub_menu_title_wrapper">
                                                         <div>
-                                                            <a href="../../resources/evaluate-your-infection-control-procedures.html" class="sub_item_title"
-                                                                class="sub_item_title">Evaluate Your Infection
+                                                            <a href="../../resources/evaluate-your-infection-control-procedures.html"
+                                                                class="sub_item_title" class="sub_item_title">Evaluate
+                                                                Your Infection
                                                                 Control Procedures</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item" href="../../resources/evaluate-your-infection-control-procedures.html">
+                                                                <a class="sub_menu_item"
+                                                                    href="../../resources/evaluate-your-infection-control-procedures.html">
                                                                     <div>Are your infection control procedures
                                                                         up-to-date,
                                                                         legally compliant, and well documented?</div>
@@ -268,12 +380,14 @@
                                                     </div>
                                                     <div class="sub_menu_title_wrapper mt-5">
                                                         <div>
-                                                            <a href="../../resources/infection-control-trainings.html" class="sub_item_title">Infection Control
+                                                            <a href="../../resources/infection-control-trainings.html"
+                                                                class="sub_item_title">Infection Control
                                                                 Trainings</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item pb-2" href="../../resources/infection-control-trainings.html">
+                                                                <a class="sub_menu_item pb-2"
+                                                                    href="../../resources/infection-control-trainings.html">
                                                                     <div>Book an infection control training tailored to
                                                                         your
                                                                         needs – online or on-site at your practice.
@@ -284,11 +398,13 @@
                                                     </div>
                                                     <div class="sub_menu_title_wrapper mt-4">
                                                         <div>
-                                                            <a href="../../resources/glossary.html" class="sub_item_title">Infection Control Glossary</a>
+                                                            <a href="../../resources/glossary.html"
+                                                                class="sub_item_title">Infection Control Glossary</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item pb-2" href="../../resources/glossary.html">
+                                                                <a class="sub_menu_item pb-2"
+                                                                    href="../../resources/glossary.html">
                                                                     <div>A comprehensive glossary for your reference.
                                                                     </div>
                                                                 </a>
@@ -299,12 +415,14 @@
                                                 <div class="col-4" style="max-width: 433px;">
                                                     <div class="sub_menu_title_wrapper">
                                                         <div>
-                                                            <a href="../../resources/Infection-Control-Quiz.html" class="sub_item_title">Infection Control
+                                                            <a href="../../resources/Infection-Control-Quiz.html"
+                                                                class="sub_item_title">Infection Control
                                                                 Quiz</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item" href="../../resources/Infection-Control-Quiz.html">
+                                                                <a class="sub_menu_item"
+                                                                    href="../../resources/Infection-Control-Quiz.html">
                                                                     <div>Test your infection control knowledge with our
                                                                         quiz
                                                                         and get a certificate.</div>
@@ -314,12 +432,14 @@
                                                     </div>
                                                     <div class="sub_menu_title_wrapper mt-5">
                                                         <div>
-                                                            <a href="../../resources/faq.html" class="sub_item_title">Frequently Asked
+                                                            <a href="../../resources/faq.html"
+                                                                class="sub_item_title">Frequently Asked
                                                                 Questions</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item" href="../../resources/faq.html">
+                                                                <a class="sub_menu_item"
+                                                                    href="../../resources/faq.html">
                                                                     <div>Got a Question? Get Your Answer</div>
                                                                 </a>
                                                             </li>
@@ -329,11 +449,13 @@
                                                 <div class="col-4" style="max-width: 433px;">
                                                     <div class="sub_menu_title_wrapper">
                                                         <div>
-                                                            <a href="../../resources/dosage-calculator.html" class="sub_item_title">Dosage Calculator</a>
+                                                            <a href="../../resources/dosage-calculator.html"
+                                                                class="sub_item_title">Dosage Calculator</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item" href="../../resources/dosage-calculator.html">
+                                                                <a class="sub_menu_item"
+                                                                    href="../../resources/dosage-calculator.html">
                                                                     <div>Calculate the amount of disinfectant
                                                                         concentrate
                                                                         and water needed for a desired amount of working
@@ -344,12 +466,15 @@
                                                     </div>
                                                     <div class="sub_menu_title_wrapper" style="margin-top: 23px;">
                                                         <div>
-                                                            <a href="../../resources/download-center.html" class="sub_item_title">Download Center</a>
+                                                            <a href="../../resources/download-center.html"
+                                                                class="sub_item_title">Download Center</a>
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item" href="../../resources/download-center.html">
-                                                                    <div>Download our latest Safety Data Sheets or other product related documents.</div>
+                                                                <a class="sub_menu_item"
+                                                                    href="../../resources/download-center.html">
+                                                                    <div>Download our latest Safety Data Sheets or other
+                                                                        product related documents.</div>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -366,6 +491,24 @@
                             </div>
                         </li>
                         <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../../assets/images/Wishlist_Black outline.svg"
+                                        alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../../assets/images/shopping-cart.svg"
+                                        alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../../assets/images/User_Black.svg"
+                                        alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2 border-start">
                             <span class="menu_item_top lang" id="lang_btn">
                                 <span class="me-2"><img width="20" src="../../assets/images/Language_Globe.svg"
                                         alt=""></span>
@@ -1719,10 +1862,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="cart_items">
+            <div class="cart_items gap-4">
                 <a class="position-relative" href="#">
                     <div
-                        style="background-image: url(../../assets/images/shopping-cart.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                        style="background-image: url(../../assets/images/User_Black.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                    </div>
+                </a>
+                <a class="position-relative" href="#">
+                    <div
+                        style="background-image: url(../../assets/images/shopping-cart.svg); width: 28px; height: 24px; background-repeat: no-repeat; background-size: contain;">
                     </div>
                     <span>0</span>
                 </a>
@@ -3154,28 +3302,32 @@
                             <div class="accordion-item mx-2">
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/evaluate-your-infection-control-procedures.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/evaluate-your-infection-control-procedures.html">
                                             <div>Evaluate Your Infection Control Procedures</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/Infection-Control-Quiz.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/Infection-Control-Quiz.html">
                                             <div>Infection Control Quiz</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/dosage-calculator.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/dosage-calculator.html">
                                             <div>Dosage Calculator</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/infection-control-trainings.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/infection-control-trainings.html">
                                             <div>Infection Control Trainings</div>
                                         </a>
                                     </li>
@@ -3196,7 +3348,8 @@
                                 </ul>
                                 <ul class="list-unstyled mb-0">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/download-center.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/download-center.html">
                                             <div>Download Center</div>
                                         </a>
                                     </li>
@@ -3205,9 +3358,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="Contact_us">
-                    <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../../contact.html"><i
-                            class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                <div class="d-flex gap-5">
+                    <div class="Contact_us">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../../contact.html"><i
+                                class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                    </div>
+                    <div class="Contact_us Wishlist">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="#"><i
+                                class="me-2"><img width="20px" src="../../assets/images/Wishlist_Black outline.svg" alt=""></i> Liked Products</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3221,8 +3380,8 @@
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
-                    <div class="container-lg ps-md-4 ps-lg-0 mt-5">
-                        <div class="overlay_content mt-lg-4">
+                    <div class="container-lg ps-md-4 ps-lg-0">
+                        <div class="overlay_content">
                             <h1 class="mb-3 mb-md-4">Let's Build a Safer World Together<span
                                     style="color: #ff6600;">.</span></h1>
                             <p class="mb-4 mb-xl-5">Check out our job vacancies and apply today to join our team!</p>
@@ -3341,35 +3500,40 @@
                         <div class="job_vacancies_card">
                             <h4 class="heading_4">Executive Assistant to CEO</h4>
                             <p class="mt-0">Location: Fehraltorf, Switzerland</p>
-                            <a class="btn_orange px-5" href="#">APPLY</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal1"
+                                class="btn btn_orange px-5">APPLY</button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="job_vacancies_card">
                             <h4 class="heading_4">Account Manager</h4>
                             <p class="mt-0">Location: Fehraltorf, Switzerland</p>
-                            <a class="btn_orange px-5" href="#">APPLY</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal2"
+                                class="btn btn_orange px-5">APPLY</button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="job_vacancies_card">
                             <h4 class="heading_4">ASP.NET MVC Developer</h4>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
-                            <a class="btn_orange px-5" href="#">APPLY</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal3"
+                                class="btn btn_orange px-5">APPLY</button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="job_vacancies_card">
                             <h4 class="heading_4">Marketing Assistant</h4>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
-                            <a class="btn_orange px-5" href="#">APPLY</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal4"
+                                class="btn btn_orange px-5">APPLY</button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="job_vacancies_card">
                             <h4 class="heading_4">Sales Support Executive</h4>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
-                            <a class="btn_orange px-5" href="#">APPLY</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal5"
+                                class="btn btn_orange px-5">APPLY</button>
                         </div>
                     </div>
                 </div>
@@ -3486,10 +3650,10 @@
                 <div class="row">
                     <div class="col-12 d-flex align-items-center ">
                         <div class="content_Slide">
-                            <h3 class="mb-0 text-white text-center heading_3">No Suitable Job Opening?</h3>
-                            <p class="text-white text-center">Leave us you email address and receive new job offers
+                            <h3 class="text-white text-center heading_3 pt-0">No Suitable Job Opening?</h3>
+                            <p class="text-white text-center mb-20">Leave us you email address and receive new job offers
                                 by email.</p>
-                            <div class="mt-3">
+                            <div>
                                 <form>
                                     <div class="row justify-content-center">
                                         <div class="col-12 col-md-8 col-lg-9">
@@ -3514,7 +3678,7 @@
 
 
 
-    <footer style="background-color: #dfdfdf; padding: 50px 0;">
+    <footer style="background-color: #dfdfdf;">
         <div class="container-lg px-md-4 px-lg-0">
             <div class="footer-widgets-wrap">
                 <div class="row pb-3 mb-3 border-bottom">
@@ -3753,28 +3917,32 @@
                             <div class="accordion accordion-flush footer-menu mx-2 mx-lg-0" id="">
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/evaluate-your-infection-control-procedures.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/evaluate-your-infection-control-procedures.html">
                                             <div>Evaluate Your Infection Control Procedures</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/Infection-Control-Quiz.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/Infection-Control-Quiz.html">
                                             <div>Infection Control Quiz</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/dosage-calculator.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/dosage-calculator.html">
                                             <div>Dosage Calculator</div>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="list-unstyled mb-0 border-bottom">
                                     <li class="py-2">
-                                        <a class="text-decoration-none text-dark" href="../../resources/infection-control-trainings.html">
+                                        <a class="text-decoration-none text-dark"
+                                            href="../../resources/infection-control-trainings.html">
                                             <div>Infection Control Trainings</div>
                                         </a>
                                     </li>
@@ -3825,8 +3993,537 @@
     </div>
 
 
+    <!-- Modal -->
+    <div class="modal fade apply_modal" id="applyModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h3 class="text-orange mb-20">Executive Assistant to CEO</h3>
+                        <p class="description">Location: Fehraltorf, Switzerland</p>
+                        <p class="description">Years of experience: 5 years</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="job_description">
+                        <div>
+                            <h4>Who are we looking for?</h4>
+                            <p>The Executive Assistant to the CEO is responsible for providing comprehensive support
+                                to the CEO. This dynamic position requires the ability to anticipate needs, think
+                                critically, and offer solutions to problems with a high level of professionalism and
+                                confidentiality.</p>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Job Highlights</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Great career development opportunity.</li>
+                                <li>Be part of a team that kills germs for a safer world.</li>
+                                <li>Opportunity to travel internationally.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Responsibilities</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Provide sophisticated calendar management for CEO. Prioritize inquiries and
+                                    requests while troubleshooting conflicts; make judgements and recommendations to
+                                    ensure smooth day-to-day engagements.</li>
+                                <li>Complete a broad variety of administrative tasks that facilitate the CEO’s
+                                    ability to effectively lead the organization, including assisting with special
+                                    projects; designing and producing complex documents, reports, and presentations;
+                                    collecting and preparing information for meetings with staff and external
+                                    parties; composing and preparing correspondence; and making travel arrangements.
+                                </li>
+                                <li>Serve as the primary point of contact for internal and external stakeholders on
+                                    all matters pertaining to the CEO, including those of a highly confidential or
+                                    critical nature. Prioritize and determine appropriate course of action,
+                                    referral, or response, exercising judgement to reflect CEO’s style and
+                                    organization policy.</li>
+                                <li>Follow up on contacts made by the CEO to cultivate ongoing relationships.</li>
+                                <li>Manage all aspects of organization’s office services. Evaluate and assist in
+                                    developing office policies and procedures for improved workflow and anticipate
+                                    future needs as organization grows.</li>
+                                <li>Assist in the procurement of material and equipment, including researching
+                                    potential vendors, comparing and evaluating offers, monitor stock level and
+                                    place orders as needed, track order status and ensure timely delivery.</li>
+                                <li>Prepare expense reports, including submitting CEO’s claims.</li>
+                                <li>Assist in answering the main phone line and respond to inquiries.</li>
+                                <li>Undertake special assignments/projects as assigned for the overall benefit of
+                                    the organization.</li>
+                                <li>Perform occasional personal tasks for CEO as necessary and reasonable.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Qualifications</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Bachelor’s or master’s degree.</li>
+                                <li>MBA is an added advantage.</li>
+                                <li>Must possess excellent verbal and written communication skills in English.</li>
+                                <li>Proficiency in Mandarin is an advantage.</li>
+                                <li>Ideally 5+ years of experience supporting senior executives, preferably in a
+                                    multi-national organization.</li>
+                                <li>Solid research and project management experience.</li>
+                                <li>Excellent problem-solving capabilities with timely resolution demonstrating an
+                                    awareness of knowing when to elevate concerns or issues.</li>
+                                <li>Exceptional organizational skills and impeccable attention to detail.</li>
+                                <li>Ability to complete a high volume of tasks and projects with little or no
+                                    guidance.</li>
+                                <li>High degree of professionalism in dealing with diverse groups of people.</li>
+                                <li>Able to maintain a high level of integrity and discretion in handling
+                                    confidential information.</li>
+                                <li>Self-starter, self-motivated and takes responsibility/ownership of tasks.</li>
+                                <li>Must be willing to travel (domestic and international).</li>
+                                <li>Willingness to be available outside of core office hours when required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_apply_form">
+                        <form  >
+                            <h4 class="heading_4 fw-medium mb-20">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Resume/CV</label>
+                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>What is your expected salary per month?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center py-5">
+                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade apply_modal" id="applyModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h3 class="text-orange mb-20">Account Manager</h3>
+                        <p class="description">Location: Fehraltorf, Switzerland</p>
+                        <p class="description">Years of experience: 5 years</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="job_description">
+                        <div>
+                            <h4>Who are we looking for?</h4>
+                            <p>The Executive Assistant to the CEO is responsible for providing comprehensive support
+                                to the CEO. This dynamic position requires the ability to anticipate needs, think
+                                critically, and offer solutions to problems with a high level of professionalism and
+                                confidentiality.</p>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Job Highlights</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Great career development opportunity.</li>
+                                <li>Be part of a team that kills germs for a safer world.</li>
+                                <li>Opportunity to travel internationally.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Responsibilities</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Provide sophisticated calendar management for CEO. Prioritize inquiries and
+                                    requests while troubleshooting conflicts; make judgements and recommendations to
+                                    ensure smooth day-to-day engagements.</li>
+                                <li>Complete a broad variety of administrative tasks that facilitate the CEO’s
+                                    ability to effectively lead the organization, including assisting with special
+                                    projects; designing and producing complex documents, reports, and presentations;
+                                    collecting and preparing information for meetings with staff and external
+                                    parties; composing and preparing correspondence; and making travel arrangements.
+                                </li>
+                                <li>Serve as the primary point of contact for internal and external stakeholders on
+                                    all matters pertaining to the CEO, including those of a highly confidential or
+                                    critical nature. Prioritize and determine appropriate course of action,
+                                    referral, or response, exercising judgement to reflect CEO’s style and
+                                    organization policy.</li>
+                                <li>Follow up on contacts made by the CEO to cultivate ongoing relationships.</li>
+                                <li>Manage all aspects of organization’s office services. Evaluate and assist in
+                                    developing office policies and procedures for improved workflow and anticipate
+                                    future needs as organization grows.</li>
+                                <li>Assist in the procurement of material and equipment, including researching
+                                    potential vendors, comparing and evaluating offers, monitor stock level and
+                                    place orders as needed, track order status and ensure timely delivery.</li>
+                                <li>Prepare expense reports, including submitting CEO’s claims.</li>
+                                <li>Assist in answering the main phone line and respond to inquiries.</li>
+                                <li>Undertake special assignments/projects as assigned for the overall benefit of
+                                    the organization.</li>
+                                <li>Perform occasional personal tasks for CEO as necessary and reasonable.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-30">
+                            <h4>Qualifications</h4>
+                            <ul class="ps-3 ps-md-4">
+                                <li>Bachelor’s or master’s degree.</li>
+                                <li>MBA is an added advantage.</li>
+                                <li>Must possess excellent verbal and written communication skills in English.</li>
+                                <li>Proficiency in Mandarin is an advantage.</li>
+                                <li>Ideally 5+ years of experience supporting senior executives, preferably in a
+                                    multi-national organization.</li>
+                                <li>Solid research and project management experience.</li>
+                                <li>Excellent problem-solving capabilities with timely resolution demonstrating an
+                                    awareness of knowing when to elevate concerns or issues.</li>
+                                <li>Exceptional organizational skills and impeccable attention to detail.</li>
+                                <li>Ability to complete a high volume of tasks and projects with little or no
+                                    guidance.</li>
+                                <li>High degree of professionalism in dealing with diverse groups of people.</li>
+                                <li>Able to maintain a high level of integrity and discretion in handling
+                                    confidential information.</li>
+                                <li>Self-starter, self-motivated and takes responsibility/ownership of tasks.</li>
+                                <li>Must be willing to travel (domestic and international).</li>
+                                <li>Willingness to be available outside of core office hours when required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_apply_form">
+                        <form  >
+                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Resume/CV</label>
+                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>What is your expected salary per month?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center py-5">
+                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade apply_modal" id="applyModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h3 class="text-orange mb-20">ASP.NET MVC Developer</h3>
+                        <p class="description">Location: Kuala Lumpur, Malaysia</p>
+                        <p class="description">Years of experience: 5 years</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="job_description"></div>
+                    <div class="modal_apply_form">
+                        <form  >
+                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Resume/CV</label>
+                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>What is your expected salary per month?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center py-5">
+                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade apply_modal" id="applyModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h3 class="text-orange mb-20">Marketing Assistant</h3>
+                        <p class="description">Location: Kuala Lumpur, Malaysia</p>
+                        <p class="description">Years of experience: 5 years</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="job_description"></div>
+                    <div class="modal_apply_form">
+                        <form  >
+                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Resume/CV</label>
+                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>What is your expected salary per month?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center py-5">
+                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade apply_modal" id="applyModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h3 class="text-orange mb-20">Sales Support Executive</h3>
+                        <p class="description">Location: Kuala Lumpur, Malaysia</p>
+                        <p class="description">Years of experience: 5 years</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="job_description"></div>
+                    <div class="modal_apply_form">
+                        <form  >
+                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-6">
+                                    <label>Resume/CV</label>
+                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>What is your expected salary per month?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center py-5">
+                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="../../assets/js/custom.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script>
+        const applyButtons = document.querySelectorAll('.applyBtn');
+        let currentModal;
+
+        applyButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                currentModal = e.target.closest('.modal');
+                const jobDescription = currentModal.querySelector('.job_description');
+                jobDescription.style.display = 'none';
+
+                const applyForm = currentModal.querySelector('.modal_apply_form');
+                applyForm.style.display = 'block';
+
+                button.style.display = 'none';
+            });
+        });
+
+        document.body.addEventListener('hidden.bs.modal', (e) => {
+            if (e.target === currentModal) {
+                const jobDescription = currentModal.querySelector('.job_description');
+                const applyForm = currentModal.querySelector('.modal_apply_form');
+
+                jobDescription.style.display = 'block';
+                applyForm.style.display = 'none';
+
+                applyButtons.forEach(button => {
+                    button.style.display = 'block';
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

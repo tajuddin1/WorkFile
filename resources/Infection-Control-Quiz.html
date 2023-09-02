@@ -61,12 +61,7 @@
             }
         }
 
-        @media only screen and (max-width: 590px) {
-            .content_Slide h3 {
-                font-size: 20px;
-                line-height: 24px;
-            }
-        }
+        
 
         .btn-check:checked+.btn {
             color: #fff;
@@ -131,6 +126,15 @@
 
         .hidden {
             display: none;
+        }
+        @media only screen and (max-width: 590px) {
+            .content_Slide h3 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .inputGroup label {
+                padding: 5px 20px;
+            }
         }
     </style>
 </head>
@@ -486,6 +490,22 @@
                             </div>
                         </li>
                         <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/Wishlist_Black outline.svg"
+                                        alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/shopping-cart.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2">
+                            <span class="menu_item_top before_off p-0">
+                                <span class="me-0"><img width="20" src="../assets/images/User_Black.svg" alt=""></span>
+                            </span>
+                        </li>
+                        <li class="menu-item px-2 border-start">
                             <span class="menu_item_top lang" id="lang_btn">
                                 <span class="me-2"><img width="20" src="../assets/images/Language_Globe.svg"
                                         alt=""></span>
@@ -1839,10 +1859,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="cart_items">
+            <div class="cart_items gap-4">
                 <a class="position-relative" href="#">
                     <div
-                        style="background-image: url(../assets/images/shopping-cart.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                        style="background-image: url(../assets/images/User_Black.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                    </div>
+                </a>
+                <a class="position-relative" href="#">
+                    <div
+                        style="background-image: url(../assets/images/shopping-cart.svg); width: 28px; height: 24px; background-repeat: no-repeat; background-size: contain;">
                     </div>
                     <span>0</span>
                 </a>
@@ -3326,9 +3351,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="Contact_us">
-                    <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../contact.html"><i
-                            class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                <div class="d-flex gap-5">
+                    <div class="Contact_us">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="../contact.html"><i
+                                class="fa-solid fa-phone-volume me-2"></i> Contact Us</a>
+                    </div>
+                    <div class="Contact_us Wishlist">
+                        <a class="text-decoration-none px-0 py-2 d-inline-block text-dark" href="#"><i
+                                class="me-2"><img width="20px" src="../assets/images/Wishlist_Black outline.svg" alt=""></i> Liked Products</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3342,8 +3373,8 @@
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
-                    <div class="container-lg ps-md-4 ps-lg-0 mt-5">
-                        <div class="overlay_content mt-lg-4">
+                    <div class="container-lg ps-md-4 ps-lg-0">
+                        <div class="overlay_content">
                             <h1 class="mb-3 mb-md-4">Infection Control Quiz<span style="color: #ff6600;">.</span>
                             </h1>
                             <p class="mb-4 mb-xl-5">Are your infection control procedures up-to-date, compliant and well
@@ -3380,10 +3411,10 @@
             <div class="container-lg px-md-4 px-lg-0">
                 <h2 class="heading_2 text-left text-lg-center">Challenge yourself! Test your infection control
                     knowledge and receive a certificate.</h2>
-                <h5 class="heading_5 m-0 fw-normal pb-3 mb-md-5">Check your understanding of practice hygiene and test your
+                <h5 class="heading_5 m-0 fw-normal mb-20">Check your understanding of practice hygiene and test your
                     understanding of statutory and regulatory requirements.</h5>
 
-                <div class="row mt-2 mb-0">
+                <div class="row">
                     <div class="col-12 col-md-6 d-flex align-items-center mt-2 mt-lg-0">
                         <div class="content_Slide p-0">
                             <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-0">
@@ -3481,8 +3512,8 @@
                         </div>
                         <div class="infection-control-content">
                             <div>
-                                <h4 class="mb-1">Congratulations!</h4>
-                                <h5 class="heading_5 fw-normal m-0">You've successfully completed the evaluation. Your
+                                <h4 class="mb-20">Congratulations!</h4>
+                                <h5 class="heading_5 fw-normal mb-20">You've successfully completed the evaluation. Your
                                     report has been generated and sent to your inbox. Additionally, you can download the
                                     report using the button below. We appreciate your participation and hope that you
                                     found this evaluation useful.</h5>
@@ -3721,8 +3752,8 @@
                                         <h5 class="description heading_5 fw-normal hidden">Lorem ipsum dolor sit, amet
                                             consectetur adipisicing elit. Explicabo, ea.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">CHECK YOUR ANSWER</button>
-                                    <button class="btn btn_orange nextButton hidden">NEXT</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">CHECK YOUR ANSWER</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">NEXT</button>
                                 </div>
 
                                 <div class="mcqQuestion hidden">
@@ -3744,8 +3775,8 @@
                                         <h5 class="description heading_5 fw-normal hidden">Jupiter is the largest planet
                                             in our solar system.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">CHECK YOUR ANSWER</button>
-                                    <button class="btn btn_orange nextButton hidden">NEXT</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">CHECK YOUR ANSWER</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">NEXT</button>
                                 </div>
                             </div>
                         </div>
@@ -3790,8 +3821,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 4.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
 
                                 <div class="mcqQuestion">
@@ -3811,8 +3842,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 0.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -3857,8 +3888,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 0.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -3903,8 +3934,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 0.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -3949,8 +3980,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 0.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -3995,8 +4026,8 @@
                                         <h5 class="result heading_5 hidden text_orange"></h5>
                                         <h5 class="description heading_5 fw-normal hidden">The correct answer is 0.</h5>
                                     </div>
-                                    <button class="btn btn_orange checkAnswerButton">Check Answer</button>
-                                    <button class="btn btn_orange nextButton hidden">Next</button>
+                                    <button class="btn btn_orange checkAnswerButton px-5">Check Answer</button>
+                                    <button class="btn btn_orange nextButton hidden px-5">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -4013,7 +4044,7 @@
                     </div>
                     <div class="col-12 col-md-6 pb-4 pt-0 px-lg-0 ps-lg-5 py-4 py-md-5">
                         <div class="w-100">
-                            <p class="description text-white mb-3 me-lg-5">As a manufacturer of disinfectants, we're on
+                            <p class="description text-white">As a manufacturer of disinfectants, we're on
                                 a mission to protect lives with top-tier disinfectants.</p>
                             <a href="#" class="btn_orange_ng">GET INVOLVED <span
                                     style="font-size: 24px; line-height:0px; margin-left: 5px;"> › </span></a>
@@ -4063,7 +4094,7 @@
 
 
 
-    <footer style="background-color: #dfdfdf; padding: 50px 0;">
+    <footer style="background-color: #dfdfdf;">
         <div class="container-lg px-md-4 px-lg-0">
             <div class="footer-widgets-wrap">
                 <div class="row pb-3 mb-3 border-bottom">
