@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom dropdown styles */
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            z-index: 1;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Show the dropdown content when the button is clicked */
+        .custom-dropdown.active .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-dropdown">
+        <div class="dropdown-button">Select an Option</div>
+        <div class="dropdown-content">
+            <div class="dropdown-option">Option 1</div>
+            <div class="dropdown-option">Option 2</div>
+            <div class="dropdown-option">Option 3</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the custom dropdown
+        const dropdown = document.querySelector('.custom-dropdown');
+        const dropdownButton = dropdown.querySelector('.dropdown-button');
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        const dropdownOptions = dropdown.querySelectorAll('.dropdown-option');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+
+        dropdownOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                dropdownButton.textContent = option.textContent;
+                dropdown.classList.remove('active');
+            });
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
