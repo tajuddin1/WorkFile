@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
 	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
 	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
@@ -10,39 +10,47 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
-<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
-	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<svg version="1.1" id="flag-icons-cn" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px" height="480px"
+	 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EE1C25;}
 	.st1{fill:#FFFF00;}
+	.st2{fill:#FEDE00;}
 </style>
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-216.8095"></sliceSourceBounds>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="8089.3278" width="10716.3327" x="-2305.0632" y="0"></sliceSourceBounds>
 	</sfw>
 </metadata>
+<path class="st0" d="M0,0h640v480H0V0z"/>
+<g transform="matrix(-12.33562 -20.5871 20.58684 -12.33577 240.3 48)">
+	<path id="cn-a_00000173865834565625194310000000175587927039212179_" class="st1" d="M264.2,50.5l-44.5,9.9l29.7-34.6l-2.9,46.5
+		l-24.7-41.2L264.2,50.5z"/>
+</g>
+<g transform="matrix(-3.38573 -23.75998 23.75968 -3.38578 288 95.8)">
+	<path id="cn-a_00000108287806569573209180000014682821961894033808_" class="st1" d="M309,107.3l-44.8-8.2L305,78.8l-20.7,41.7
+		L277.5,73L309,107.3z"/>
+</g>
+<g transform="matrix(6.5991 -23.0749 23.0746 6.59919 288 168)">
+	<path id="cn-a_00000026135473386712677700000013702585850313926794_" class="st1" d="M302.5,187.1l-37.6-25.7l45.5-2l-35.9,29.7
+		l13.2-46.1L302.5,187.1z"/>
+</g>
+<g transform="matrix(14.9991 -18.73557 18.73533 14.99929 240 216)">
+	<path id="cn-a_00000003095802333688043050000017408378508175926189_" class="st1" d="M246,239.2L221.3,201l42.7,15.8l-44.6,13.5
+		l30-37.5L246,239.2z"/>
+</g>
 <g>
-	<path class="st0" d="M0-0.1905h660v440H0V-0.1905z"/>
-	<g transform="matrix(3 0 0 3 5 5)">
-		<path id="a" class="st1" d="M110,43.8095l38.808,119.394l-101.64-73.788h125.664l-101.64,73.788L110,43.8095z"/>
-	</g>
-	<g transform="rotate(23.036 .093 25.536)">
-		<path id="a_00000137828804703853762530000005044232526185914033_" class="st1" d="M228.6065,23.561l-3.6689,41.6865
-			l-21.5537-35.8923l38.5478,16.3912l-40.803,9.3771L228.6065,23.561z"/>
-	</g>
-	<g transform="rotate(45.87 1.273 16.18)">
-		<path id="a_00000021090360080598187820000009722184253817589418_" class="st1" d="M279.791,72.4986l-19.5583,36.9959
-			l-5.9362-41.4437l29.1661,30.0656l-41.2443-7.1919L279.791,72.4986z"/>
-	</g>
-	<g transform="rotate(69.945 .996 12.078)">
-		<path id="a_00000047761302259846550380000004055490355250818970_" class="st1" d="M284.6679,146.278l-32.9488,25.7992
-			l11.4864-40.2602l14.3643,39.3481l-34.7228-23.3911L284.6679,146.278z"/>
-	</g>
-	<g transform="rotate(20.66 -19.689 31.932)">
-		<path id="a_00000070809461998300752390000000967243838259863943_" class="st1" d="M227.7646,177.2295l-1.9375,41.8027
-			l-23.0232-34.9678l39.1942,14.779l-40.3792,11.0606L227.7646,177.2295z"/>
-	</g>
+	<polygon class="st2" points="135.5331,98.8506 119.396,49.1881 103.259,98.8506 51.039,98.8506 93.2862,129.5447 77.1488,179.2068 
+		119.396,148.5127 161.6433,179.2068 145.5017,129.5447 187.7531,98.8506 	"/>
+	<polygon class="st2" points="235.6059,57.6126 244.5611,72.5316 246.0892,55.1959 263.0547,51.2915 247.0301,44.4754 
+		248.566,27.1401 237.1376,40.2691 221.113,33.4571 230.0687,48.3839 218.6481,61.5134 	"/>
+	<polygon class="st2" points="280.535,103.479 282.9999,120.706 291.1349,105.3167 308.2816,108.3046 296.1614,95.8105 
+		304.3006,80.4212 288.67,88.0856 276.5499,75.5919 279.0152,92.8227 263.3846,100.4911 	"/>
+	<polygon class="st2" points="292.2125,161.3848 286.2451,145.0345 281.4598,161.7747 264.0681,162.3982 278.5042,172.1095 
+		273.7189,188.8498 287.4273,178.1214 301.8719,187.8446 295.9041,171.4943 309.6088,160.7618 	"/>
+	<polygon class="st2" points="247.6412,194.4795 236.7679,208.0714 220.4777,201.9269 230.0444,216.4716 219.1711,230.0635 
+		235.9554,225.4553 245.5263,240 246.3264,222.6083 263.119,218.0038 246.8329,211.8634 	"/>
 </g>
 </svg>

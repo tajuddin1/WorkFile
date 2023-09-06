@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .rating-button {
+            width: 40px; /* Adjust the width and height according to your star image size */
+            height: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .gray-star {
+            background-image: url('assets/images/Product-Images/Rating/Rating_grey.svg');
+        }
+    
+        .orange-star {
+            background-image: url('assets/images/Product-Images/Rating/Rating_orange.svg');
+        }
+    </style>
+</head>
+<body>
+    <div class="rating">
+        <button type="button" class="btn rating-button gray-star" aria-label="1 Star"></button>
+        <button type="button" class="btn rating-button gray-star" aria-label="2 Stars"></button>
+        <button type="button" class="btn rating-button gray-star" aria-label="3 Stars"></button>
+        <button type="button" class="btn rating-button gray-star" aria-label="4 Stars"></button>
+        <button type="button" class="btn rating-button gray-star" aria-label="5 Stars"></button>
+    </div>
+    
+
+    <script>
+        const ratingButtons = document.querySelectorAll('.rating-button');
+        let userRating = 0;
+    
+        ratingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                userRating = Array.from(ratingButtons).indexOf(button) + 1;
+                updateRating();
+            });
+        });
+    
+        function updateRating() {
+            ratingButtons.forEach((button, index) => {
+                if (index < userRating) {
+                    button.classList.add('orange-star');
+                } else {
+                    button.classList.remove('orange-star');
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

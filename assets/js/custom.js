@@ -44,3 +44,4 @@ navIcon.addEventListener('click' , function(){
     navIcon.classList.toggle('active');
     leftmenu.classList.toggle('fitMenu');
 });
+
