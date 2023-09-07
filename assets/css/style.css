@@ -1980,7 +1980,7 @@ button.btn-outline-orange-ng.disabled{
   background-image: url(../images/Product-Images/Rating/Rating_grey.svg);
 }
 .rating_list{
-  width: 70%;
+  width: 60%;
 }
 .modal .progress{
   max-width: 160px;
@@ -3319,6 +3319,9 @@ button.btn-outline-orange-ng.disabled{
   }
   .review_stars img{
     width: 15px !important;
+  }
+  .rating_list {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 390px) {
