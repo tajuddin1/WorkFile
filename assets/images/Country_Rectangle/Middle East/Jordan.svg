@@ -1,36 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="660px" height="440px"
-	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#007A3D;}
-	.st1{fill:#FFFFFF;}
-	.st2{fill:#CE1126;}
-</style>
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="440" width="660" x="-325.5" y="-217"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<g>
-	<rect class="st0" width="660" height="440"/>
-	<rect class="st1" width="660" height="293.3333"/>
-	<rect width="660" height="146.6667"/>
-	<path class="st2" d="M0,0v440l440-220L0,0z"/>
-	<path class="st1" d="M135.9675,188.5714l6.8182,17.2705l17.7537-5.4373l-9.2515,16.0986l15.3203,10.4903l-18.3547,2.8042
-		l1.3504,18.5185l-13.6363-12.6019l-13.6364,12.6019l1.3504-18.5185l-18.3547-2.8042l15.3203-10.4903l-9.2515-16.0986
-		l17.7537,5.4373L135.9675,188.5714z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-jo" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="jo-a">
+      <path fill-opacity=".7" d="M-117.8 0h682.6v512h-682.6z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#jo-a)" transform="translate(110.5) scale(.9375)">
+    <g fill-rule="evenodd" stroke-width="1pt">
+      <path d="M-117.8 0h1024v170.7h-1024z"/>
+      <path fill="#fff" d="M-117.8 170.7h1024v170.6h-1024z"/>
+      <path fill="#090" d="M-117.8 341.3h1024V512h-1024z"/>
+      <path fill="red" d="m-117.8 512 512-256-512-256v512z"/>
+      <path fill="#fff" d="m24.5 289 5.7-24.9H4.7l23-11-15.9-19.9 23 11 5.6-24.8 5.7 24.9L69 233.2l-16 19.9 23 11H50.6l5.7 24.9-15.9-20z"/>
+    </g>
+  </g>
 </svg>

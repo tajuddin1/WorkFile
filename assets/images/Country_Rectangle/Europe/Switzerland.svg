@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 660 440" style="enable-background:new 0 0 660 440;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="flag-icons-ch" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px" height="480px"
+	 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#E5340F;}
-	.st1{fill:#FFFFFF;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FF0000;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 </style>
-<rect class="st0" width="660" height="440"/>
-<g id="Layer_1_00000083777252776052999760000008468307432314868143_">
-	<polygon class="st1" points="373.6,74.6 286.4,74.6 286.4,176.4 184.6,176.4 184.6,263.6 286.4,263.6 286.4,365.4 373.6,365.4 
-		373.6,263.6 475.4,263.6 475.4,176.4 373.6,176.4 	"/>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="480" width="480" x="80" y="0"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<path class="st0" d="M80,0h480v480H80V0z"/>
+	<g>
+		<path class="st1" d="M170,195h300v90H170V195z"/>
+		<path class="st1" d="M275,90h90v300h-90V90z"/>
+	</g>
 </g>
 </svg>
