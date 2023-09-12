@@ -31,15 +31,17 @@
             padding: 20px 30px;
             border: 0 !important;
         }
-        .modal-body .btn-close {
+        .btn-close {
             position: absolute;
-            top: -4px;
-            right: -6px;
+            top: 8px;
+            right:8px;
             opacity: 1;
             background-image: unset;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: .25em .25em;
+            z-index: 999999;
         }
 
         .modal-body {
@@ -72,9 +74,9 @@
         }
 
         .btn-close:focus {
-            outline: 0;
-            box-shadow: unset;
-            opacity: unset;
+            outline: 0 !important;
+            box-shadow: unset !important;
+            opacity: unset !important;
         }
 
         .modal-body p {
@@ -114,10 +116,6 @@
                 font-size: 16px;
                 line-height: 1.3;
             }
-            .modal-body .btn-close {
-                top: -5px;
-                right: -15px;
-            }
         }
         @media (max-width:540px) {
             .modal_apply_form label {
@@ -154,10 +152,6 @@
             .modal-body ul li {
                 font-size: 14px;
                 line-height: 1.2;
-            }
-            .modal-body .btn-close {
-                top: -15px;
-                right: -15px;
             }
         }
     </style>
@@ -4043,7 +4037,7 @@
     <div class="modal fade apply_modal" id="applyModal1" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header position-relative">
                     <div>
                         <h3 class="text-orange mb-20">Executive Assistant to CEO</h3>
                         <p class="description">Location: Fehraltorf, Switzerland</p>
@@ -4052,6 +4046,7 @@
                     <div>
                         <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="job_description">
@@ -4157,7 +4152,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4197,7 +4192,7 @@
     <div class="modal fade apply_modal" id="applyModal2" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header position-relative">
                     <div>
                         <h3 class="text-orange mb-20">Account Manager</h3>
                         <p class="description">Location: Fehraltorf, Switzerland</p>
@@ -4206,6 +4201,7 @@
                     <div>
                         <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="job_description">
@@ -4311,7 +4307,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4351,7 +4347,7 @@
     <div class="modal fade apply_modal" id="applyModal3" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header position-relative">
                     <div>
                         <h3 class="text-orange mb-20">ASP.NET MVC Developer</h3>
                         <p class="description">Location: Kuala Lumpur, Malaysia</p>
@@ -4360,6 +4356,7 @@
                     <div>
                         <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="job_description"></div>
@@ -4395,7 +4392,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4435,7 +4432,7 @@
     <div class="modal fade apply_modal" id="applyModal4" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header position-relative">
                     <div>
                         <h3 class="text-orange mb-20">Marketing Assistant</h3>
                         <p class="description">Location: Kuala Lumpur, Malaysia</p>
@@ -4444,6 +4441,7 @@
                     <div>
                         <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="job_description"></div>
@@ -4479,7 +4477,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4519,7 +4517,7 @@
     <div class="modal fade apply_modal" id="applyModal5" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header position-relative">
                     <div>
                         <h3 class="text-orange mb-20">Sales Support Executive</h3>
                         <p class="description">Location: Kuala Lumpur, Malaysia</p>
@@ -4528,6 +4526,7 @@
                     <div>
                         <button type="button" class="btn btn_orange px-5 applyBtn">APPLY NOW</button>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="job_description"></div>
@@ -4563,7 +4562,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4605,10 +4604,11 @@
     <div class="modal fade" id="Students_Internship" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-body">
-                    <h3 class="heading_3 text-orange position-relative  mb-20 w-100">Internship Application 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
-                    </h3>
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <h3 class="heading_3 text-orange  mb-20 w-100">Internship Application</h3>
                     <div class="">
                         <form>
                             <h4 class="fw-medium mb-0">Submit your application</h4>
@@ -4641,7 +4641,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">
@@ -4683,10 +4683,11 @@
     <div class="modal fade" id="freelancer" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
                 <div class="modal-body">
-                    <h3 class="heading_3 text-orange position-relative  mb-20 w-100">Freelance Application 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
-                    </h3>
+                    <h3 class="heading_3 text-orange  mb-20 w-100">Freelance Application</h3>
                     <div class="">
                         <form>
                             <h4 class="fw-medium mb-0">Submit your application</h4>
@@ -4729,7 +4730,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
                                             <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
-                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                            <label class="ms-2" style="color: #8f8f8f;">File must not be more than 20 MB in size</label>
                                         </div>
                                     </div>
                                     <input type="file" id="file" class="form-control d-none">

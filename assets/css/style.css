@@ -2892,10 +2892,6 @@ span.menu_item_top.loginReg.before_off.p-0.active {
     flex-direction: column;
     row-gap: unset;
   }
-  .modal-header .btn-close {
-    top: -18px !important;
-    right: -8px !important;
-  }
   .d-flex.item_wrap i {
     margin-right: 20px;
     width: 15px;
