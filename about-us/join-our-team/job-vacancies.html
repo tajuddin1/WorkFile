@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/intlTelInput.css" type="text/css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Job Vacancies</title>
@@ -19,18 +20,36 @@
             z-index: 99999 !important;
         }
 
+        .apply_modal .modal-content {
+            border-radius: 2px;
+            max-height: 94vh;
+        }
         .modal-content {
             border-radius: 2px;
         }
-
         .modal-header {
             padding: 20px 30px;
             border: 0 !important;
         }
+        .modal-body .btn-close {
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            opacity: 1;
+            background-image: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         .modal-body {
-            padding: 30px;
+            padding: 20px 30px;
+        }
+
+        .apply_modal .modal-body {
+            padding: 20px 30px;
             background-color: #f2f2f2;
+            overflow-y: scroll;
         }
 
         .modal-header h3{
@@ -52,6 +71,12 @@
             margin-bottom: 10px;
         }
 
+        .btn-close:focus {
+            outline: 0;
+            box-shadow: unset;
+            opacity: unset;
+        }
+
         .modal-body p {
             font-size: 20px;
             line-height: 1.3;
@@ -59,6 +84,10 @@
         .modal-body ul li {
             font-size: 20px;
             line-height: 1.4;
+        }
+        .form-check-input:checked {
+            background-color: #ff6600 !important;
+            border-color: #ff6600 !important;
         }
         @media (max-width:767px) {
             .modal-header h3 {
@@ -84,6 +113,10 @@
             .modal-body ul li {
                 font-size: 16px;
                 line-height: 1.3;
+            }
+            .modal-body .btn-close {
+                top: -5px;
+                right: -15px;
             }
         }
         @media (max-width:540px) {
@@ -121,6 +154,10 @@
             .modal-body ul li {
                 font-size: 14px;
                 line-height: 1.2;
+            }
+            .modal-body .btn-close {
+                top: -15px;
+                right: -15px;
             }
         }
     </style>
@@ -523,8 +560,16 @@
                                             <div class="mainlangmenu">
                                                 <ul class="nav nav-tabs justify-content-center" id="myTab"
                                                     role="tablist">
+                                                                                                        <li>
+                                                        <a href="#" class=" active" id="slide_0" data-bs-toggle="tab"
+                                                            data-bs-target="#slide_0_pane" type="button" role="tab"
+                                                            aria-controls="slide_0_pane" aria-selected="true">
+                                                            <span>Global</span>
+                                                            <div class="globalmapimg">&nbsp;</div>
+                                                        </a>
+                                                    </li>
                                                     <li>
-                                                        <a href="#" class=" active" id="slide_1" data-bs-toggle="tab"
+                                                        <a href="#" class="" id="slide_1" data-bs-toggle="tab"
                                                             data-bs-target="#slide_1_pane" type="button" role="tab"
                                                             aria-controls="slide_1_pane" aria-selected="true">
                                                             <span>Africa</span>
@@ -566,7 +611,30 @@
                                                 </ul>
                                             </div>
                                             <div class="tab-content" id="myTabContent">
-                                                <div class="tab-pane fade show active" id="slide_1_pane" role="tabpanel"
+                                                <div class="tab-pane fade show active" id="slide_0_pane" role="tabpanel"
+                                                    aria-labelledby="slide_0" tabindex="0">
+                                                    <div class="langbox">
+                                                        <div class="leftlang">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="mapimg">
+                                                                        <img class="w-100"
+                                                                            src="../../assets/images/Country_Rectangle/Global/Global_Rectangle.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="rgtlang">
+                                                                        <div class="countryname">Global</div>
+                                                                        <div class="langlink">
+                                                                            <a href="#">German</a> |
+                                                                            <a href="#">English</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade show" id="slide_1_pane" role="tabpanel"
                                                     aria-labelledby="slide_1" tabindex="0">
                                                     <div class="langbox">
                                                         <div class="leftlang">
@@ -1724,7 +1792,7 @@
                                                                 <li>
                                                                     <div class="mapimg">
                                                                         <img class="w-100"
-                                                                            src="../../assets/images/Country_Rectangle/Middle East/jordan.svg"
+                                                                            src="../../assets/images/Country_Rectangle/Middle East/Jordan.svg"
                                                                             alt="">
                                                                     </div>
                                                                     <div class="rgtlang">
@@ -2395,7 +2463,7 @@
                                             <li>
                                                 <div class="mapimg">
                                                     <img class="w-100"
-                                                        src="../../assets/images/Country_Round/jordan.svg" alt="">
+                                                        src="../../assets/images/Country_Round/Jordan.svg" alt="">
                                                 </div>
                                                 <div class="rgtlang">
                                                     <div class="countryname">Jordan</div>
@@ -3417,134 +3485,86 @@
             <div class="container-lg px-md-4 px-lg-0">
                 <h2 class="heading_2 text-start text-lg-center">Job Vacancies</h2>
                 <div class="row">
-                    <div class="col-12 col-lg-4 px-2 px-lg-1  mb-4 mb-lg-0">
-                        <div class="h-100 d-flex flex-column justify-content-between text_image_slide">
-                            <div class="row">
-                                <div class="col-12 d-flex align-items-center">
-                                    <div class="overflow-hidden position-relative w-100">
-                                        <img class="w-100"
-                                            src="../../assets/images/job-vacancies/experienced_professionals.jpg"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 d-flex align-items-center px-3">
-                                    <div class="content_Slide p-0">
-                                        <h3 class="heading_3 text-start text-lg-center">Experienced Professionals</h3>
-                                        <p class="m-0">Are you an ambitious individual who is passionate about infection
-                                            control? Do you want to actively shape the success of our company? If the
-                                            answer is yes, then we would love to hear from you.</p>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-md-8">
+                        <div class="d-flex align-items-center mb-30 border">
+                            <div class="icon_wrap">
+                                <i class="fa-solid fa-bars"></i>
                             </div>
-                            <div class="text-start text-lg-center mt-2 mt-3">
-                                <a class="btn_orange px-5" href="#">APPLY NOW</a>
+                            <input class="form-control border-0 ps-0 myInput" type="text" placeholder="Search">
+                            <div class="icon_wrap bg-orange h-100">
+                                <i class="bg-orange" style="box-shadow: 0px 0px 0px 1.5px #ff6600;">
+                                    <img width="25" src="../../assets/images/FAQ/White/All.svg" alt="">
+                                </i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 px-2 px-lg-1 mb-4 mb-lg-0">
-                        <div class="h-100 d-flex flex-column justify-content-between text_image_slide">
-                            <div class="row">
-                                <div class="col-12 d-flex align-items-center">
-                                    <div class="overflow-hidden position-relative w-100">
-                                        <img class="w-100"
-                                            src="../../assets/images/job-vacancies/students_internship.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 d-flex align-items-center px-3">
-                                    <div class="content_Slide p-0">
-                                        <h3 class="heading_3 text-start text-lg-center">Student (Internship)</h3>
-                                        <p class="m-0">Develop your research skills, get paid, and advance your career
-                                            by supporting OCC Switzerland in making this world a safer place.</p>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-md-4 position-relative">
+                        <div class="d-flex align-items-center mb-30 border position-relative dropdown-button" style="min-height: 46px;">
+                            <div class="icon_wrap h-100">
+                                <i class="filtericon">
+                                    <img width="25" src="../../assets/images/FAQ/faq-filter.svg" alt="">
+                                </i>
                             </div>
-                            <div class="text-start text-lg-center mt-2 mt-3">
-                                <a class="btn_orange px-5" href="#">APPLY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 px-2 px-lg-1 mb-4 mb-lg-0">
-                        <div class="h-100 d-flex flex-column justify-content-between text_image_slide">
-                            <div class="row">
-                                <div class="col-12 d-flex align-items-center">
-                                    <div class="overflow-hidden position-relative w-100">
-                                        <img class="w-100" src="../../assets/images/job-vacancies/freelancers.jpg"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12 d-flex align-items-center px-3">
-                                    <div class="content_Slide p-0">
-                                        <h3 class="heading_3 text-start text-lg-center">Freelancer</h3>
-                                        <p class="m-0">Do you want to be a self-employed contractor and work from the
-                                            comfort of your home? We are looking for designers, writers, marketing
-                                            executives, programmers and infection control experts to perform work on a
-                                            freelance basis. Share your talent and support us in our daily fight against
-                                            the spread of disease.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-start text-lg-center mt-2 mt-3">
-                                <a class="btn_orange px-5" href="#">APPLY NOW</a>
+                            <input class="form-control border-0 px-0" type="text" placeholder="Filter by depertment" style="background-color: #fff;" disabled="">
+                            <div class="dropdown-content" id="checkboxContainer2.3">
+                                <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Item 1</label>
+                                <label class="form-check-label border-bottom"><input class="form-check-input m-0" type="checkbox">Item 2</label>
+                                <label class="form-check-label"><input class="form-check-input m-0" type="checkbox">Item 3</label>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section_2">
-            <div class="container-lg px-md-4 px-lg-0">
-                <h2 class="heading_3 text-start text-lg-center">Job Vacancies</h2>
                 <div class="row row-gap-4">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 job_vacancies_card_wrapper">
                         <div class="job_vacancies_card">
-                            <h4 class="heading_4">Executive Assistant to CEO</h4>
+                            <h5 class="heading_5">Executive Assistant to CEO</h5>
                             <p class="mt-0">Location: Fehraltorf, Switzerland</p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal1"
-                                class="btn btn_orange px-5">APPLY</button>
+                                class="btn btn_orange px-4">APPLY</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 job_vacancies_card_wrapper">
                         <div class="job_vacancies_card">
-                            <h4 class="heading_4">Account Manager</h4>
+                            <h5 class="heading_5">Account Manager</h5>
                             <p class="mt-0">Location: Fehraltorf, Switzerland</p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal2"
-                                class="btn btn_orange px-5">APPLY</button>
+                                class="btn btn_orange px-4">APPLY</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 job_vacancies_card_wrapper">
                         <div class="job_vacancies_card">
-                            <h4 class="heading_4">ASP.NET MVC Developer</h4>
+                            <h5 class="heading_5">ASP.NET MVC Developer</h5>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal3"
-                                class="btn btn_orange px-5">APPLY</button>
+                                class="btn btn_orange px-4">APPLY</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 job_vacancies_card_wrapper">
                         <div class="job_vacancies_card">
-                            <h4 class="heading_4">Marketing Assistant</h4>
+                            <h5 class="heading_5">Marketing Assistant</h5>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal4"
-                                class="btn btn_orange px-5">APPLY</button>
+                                class="btn btn_orange px-4">APPLY</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 job_vacancies_card_wrapper">
                         <div class="job_vacancies_card">
-                            <h4 class="heading_4">Sales Support Executive</h4>
+                            <h5 class="heading_5">Sales Support Executive</h5>
                             <p class="mt-0">Location: Kuala Lumpur, Malaysia</p>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#applyModal5"
-                                class="btn btn_orange px-5">APPLY</button>
+                                class="btn btn_orange px-4">APPLY</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section_2">
+        <section class="section_2" style="background-color: #f2f2f2;">
             <div class="container-lg px-md-4 px-lg-0">
                 <h2 class="heading_3 text-start text-lg-center">Our Recruitment Process</h2>
-                <div class="row mb-0 mb-lg-4">
+                <div class="row mb-0">
                     <div class="col-12 col-md-6 d-flex align-items-center mt-2 mt-lg-0">
                         <div class="content_Slide p-0">
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-0">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-0 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/Submitting-Application/Submitting your application_White2.svg"
@@ -3552,13 +3572,13 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">Submitting Your Application</h3>
+                                    <h3 class="heading_3 text-dark">Submitting Your Application</h3>
                                     <p class="mt-0">The first step in the recruitment process is submitting your
                                         application, typically by email to hr@oroclean.com or through a job portal. This
                                         is where you showcase your skills, education, and experience.</p>
                                 </div>
                             </div>
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/Phone- Microsoft/Phone or microsoft teams interview_White2.svg"
@@ -3566,7 +3586,7 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">Phone or Microsoft Teams Interview</h3>
+                                    <h3 class="heading_3 text-dark">Phone or Microsoft Teams Interview</h3>
                                     <p class="mt-0">If your application meets the minimum requirements, you will likely
                                         receive an invitation for a 15 to 30 minute long phone or Microsoft Teams
                                         interview. During this interview, the interviewer will ask you a series of
@@ -3574,7 +3594,7 @@
                                         about your interest in our company and the position.</p>
                                 </div>
                             </div>
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/Possibly-Second/Possibly 2nd in person interview_White2.svg"
@@ -3582,7 +3602,7 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">Possibly Second In-Person Interview</h3>
+                                    <h3 class="heading_3 text-dark">Possibly Second In-Person Interview</h3>
                                     <p class="mt-0">After the initial in-person interview, you may be asked to return
                                         for a second interview. This is typically an opportunity to meet with other
                                         members of the team or the executive management and provide additional details
@@ -3593,7 +3613,7 @@
                     </div>
                     <div class="col-12 col-md-6 d-flex align-items-center mt-2 mt-lg-0">
                         <div class="content_Slide p-0">
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-0">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-0 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/Initial-Screening/Initial screening by HR_White2.svg"
@@ -3601,14 +3621,14 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">Initial Screening by HR</h3>
+                                    <h3 class="heading_3 text-dark">Initial Screening by HR</h3>
                                     <p class="mt-0">Upon receiving your application, our HR Department will conduct an
                                         initial screening. This involves reviewing your application, looking for
                                         relevant skills and experience and checking that you meet the minimum
                                         qualifications for the job.</p>
                                 </div>
                             </div>
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/In-Person/In person interview_White2.svg"
@@ -3616,7 +3636,7 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">In-Person Interview</h3>
+                                    <h3 class="heading_3 text-dark">In-Person Interview</h3>
                                     <p class="mt-0">If you pass the phone interview, you will likely be invited for an
                                         in-person interview. This is a great opportunity to meet with the hiring manager
                                         and potentially other team members. The interviewer will ask more detailed
@@ -3624,7 +3644,7 @@
                                 </div>
                             </div>
 
-                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4">
+                            <div class="d-flex gap-2 gap-lg-3 align-items-stretch mt-3 mt-lg-4 bg-white">
                                 <div class="icon_box">
                                     <div class="icon_img box-md-0">
                                         <img width="40px" src="../../assets/images/job-vacancies/Follow-Up/Follow up & desicion_White2.svg"
@@ -3632,7 +3652,7 @@
                                     </div>
                                 </div>
                                 <div class="pe-4 box_info">
-                                    <h3 class="heading_3 mb-0 text-dark">Follow-Up and Decision</h3>
+                                    <h3 class="heading_3 text-dark">Follow-Up and Decision</h3>
                                     <p class="mt-0">A couple of days after the interview, the HR team or hiring manager
                                         will follow-up with you on the status of your application. If your application
                                         was successful, you will receive a job offer, which includes details about
@@ -3644,29 +3664,56 @@
                 </div>
             </div>
         </section>
+        <section class="section_2">
+            <div class="container-lg px-md-4 px-lg-0">
+                <h2 class="heading_2 text-start text-lg-center">Calling All Freelancers and Interns: Apply Now!</h2>
+                <div class="row text_image_slide mb-2">
+                    <div class="col-12 col-lg-6 pe-lg-5">
+                        <div class="overflow-hidden position-relative">
+                            <img class="w-100" src="../../assets/images/job-vacancies/Internship_Image.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex align-items-center mt-3 mt-lg-0">
+                        <div class="right_side_content">
+                            <h3 class="heading_3">Students (Internship)</h3>
+                            <h5 class="heading_5 fw-normal mb-30">Are you eager to kickstart your career and gain practical insights into your field of interest? Join OCC Switzerland's Internship Program and embark on a journey of growth and learning. As an intern, you'll have the invaluable opportunity to learn from experienced professionals, contribute to meaningful projects, and build a foundation for your future.</h5>
+                            <button class="btn btn_orange"  type="button" data-bs-toggle="modal" data-bs-target="#Students_Internship">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_2 pt-0">
+            <div class="container-lg px-md-4 px-lg-0">
+                <div class="row text_image_slide flex-row-reverse">
+                    <div class="col-12 col-lg-6 pe-lg-5">
+                        <div class="overflow-hidden position-relative">
+                            <img class="w-100" src="../../assets/images/job-vacancies/Freelancer_Image.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex align-items-center mt-3 mt-lg-0">
+                        <div class="right_side_content">
+                            <h3 class="heading_3">Freelancers</h3>
+                            <h5 class="heading_5 fw-normal mb-30">Do you want to be a self-employed contractor, work from the comfort of your home and at times that suit you? OCC Switzerland is looking for designers, writers and infection control experts to perform work on a freelance basis. Share your talent and support OCC Switzerland in our daily fight against the spread of disease.</h5>
+                            <button class="btn btn_orange"  type="button" data-bs-toggle="modal" data-bs-target="#freelancer">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section style="background-color: #ff6600;">
             <div class="container-lg px-md-4 px-lg-0">
                 <div class="row">
-                    <div class="col-12 d-flex align-items-center ">
-                        <div class="content_Slide">
-                            <h3 class="text-white text-center heading_3 pt-0">No Suitable Job Opening?</h3>
-                            <p class="text-white text-center mb-20">Leave us you email address and receive new job offers
-                                by email.</p>
-                            <div>
-                                <form>
-                                    <div class="row justify-content-center">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <input class="form-control py-2" type="text"
-                                                placeholder="Please enter your email address">
-                                        </div>
-                                        <div class="col-8 col-md-4 col-lg-3 text-center text-md-start mt-3 mt-md-0">
-                                            <input class="btn btn-light py-2 fw-medium" style="color: #ff6600;"
-                                                type="button" value="SIGN UP FOR A JOB ALERT">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="col-12 col-md-6 pb-0 px-lg-0 ps-lg-5">
+                        <h2 class="heading_2 tag text-white m-0 mb-20 me-lg-4">Can't find what you are looking for?</h2>
+                        <h5 class="heading_5 fw-normal mt-20 mb-0 text-white">We are always looking for people with unique skills. Send us your resume and we will get in touch when we have an opening that matches you expectations.</h5>
+                    </div>
+                    <div class="col-12 col-md-6 pt-3 mt-md-0 px-lg-0 ps-lg-5 d-flex align-items-center">
+                        <form class="w-100">
+                            <input class="form-control mb-30" type="text"
+                                placeholder="Please enter your email address">
+                            <button class="btn btn_orange_ng">SIGN UP FOR JOB ALERTS</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -4079,54 +4126,67 @@
                         </div>
                     </div>
                     <div class="modal_apply_form">
-                        <form  >
-                            <h4 class="heading_4 fw-medium mb-20">Submit your application</h4>
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>First name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Last name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Email<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="email" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Phone number<span style="color:red;">*</span></label>
-                                    <input class="form-control d-block" type="text" required="">
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
-                                    <label>Resume/CV</label>
-                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume/CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>What is your expected salary per month?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Why do you want to work for OCC Switzerland?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Additional information</label>
                                     <textarea class="form-control d-block" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div  class="text-left text-xl-center py-5">
-                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <div class="mb-20 d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
+                                    <label for="accept" class="d-inline-block">Yes, OCC can contact me about future job opportunities for up to 1 year</label>
+                                </div>
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
                             </div>
                         </form>
                     </div>
@@ -4220,8 +4280,8 @@
                         </div>
                     </div>
                     <div class="modal_apply_form">
-                        <form  >
-                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <label>First name<span style="color:red;">*</span></label>
@@ -4232,42 +4292,55 @@
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-6">
                                     <label>Email<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="email" required="">
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <label>Phone number<span style="color:red;">*</span></label>
-                                    <input class="form-control d-block" type="text" required="">
+                                    <input class="form-control" name="phone" type="phone" required="" />
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
-                                    <label>Resume/CV</label>
-                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume/CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>What is your expected salary per month?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Why do you want to work for OCC Switzerland?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Additional information</label>
                                     <textarea class="form-control d-block" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div  class="text-left text-xl-center py-5">
-                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <div class="mb-20 d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
+                                    <label for="accept" class="d-inline-block">Yes, OCC can contact me about future job opportunities for up to 1 year</label>
+                                </div>
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
                             </div>
                         </form>
                     </div>
@@ -4291,54 +4364,67 @@
                 <div class="modal-body">
                     <div class="job_description"></div>
                     <div class="modal_apply_form">
-                        <form  >
-                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>First name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Last name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Email<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="email" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Phone number<span style="color:red;">*</span></label>
-                                    <input class="form-control d-block" type="text" required="">
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
-                                    <label>Resume/CV</label>
-                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume/CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>What is your expected salary per month?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Why do you want to work for OCC Switzerland?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Additional information</label>
                                     <textarea class="form-control d-block" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div  class="text-left text-xl-center py-5">
-                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <div class="mb-20 d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
+                                    <label for="accept" class="d-inline-block">Yes, OCC can contact me about future job opportunities for up to 1 year</label>
+                                </div>
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
                             </div>
                         </form>
                     </div>
@@ -4362,54 +4448,67 @@
                 <div class="modal-body">
                     <div class="job_description"></div>
                     <div class="modal_apply_form">
-                        <form  >
-                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>First name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Last name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Email<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="email" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Phone number<span style="color:red;">*</span></label>
-                                    <input class="form-control d-block" type="text" required="">
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
-                                    <label>Resume/CV</label>
-                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume/CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>What is your expected salary per month?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Why do you want to work for OCC Switzerland?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Additional information</label>
                                     <textarea class="form-control d-block" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div  class="text-left text-xl-center py-5">
-                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <div class="mb-20 d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
+                                    <label for="accept" class="d-inline-block">Yes, OCC can contact me about future job opportunities for up to 1 year</label>
+                                </div>
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
                             </div>
                         </form>
                     </div>
@@ -4433,54 +4532,67 @@
                 <div class="modal-body">
                     <div class="job_description"></div>
                     <div class="modal_apply_form">
-                        <form  >
-                            <h4 class="fw-medium mb-20">Submit your application</h4>
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>First name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Last name<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="text" required="">
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Email<span style="color:red;">*</span></label>
                                     <input class="form-control d-block" type="email" required="">
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-lg-6 mt-20">
                                     <label>Phone number<span style="color:red;">*</span></label>
-                                    <input class="form-control d-block" type="text" required="">
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 col-lg-6">
-                                    <label>Resume/CV</label>
-                                    <input type="file" class="form-control d-block" placeholder="Attach here">
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume/CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>What is your expected salary per month?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Why do you want to work for OCC Switzerland?</label>
                                     <input class="form-control d-block" type="text">
                                 </div>
                             </div>
-                            <div class="row mt-2">
+                            <div class="row mt-20">
                                 <div class="col-12 col-lg-12">
                                     <label>Additional information</label>
                                     <textarea class="form-control d-block" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div  class="text-left text-xl-center py-5">
-                                <button type="submit" class="btn btn_orange px-5">SUBMIT</button>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <div class="mb-20 d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
+                                    <label for="accept" class="d-inline-block">Yes, OCC can contact me about future job opportunities for up to 1 year</label>
+                                </div>
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
                             </div>
                         </form>
                     </div>
@@ -4489,9 +4601,197 @@
         </div>
     </div>
 
+    <!-- Modal For Student(Internship) Ans Freelancer -->
+    <div class="modal fade" id="Students_Internship" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="heading_3 text-orange position-relative  mb-20 w-100">Internship Application 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                    </h3>
+                    <div class="">
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Resume / CV</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>University / College</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Career Interest</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Why do you want to work for OCC Switzerland?</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="freelancer" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="heading_3 text-orange position-relative  mb-20 w-100">Freelance Application 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                    </h3>
+                    <div class="">
+                        <form>
+                            <h4 class="fw-medium mb-0">Submit your application</h4>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>First name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Last name<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="text" required="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Email<span style="color:red;">*</span></label>
+                                    <input class="form-control d-block" type="email" required="">
+                                </div>
+                                <div class="col-12 col-lg-6 mt-20">
+                                    <label>Phone number<span style="color:red;">*</span></label>
+                                    <input class="form-control intlTel" name="phone" type="phone" required="" />
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12 col-lg-6">
+                                    <label>Services offered</label>
+                                    <input class="form-control d-block" type="text"/>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label>Years of experience</label>
+                                    <input class="form-control d-block"  type="text"/>
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12">
+                                    <label>Portfolio / Proof of work</label><br>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-5">
+                                            <label class="form-control text-center" style="color: #000000;" for="file">Attach here</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0 d-flex align-items-center">
+                                            <img width="25px" src="../../assets/images/job-vacancies/pdf1.png" alt="">
+                                            <h5 class="ms-2 heading_5 fw-normal mb-0" style="color: #8f8f8f;">File must not be more than 20 MB in size</h5>
+                                        </div>
+                                    </div>
+                                    <input type="file" id="file" class="form-control d-none">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12 col-lg-12">
+                                    <label>Links (if any)</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-6">
+                                    <label>Expected hourly rate / Project rate</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12 col-lg-12">
+                                    <label>Why do you want to freelance with</label>
+                                    <input class="form-control d-block" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-20">
+                                <div class="col-12 col-lg-12">
+                                    <label>Additional information</label>
+                                    <textarea class="form-control d-block" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="text-left text-xl-center mt-20 mb-2">
+                                <button type="submit" class="btn btn_orange">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="../../assets/js/custom.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../assets/js/intlTelInput.js"></script>
+    <script>
+        var inputs = document.getElementsByClassName("intlTel");
+
+        Array.from(inputs).forEach((element, index) => {
+            window.intlTelInput(element, {
+                allowDropdown: true,
+                formatOnDisplay: false,
+                hiddenInput: "full_number",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['ch', 'us'],
+                separateDialCode: true,
+                showFlags: true,
+            });
+        });
+    </script>
     <script>
         const applyButtons = document.querySelectorAll('.applyBtn');
         let currentModal;
@@ -4521,6 +4821,47 @@
                     button.style.display = 'block';
                 });
             }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".job_vacancies_card_wrapper").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <script>
+        const dropdownButtons = document.querySelectorAll('.dropdown-button');
+        const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+        dropdownButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                dropdownContents[index].classList.toggle('show-dropdown');
+            });
+        });
+
+        // Close the dropdowns when clicking outside of them
+        document.addEventListener('click', (event) => {
+            dropdownButtons.forEach((button, index) => {
+                if (!button.contains(event.target) && !dropdownContents[index].contains(event.target)) {
+                    dropdownContents[index].classList.remove('show-dropdown');
+                }
+            });
+        });
+
+        const feedback_wrap = document.getElementById('feedback_wrap');
+        const share_fdbk = document.getElementById('share_fdbk');
+        const first_step = document.getElementById('First_step');
+        const second_step = document.getElementById('second_step');
+
+
+        share_fdbk.addEventListener('click', function (event) {
+            event.preventDefault();
+            First_step.style.display = 'none';
+            second_step.style.display = 'flex';
         });
     </script>
 </body>

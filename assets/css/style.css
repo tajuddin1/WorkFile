@@ -622,7 +622,7 @@ footer .accordion-button::after {
   height: 130px;
 }
 .langbox {
-  width: 924px;
+  width: 1098px;
   margin: auto;
   background: #fff;
   margin-top: 20px;
@@ -685,51 +685,70 @@ footer .accordion-button::after {
   border: solid 1px #fff;
   border-bottom: solid 1px #e3e4e4;
 }
+.mainlangmenu ul li a .globalmapimg {
+  margin-top: 10px;
+  height: 81px;
+  text-align: center;
+  background: url(../images/Global_Map_Grey.svg) no-repeat top center;
+  background-size: contain !important;
+}
+.mainlangmenu ul li a.active .globalmapimg {
+  background: url(../images/Global_Map_Orange.svg) no-repeat top center;
+}
 .mainlangmenu ul li a .africamapimg {
   margin-top: 10px;
   height: 81px;
   text-align: center;
   background: url(../images/Africa_Inactive.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a.active .africamapimg {
   background: url(../images/Africa_active.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a .aciamapimg {
   margin-top: 10px;
   height: 81px;
   text-align: center;
   background: url(../images/Asia_The_Pacific_Inactive.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a.active .aciamapimg {
   background: url(../images/Asia_The_Pacific_active.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a .europemapimg {
   margin-top: 10px;
   height: 81px;
   text-align: center;
   background: url(../images/Europe_Inactive.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a.active .europemapimg {
   background: url(../images/Europe_active.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a .northmapimg {
   margin-top: 10px;
   height: 81px;
   text-align: center;
-  background: url(../images/North_South_America_Inactiv.jpg) no-repeat top
-    center;
+  background: url(../images/North_South_America_Inactiv.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a.active .northmapimg {
   background: url(../images/North_South_America_Active.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a .middlemapimg {
   margin-top: 10px;
   height: 81px;
   text-align: center;
   background: url(../images/The_Middle_East_Inactive.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a.active .middlemapimg {
   background: url(../images/The_Middle_East_active.jpg) no-repeat top center;
+  background-size: contain !important;
 }
 .mainlangmenu ul li a:hover,
 .mainlangmenu ul li a.active {
@@ -743,7 +762,6 @@ footer .accordion-button::after {
   display: block;
   min-height: 30px;
   height: auto;
-  width: 170px;
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto";
@@ -1125,7 +1143,7 @@ section.counter_sec {
   width: 60px;
   height: 60px;
   background-color: #FF6600;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   padding: 5px;
 }
 .open_position_btn {
@@ -1380,8 +1398,8 @@ select.form-select {
 }
 
 .faq_tabs .accordion-item .accordion-button {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .faq_tabs .accordion-item .accordion-button:focus {
   z-index: 3;
@@ -1889,6 +1907,7 @@ h3.heading_4 {
   background-color: #ff6600;
   border-radius: 20px;
   height: 100%;
+  transition: 3s all;
 }
 td.w-30{
   width: 30%;
@@ -2119,6 +2138,12 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .langbox {
+    width: 960px;
+  }
+  .mainlangmenu ul li {
+    width: 160px;
+  }
   .d-flex.gap-2.gap-lg-3.align-items-stretch {
     min-height: 280px;
   }
@@ -2156,6 +2181,17 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .mainlangmenu ul li {
+    width: 133px;
+  }
+  .globalmapimg, .africamapimg, .aciamapimg, .europemapimg, .northmapimg, .middlemapimg{
+    margin: 5px 5px 0px;
+  }
+  .mainlangmenu ul li a span {
+    width: 100%;
+    font-size: 13px;
+    min-height: 20px;
+  }
   .handling img{
     max-width: 100px;
   }
@@ -2299,11 +2335,6 @@ span.menu_item_top.loginReg.before_off.p-0.active {
     font-size: 38px !important;
     line-height: 40px;
     margin-bottom: 20px !important;
-  }
-  .mainlangmenu ul li {
-    float: left;
-    width: 160px;
-    display: block;
   }
   /* .right_side_content h3 {
         font-size: 28px;
@@ -2722,7 +2753,6 @@ span.menu_item_top.loginReg.before_off.p-0.active {
 
   .job_vacancies_card {
     padding: 50px 20px;
-    text-align: center;
   }
   /* .job_vacancies_card h4 {
         font-size: 20px;
@@ -2770,6 +2800,9 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   
 }
 @media only screen and (max-width: 767px) {
+  .job_vacancies_card {
+    text-align: center;
+  }
   .table.responsive{
     padding-bottom: 20px;
   }
@@ -2851,6 +2884,10 @@ span.menu_item_top.loginReg.before_off.p-0.active {
 }
 
 @media only screen and (max-width: 590px) {
+  .form-check-input[type="checkbox"] {
+    width: 24px;
+    height: 18px;
+  }
   .d-flex.delivery-forms {
     flex-direction: column;
     row-gap: unset;
