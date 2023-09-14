@@ -2241,17 +2241,56 @@ span.toggle-password {
   border-radius: 4px;
   overflow: hidden;
 }
+.dashbord_nav ul{
+ margin-bottom: 0;
+}
 .dashbord_nav ul li {
  padding: 10px 0;
 }
 .dashbord_nav ul li a {
  font-size: 18px;
+ display: block;
+ transition: 0.5s all;
+}
+.dashbord_nav ul li a:hover {
+ color: #ff6600 !important;
 }
 .userData p{
   font-size: 16px;
   color: #000;
 }
-
+ul.warning_text_wrapper {
+  padding-left: 0px;
+}
+span.me_tag {
+  position: relative;
+  padding: 2px 10px 0px;
+  font-size: 14px;
+  line-height: 16px;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 400;
+  display: inline-block;
+}
+.active_status {
+  border: 1px solid #ff6600;
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 6px;
+  margin-right: 30px;
+}
+.form-check-input.AccessCheck[type="radio"] {
+  border-radius: 6px;
+  height: 20px;
+  width: 20px;
+}
+.form-check-input.AccessCheck:checked {
+  background-color: #ff6600;
+  background-image: unset;
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  border-color: #ff6600;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 1440px) {
   .right_side_content p {
@@ -2931,6 +2970,21 @@ span.toggle-password {
   
 }
 @media only screen and (max-width: 767px) {
+  .dashbord_nav {
+    width: 270px;
+    top: 35px;
+    right: -30px;
+  }
+  .dashbord_nav::before {
+    top: -4px;
+    right: 35px;
+    width: 15px;
+    height: 15px;
+    box-shadow: -2px -2px 3px #e0d4d4;
+  }
+  form .fs-5 {
+    font-size: 16px !important;
+  }
   .job_vacancies_card {
     text-align: center;
   }
@@ -3015,6 +3069,17 @@ span.toggle-password {
 }
 
 @media only screen and (max-width: 590px) {
+  .userImg.me-1.me-md-3 img {
+    width: 30px;
+  }
+  .active_status {
+    padding: 0px 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  form .fs-5 {
+    font-size: 14px !important;
+  }
   .form-check-input[type="checkbox"] {
     width: 24px;
     height: 18px;
@@ -3511,8 +3576,8 @@ span.toggle-password {
     line-height: 14px;
   }
   form .btn_orange, form .btn_orange_ng {
-    font-size: 16px;
-    padding: 7px 15px;
+    font-size: 14px;
+    padding: 4px 15px;
     text-align: center;
     line-height: 18px;
   }
@@ -3621,7 +3686,9 @@ span.toggle-password {
   }
 }
 @media only screen and (max-width: 430px) {
-  
+  button.tab-btn h3.heading_3 {
+    font-size: 16px !important;
+  }
   .heading_5 {
     font-size: 14px;
     line-height: 20px;
