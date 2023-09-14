@@ -307,7 +307,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-4" style="max-width: 433px;">
+                                                <div class="col-4 d-flex flex-column justify-content-between" style="max-width: 433px;">
                                                     <div class="sub_menu_title_wrapper">
                                                         <div>
                                                             <a href="#" class="sub_item_title">Distibutors</a>
@@ -400,7 +400,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-4" style="max-width: 433px;">
+                                                <div class="col-4 d-flex flex-column justify-content-between" style="max-width: 433px;">
                                                     <div class="sub_menu_title_wrapper">
                                                         <div>
                                                             <a href="#" class="sub_item_title">Application Aids and
@@ -520,33 +520,35 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-4" style="max-width: 433px;">
-                                                    <div class="sub_menu_title_wrapper">
-                                                        <div>
-                                                            <a href="../../resources/dosage-calculator.html" class="sub_item_title">Dosage Calculator</a>
+                                                <div class="col-4 d-flex flex-column justify-content-between" style="max-width: 433px;">
+                                                    <div>
+                                                        <div class="sub_menu_title_wrapper">
+                                                            <div>
+                                                                <a href="../../resources/dosage-calculator.html" class="sub_item_title">Dosage Calculator</a>
+                                                            </div>
+                                                            <ul class="list-unstyled mb-0 mt-3   ">
+                                                                <li>
+                                                                    <a class="sub_menu_item" href="../../resources/dosage-calculator.html">
+                                                                        <div>Calculate the amount of disinfectant
+                                                                            concentrate
+                                                                            and water needed for a desired amount of working
+                                                                            solution.</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <ul class="list-unstyled mb-0 mt-3   ">
-                                                            <li>
-                                                                <a class="sub_menu_item" href="../../resources/dosage-calculator.html">
-                                                                    <div>Calculate the amount of disinfectant
-                                                                        concentrate
-                                                                        and water needed for a desired amount of working
-                                                                        solution.</div>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="sub_menu_title_wrapper" style="margin-top: 23px;">
-                                                        <div>
-                                                            <a href="../../resources/download-center.html" class="sub_item_title">Download Center</a>
+                                                        <div class="sub_menu_title_wrapper" style="margin-top: 23px;">
+                                                            <div>
+                                                                <a href="../../resources/download-center.html" class="sub_item_title">Download Center</a>
+                                                            </div>
+                                                            <ul class="list-unstyled mb-0 mt-3   ">
+                                                                <li>
+                                                                    <a class="sub_menu_item" href="../../resources/download-center.html">
+                                                                        <div>Download our latest Safety Data Sheets or other product related documents.</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <ul class="list-unstyled mb-0 mt-3   ">
-                                                            <li>
-                                                                <a class="sub_menu_item" href="../../resources/download-center.html">
-                                                                    <div>Download our latest Safety Data Sheets or other product related documents.</div>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
                                                     </div>
                                                     <div class="sub_menu_title_wrapper pt-1">
                                                         <a href="../../contact.html"
@@ -1990,6 +1992,19 @@
                                 <div class="langbox">
                                     <div class="leftlang">
                                         <ul>
+                                            <li>
+                                                <div class="mapimg">
+                                                    <img class="w-100"
+                                                        src="../../assets/images/Country_Round/Global_Round.svg" alt="">
+                                                </div>
+                                                <div class="rgtlang">
+                                                    <div class="countryname">Global</div>
+                                                    <div class="langlink">
+                                                        <a href="#">German</a> |
+                                                        <a href="#">English</a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                             <li>
                                                 <div class="mapimg">
                                                     <img class="w-100"
@@ -3555,7 +3570,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <i id="favBtn" class="Wishlist"></i>
+                                        <i id="favBtn" type="button" data-bs-toggle="modal" data-bs-target="#signin" class="Wishlist"></i>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-30">
@@ -7751,6 +7766,69 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Login Form Modal -->
+    <div class="modal w-o-h-c fade" id="signin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content login">
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="heading_3 text-center mb-20 w-100">Sign In</h3>
+                    <div>
+                        <form class="login_form">
+                            <div class="row">
+                                <div class="col-12 mb-20">
+                                    <label class="mb-1">Customer ID / Email</label>
+                                    <input class="form-control" type="email">
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <label class="mb-1">Password</label>
+                                    <input class="form-control" name="password" type="password"/>
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label class="fs-6 float-end"><button type="button" class="text-dark text-decoration-underline p-0 btn border-0 forget_pass_btn">Forgot password</button></label>
+                                </div>
+                            </div>
+                                                        <div  class="text-center mb-20">
+                                <button type="submit" class="btn btn_orange">SIGN IN</button>
+                            </div>
+                        </form>
+                        <div class="text-center">
+                            <span class="fs-6 text-center">Don't have an account yet? <a class="text-orange" href="../../create-account.html">Create an account</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content forget_pass">
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="heading_3 text-center mb-20 w-100">Reset Your Password</h3>
+                    <div>
+                        <form id="reset_pass" class="login_form">
+                            <div class="row">
+                                <div class="col-12 mb-20">
+                                    <label class="mb-1">Email</label>
+                                    <input class="form-control" type="email">
+                                </div>
+                            </div>
+                                                        <div  class="text-center mb-20">
+                                <button type="button" class="btn btn_orange forget_pass_submit_btn">SUBMIT</button>
+                            </div>
+                        </form>
+                        <div class="text-center">
+                            <span id="support_message" class="fs-6 text-center">Having trouble with your account? <a class="text-dark" href="#">Contact us</a></span>
+                            <span id="confirmation_message" class="fs-6 text-start" style="display: none;">An email with instructions on how to reset your password has been sent to [email]. If your have not received it within 10 minutes, check your spam folder. If you still have not received an email, <a class="text-dark" href="#">click here to resend it.</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../../assets/js/custom.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -8031,13 +8109,40 @@
                 progressBars.forEach(function(progress) {
                     let position = progress.getBoundingClientRect().top;
                     let screenHeight = window.innerHeight;
-        
                     if (position < screenHeight) {
                         let progressValue = progress.getAttribute('data-value');
                         progress.style.width = progressValue + '%';
                         progress.setAttribute('aria-valuenow', progressValue);
                     }
                 });
+            });
+            var loginContent = document.querySelector('.modal-content.login');
+            var forgetPassContent = document.querySelector('.modal-content.forget_pass');
+
+            var forgotPasswordButton = document.querySelector('.forget_pass_btn');
+            var forgotPassSubmitBtn = document.querySelector('.forget_pass_submit_btn');
+            var resetPassForm = document.getElementById('reset_pass');
+            var supportMessage = document.getElementById('support_message');
+            var confirmationMessage = document.getElementById('confirmation_message');
+
+            forgotPasswordButton.addEventListener('click', function() {
+                loginContent.style.display = 'none';
+                forgetPassContent.style.display = 'block';
+            });
+
+            forgotPassSubmitBtn.addEventListener('click', function() {
+                supportMessage.style.display = 'none';
+                resetPassForm.style.display = 'none';
+                confirmationMessage.style.display = 'block';
+            });
+
+            var signinModal = document.getElementById('signin');
+            signinModal.addEventListener('hidden.bs.modal', function () {
+                loginContent.style.display = 'block';
+                forgetPassContent.style.display = 'none';
+                supportMessage.style.display = 'block';
+                resetPassForm.style.display = 'block';
+                confirmationMessage.style.display = 'none';
             });
         });
     </script>

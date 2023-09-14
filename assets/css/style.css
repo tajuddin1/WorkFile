@@ -303,7 +303,7 @@ h2.heading_2 {
   font-weight: 600;
   line-height: 50px;
   color: #111;
-  margin-bottom: 30px !important;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 .section_2 p {
@@ -1330,7 +1330,8 @@ select.form-select {
 }
 
 .modal-backdrop {
-  background-color: #ffffff8f;
+  background-color: #000000af;
+  z-index: 99999;
 }
 .modal-content.pb-30.pt-30.rounded-0.border-0 {
   -webkit-box-shadow: 0px 0px 20px 0px #c7c7c7;
@@ -1512,8 +1513,8 @@ label.form-check-label {
 }
 .form-check-input[type="checkbox"] {
   border-radius: 0;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 .filtericon {
   cursor: pointer;
@@ -2118,9 +2119,139 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   background-color: gray;
   transition: 0.3s all;
 }
+.modal-content {
+  border-radius: 4px;
+  border: 0;
+}
 .iconCard:hover .icon_slide{
   background-color: #ff6600;
 }
+
+.w-o-h-c .modal-header {
+  border: 0;
+}
+
+.modal-body {
+  padding: 20px 30px;
+}
+
+.w-o-h-c .modal-header button.btn-close {
+  background: unset;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.btn-close:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+
+.login_form label{
+  font-size: 18px;
+}
+
+.text-dark {
+  color: #000000 !important;
+  opacity: 1;
+}
+
+button.text-dark.text-decoration-underline.p-0.btn:focus {
+  outline: 0;
+}
+.modal-content.forget_pass {
+  display: none;
+}
+span.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translate(-5px, -50%);
+}
+.create-account .card_wrap {
+  min-height: unset;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/account/Icons/Info\ icon.svg);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 330px;
+  box-shadow: 0px 0px 10px 0px #cac2c2;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover{
+  background-image: url(../images/account/Icons/Info-icon-orange.svg);
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.dashbord_nav {
+  position: absolute;
+  width: 320px;
+  background: #fff;
+  box-shadow: 0 0 7px 0px #808080;
+  border-radius: 4px;
+  top: 45px;
+  right: -22px;
+  z-index: 9991;
+  display: none;
+}
+.dashbord_nav.show{
+  display: block;
+}
+.dashbord_nav::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 30px;
+  /* border-left: 8px solid transparent; */
+  /* border-right: 8px solid transparent; */
+  /* border-bottom: 14px solid #fff; */
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 2px #e0d4d4;
+}
+.dashbord_nav .navContent {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dashbord_nav ul li {
+ padding: 10px 0;
+}
+.dashbord_nav ul li a {
+ font-size: 18px;
+}
+.userData p{
+  font-size: 16px;
+  color: #000;
+}
+
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 1440px) {
   .right_side_content p {
@@ -2887,6 +3018,7 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   .form-check-input[type="checkbox"] {
     width: 24px;
     height: 18px;
+
   }
   .d-flex.delivery-forms {
     flex-direction: column;
