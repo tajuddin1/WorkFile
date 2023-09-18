@@ -15,9 +15,14 @@
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Dashbord</title>
     <style>
-        .account .overlay_content p {
-            font-size: 24px;
-            line-height: 28px;
+        .dropdown-content label {
+            display: block;
+            padding: 8px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .form-check-input:checked + .catagoryList {
+            color: #ff6600;
         }
         .intlTel::placeholder{
             color: #000;
@@ -48,32 +53,6 @@
         }
         .form-switch .form-check-input:focus {
             background-image: url(assets/images/circle.svg);
-        }
-        .main {
-            overflow: hidden;
-        }
-        @media only screen and (max-width:1024px) {
-            .account .overlay_content p {
-                font-size: 20px;
-                line-height: 26px;
-            }
-        }
-        @media only screen and (max-width:768px) {
-            .account .overlay_content p {
-                font-size: 18px;
-                line-height: 22px;
-            }
-        }
-        @media only screen and (max-width:480px) {
-            .overlay_content h1 {
-                font-size: 32px;
-                line-height: 38px;
-                margin-bottom: 20px !important;
-            }
-            .about_occ .overlay_content {
-                margin-top: 25px;
-                margin-bottom: 0;
-            }
         }
     </style>
 </head>
@@ -466,7 +445,7 @@
                                             </div>
                                         </div>
                                         <ul class="list-unstyled">
-                                            <li><a class="text-decoration-none text-dark" href="#">Profile</a></li>
+                                            <li><a class="text-decoration-none text-dark" href="profile.html">Profile</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Change password</a></li>
                                             <li><a class="text-decoration-none text-dark" href="#">Logout</a></li>
                                         </ul>
@@ -3414,7 +3393,7 @@
                     <div class="container-lg ps-md-4 ps-lg-0">
                         <div class="overlay_content">
                             <h1 class="mb-3 mb-md-4">Welcome to <br> Your OROCLEAN Dashboard</h1>
-                            <p class="mb-4 mb-xl-5">Your account dashboard is your gateway to a tailored OROCLEAN experience. Explore your benefits, manage your preferences, and stay informed about our latest products and services. Take full control of your OROCLEAN account and enjoy a seamless journey with us.</p>
+                            <p class="mb-4 mb-xl-5">Explore your benefits, manage your account preferences, <br class="d-none d-lg-block"> and stay informed about the latest market trends, our products and services.</p>
                         </div>
                     </div>
                 </div>
@@ -3471,7 +3450,7 @@
                                     </div>
                                     <div class="row mt-20">
                                         <div class="col-12 col-lg-12">
-                                            <label class="heading_5 fw-normal mb-1">Additional practice/company name
+                                            <label class="heading_5 fw-normal mb-1 position-relative">Additional practice/company name
                                                 <div class="tooltip">
                                                     <div class="tooltiptext" style="background-color: #f1f1f1;">Enter an additional name or alias for your company, if applicable. This is the name your company might be known as in different contexts or regions. Providing an alternative name can help others recognize your business under different titles.</div>
                                                 </div>
@@ -3492,7 +3471,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mt-20">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Website
                                                 <div class="tooltip">
                                                     <div class="tooltiptext" style="background-color: #f1f1f1;">Please enter the official website of your company, if available. Providing your company's website allows us to learn more about your business and provide our assistance and cater services and products based on your needs.</div>
@@ -3501,7 +3480,7 @@
                                             <input class="form-control" type="text"/>
                                         </div>
                                         <div class="col-12 col-lg-6 mt-20">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Customer ID
                                                 <div class="tooltip">
                                                     <div class="tooltiptext" style="background-color: #f1f1f1;">If you have placed an order with us before, you customer ID is stated on the order confirmation, delivery note or invoice.</div>
@@ -3512,7 +3491,7 @@
                                     </div>
                                     <div class="row mt-20">
                                         <div class="col-12">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Address<span style="color:red;">*</span>
                                                 <div class="tooltip">
                                                     <div class="tooltiptext" style="background-color: #f1f1f1;">This is your primary business address. It helps us ensure accurate communication and delivery. To manage different delivery or invoice addresses, please use the dedicated sections in your profile.</div>
@@ -3525,7 +3504,7 @@
                                     </div>
                                     <div class="row mt-20">
                                         <div class="col-12 col-lg-6">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Country<span style="color:red;">*</span>
                                                 <div class="tooltip">
                                                     <div class="tooltiptext" style="background-color: #f1f1f1;">We request your country information to improve your experience on our platform. Knowing your location helps us: <br>• Provide localized content and services <br>• Comply with regional regulations</div>
@@ -3697,7 +3676,7 @@
                                 <form>
                                     <div class="row">
                                         <div class="col-12">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Label
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">You can assign a label to this delivery address for easy reference. This label can help you quickly select the appropriate address for your orders in the future</div>
@@ -3708,7 +3687,7 @@
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-12">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Address
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">This is your primary business address. It helps us ensure accurate communication and delivery. To manage different delivery or invoice addresses, please use the dedicated sections in your profile.</div>
@@ -3721,7 +3700,7 @@
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-12 col-lg-6">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Country
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">We request your country information to improve your experience on our platform. Knowing your location helps us: <br>• Provide localized content and services <br>• Comply with regional regulations</div>
@@ -3738,7 +3717,7 @@
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-12 col-lg-12">
-                                            <label class="heading_5 fw-normal mb-1">Special instructions (if any)
+                                            <label class="heading_5 fw-normal mb-1 position-relative">Special instructions (if any)
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">Use this field to provide any specific delivery instructions or notes. For example, you can mention preferred delivery times, building access codes, or other essential details that can assist our delivery team in ensuring a smooth delivery process."</div>
                                                 </div>
@@ -3877,7 +3856,7 @@
                                 <form>
                                     <div class="row">
                                         <div class="col-12">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Label
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">You can assign a label to this delivery address for easy reference. This label can help you quickly select the appropriate address for your orders in the future</div>
@@ -3888,7 +3867,7 @@
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-12">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Address
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">This is your primary business address. It helps us ensure accurate communication and delivery. To manage different delivery or invoice addresses, please use the dedicated sections in your profile.</div>
@@ -3901,7 +3880,7 @@
                                     </div>
                                     <div class="row mt-30">
                                         <div class="col-12 col-lg-6">
-                                            <label class="heading_5 fw-normal mb-1">
+                                            <label class="heading_5 fw-normal mb-1 position-relative">
                                                 Country
                                                 <div class="tooltip">
                                                     <div class="tooltiptext">We request your country information to improve your experience on our platform. Knowing your location helps us: <br>• Provide localized content and services <br>• Comply with regional regulations</div>
@@ -4211,7 +4190,335 @@
                 </div>
                 <div class="tab-pane fade" id="Wishlist" role="tabpanel"
                     aria-labelledby="Wishlist-tab" tabindex="0">
-
+                    <section class="p-0">
+                        <div class="container-lg px-md-4 px-lg-0">
+                            <h3 class="heading_3 product-title fw-bold text-center mb-30">Effortless Shopping with Your Favorite Picks</h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 position-relative">
+                                    <div class="d-flex align-items-center border position-relative dropdown-button" style="min-height: 46px;">
+                                        <input class="form-control border-0 px-4" type="text" placeholder="Product category" style="background-color: #fff;" disabled="">
+                                        <div class="icon_wrap h-100">
+                                            <i class="filtericon border-start">
+                                                <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
+                                            </i>
+                                        </div>
+                                        <div class="dropdown-content" id="checkboxContainer2.3">
+                                            <input id="item1" class="form-check-input m-0 d-none" type="checkbox">
+                                            <label for="item1" class="form-check-label catagoryList border-bottom">Item 1</label>
+                                            <input id="item2" class="form-check-input m-0 d-none" type="checkbox">
+                                            <label for="item2" class="form-check-label catagoryList">Item 2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mt-md-0 col-md-6 col-lg-4 position-relative">
+                                    <div class="d-flex align-items-center border position-relative dropdown-button" style="min-height: 46px;">
+                                        <input class="form-control border-0 px-4" type="text" placeholder="Product subategory" style="background-color: #fff;" disabled="">
+                                        <div class="icon_wrap h-100">
+                                            <i class="filtericon border-start">
+                                                <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
+                                            </i>
+                                        </div>
+                                        <div class="dropdown-content" id="checkboxContainer2.3">
+                                            <input id="item1-1" class="form-check-input m-0 d-none" type="checkbox">
+                                            <label for="item1-1" class="form-check-label catagoryList border-bottom">Item 1-1</label>
+                                            <input id="item2-2" class="form-check-input m-0 d-none" type="checkbox">
+                                            <label for="item2-2" class="form-check-label catagoryList">Item 2-2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wh-bx mt-30 pb-5 p-0 border-bottom">
+                                <div class="row  row_slide_wrapper align-items-center">
+                                    <div class="col-12 col-lg-9 order_2">
+                                        <h3 class="heading_3 mb-20"><strong>DENTIRO</strong><sup>®</sup> <span class="fw-normal">Zero</span></h3>
+                                        <h5 class="heading_5 fw-normal mb-20">DENTIRO<sup>®</sup> Zero is an alcohol-free, ready-to-use solution for the fast disinfection and cleaning of non-invasive 
+                                            medical devices with sensitive surfaces such as dental chairs. DENTIRO<sup>®</sup> Zero is particularly suitable for the 
+                                            disinfection of alcohol-sensitive materials such as artificial leather, Plexiglas<sup>®</sup>, and PVC</h5>
+                                        <h5 class="heading_5">Your Benefits</h5>
+                                        <div class="row info-icons">
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_alcohol-free_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Alcohol free</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_kills_101_microorganisms_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Kills 101 microorganisms</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Exposure Time.svg" alt="icon">
+                                                </div>
+                                                <p>Short exposure time</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_compatibility_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Compatible with more than 210 materials including artificial leather</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 order_1">
+                                        <div class="">
+                                            <div class="text-center pt-3">
+                                                <p class="product-badge" style="background-color:#006747">alcohol-free</p>
+                                            </div>
+                                            <img src="assets/images/online-shop/Product-Images/DENTIRO Zero_group photo_500px.png" class="w-100 productphotodetail" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-12">
+                                        <div class="mb-20">
+                                            <h5 class="heading_5 mb-20 fw-bold">Documents</h5>
+                                            <div class="d-flex delivery-forms dashboard">
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect4" type="radio" name="radio-check" id="radio-1">
+                                                    <label for="radio-1" class="label-content">
+                                                        <span class="image-background btnBg4"></span>
+                                                        Safety Data Sheet
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect5" type="radio" name="radio-check" id="radio-2">
+                                                    <label for="radio-2" class="label-content">
+                                                        <span class="image-background btnBg5"></span>
+                                                        Technical Data Sheet
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect6" type="radio" name="radio-check" id="radio-3">
+                                                    <label for="radio-3" class="label-content">
+                                                        <span class="image-background btnBg6"></span>
+                                                        More Documents
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mb-3 mb-sm-4 mb-xl-0 col-sm-8 col-xl-5">
+                                                <div class="btn-group w-100 df-drop">
+                                                    <button type="button" class="btn form-control border dropdown-toggle w-100  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Delivery Form
+                                                    </button>
+                                                    <ul class="dropdown-menu dashboard p-0">
+                                                        <div class="table-responsive pb-0">
+                                                            <table class="table table-borderless mb-0" width="100%">
+                                                                <thead>
+                                                                    <tr style="border-bottom: 1px solid #888;">
+                                                                        <th>Item code</th>
+                                                                        <th>Delivery form</th>
+                                                                        <th>Quantity per carton</th>
+                                                                        <th>Price per unit*</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-109980" data-deliveryform="200 ml foamer bottle" style="border-bottom: 1px solid #888;">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;">200 ml foamer bottle</td>
+                                                                        <td>25</td>
+                                                                        <td>6.05 CHF</td>
+                                                                    </tr>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-109980" data-deliveryform="1 litre bottle with flip top cap" style="border-bottom: 1px solid #888;">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;">1 litre bottle with flip top cap</td>
+                                                                        <td>10</td>
+                                                                        <td>15.95 CHF</td>
+                                                                    </tr>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-031005" data-deliveryform="">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;"></td>
+                                                                        <td>2</td>
+                                                                        <td>48.65 CHF</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="table-responsive" style="background-color: #f1f1f1;">
+                                                            <div class="d-flex align-items-center">
+                                                                <i class="drop-img me-2">
+                                                                    <img width="16px" src="assets/images/online-shop/Icons/Full pack discount_icon.svg" alt="icon">
+                                                                </i>
+                                                                <span class="drop-txt">
+                                                                    Enjoy 2% discount when you purchase full carton.
+                                                                </span>
+                                                            </div>
+                                                            <span class="drop-txt">
+                                                                * Price excludes VOC and VAT.
+                                                            </span>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3 mb-sm-4 mb-xl-0 col-sm-4 col-xl-1">
+                                                <input type="hidden" name="ItemCode" class="hide_itemcode_selected">
+                                                <input type="hidden" name="ItemPortalReferenceNumber" class="hide_itemportalreferencenumber" value="AQLO9B">
+                                                <input type="text" class="form-control hide_itemcode_qty_selected" value="45">
+                                            </div>
+                                            <div class="col-12 col-md-12 col-xl-6">
+                                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-xl-between">
+                                                    <button type="button" class="btn btn_orange me-3 mb-3 mb-sm-0 me-md-4  me-xl-0">Add to cart</button>
+                                                    <button type="button" class="btn btn_orange_ng me-3 mb-3 mb-sm-0 me-md-4 me-xl-0">VIEW MORE DETAILS</button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#removeFromWishlist" class="btn btn_orange text-dark mb-3 mb-sm-0 bg-white px-0 border-0 text-decoration-underline">Remove from Wishlist</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wh-bx mt-30 pb-5 p-0">
+                                <div class="row  row_slide_wrapper align-items-center ">
+                                    <div class="col-12 col-lg-9 order_2">
+                                        <h3 class="heading_3 mb-20"><strong>DENTIRO</strong><sup>®</sup> <span class="fw-normal">Zero</span></h3>
+                                        <h5 class="heading_5 fw-normal mb-20">DENTIRO<sup>®</sup> Zero is an alcohol-free, ready-to-use solution for the fast disinfection and cleaning of non-invasive 
+                                            medical devices with sensitive surfaces such as dental chairs. DENTIRO<sup>®</sup> Zero is particularly suitable for the 
+                                            disinfection of alcohol-sensitive materials such as artificial leather, Plexiglas<sup>®</sup>, and PVC</h5>
+                                        <h5 class="heading_5">Your Benefits</h5>
+                                        <div class="row info-icons">
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_alcohol-free_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Alcohol free</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_kills_101_microorganisms_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Kills 101 microorganisms</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Exposure Time.svg" alt="icon">
+                                                </div>
+                                                <p>Short exposure time</p>
+                                            </div>
+                                            <div class="col-6 col-lg-3 text-center my-3 icons-info-container">
+                                                <div class="m-auto">
+                                                    <img src="assets/images/online-shop/Icons/USPs/Online_shop_compatibility_icon_EN.svg" alt="icon">
+                                                </div>
+                                                <p>Compatible with more than 210 materials including artificial leather</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 order_1">
+                                        <div class="">
+                                            <div class="text-center pt-3">
+                                                <p class="product-badge" style="background-color:#006747">alcohol-free</p>
+                                            </div>
+                                            <img src="assets/images/online-shop/Product-Images/DENTIRO Zero_group photo_500px.png" class="w-100 productphotodetail" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-12">
+                                        <div class="mb-20">
+                                            <h5 class="heading_5 mb-20 fw-bold">Documents</h5>
+                                            <div class="d-flex delivery-forms dashboard">
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect4" type="radio" name="radio-check2" id="radio-4">
+                                                    <label for="radio-4" class="label-content">
+                                                        <span class="image-background btnBg4"></span>
+                                                        Safety Data Sheet
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect5" type="radio" name="radio-check2" id="radio-5">
+                                                    <label for="radio-5" class="label-content">
+                                                        <span class="image-background btnBg5"></span>
+                                                        Technical Data Sheet
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input class="btnSelect btnSelect6" type="radio" name="radio-check2" id="radio-6">
+                                                    <label for="radio-6" class="label-content">
+                                                        <span class="image-background btnBg6"></span>
+                                                        More Documents
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mb-3 mb-sm-4 mb-xl-0 col-sm-8 col-xl-5">
+                                                <div class="btn-group w-100 df-drop">
+                                                    <button type="button" class="btn form-control border dropdown-toggle w-100  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Delivery Form
+                                                    </button>
+                                                    <ul class="dropdown-menu dashboard p-0">
+                                                        <div class="table-responsive pb-0">
+                                                            <table class="table table-borderless mb-0" width="100%">
+                                                                <thead>
+                                                                    <tr style="border-bottom: 1px solid #888;">
+                                                                        <th>Item code</th>
+                                                                        <th>Delivery form</th>
+                                                                        <th>Quantity per carton</th>
+                                                                        <th>Price per unit*</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-109980" data-deliveryform="200 ml foamer bottle" style="border-bottom: 1px solid #888;">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;">200 ml foamer bottle</td>
+                                                                        <td>25</td>
+                                                                        <td>6.05 CHF</td>
+                                                                    </tr>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-109980" data-deliveryform="1 litre bottle with flip top cap" style="border-bottom: 1px solid #888;">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;">1 litre bottle with flip top cap</td>
+                                                                        <td>10</td>
+                                                                        <td>15.95 CHF</td>
+                                                                    </tr>
+                                                                    <tr class="selectitemcode" data-itemcode="CH-031005" data-deliveryform="">
+                                                                        <td style="text-align: left;">CH-109980</td>
+                                                                        <td style="text-align: left;"></td>
+                                                                        <td>2</td>
+                                                                        <td>48.65 CHF</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="table-responsive" style="background-color: #f1f1f1;">
+                                                            <div class="d-flex align-items-center">
+                                                                <i class="drop-img me-2">
+                                                                    <img width="16px" src="assets/images/online-shop/Icons/Full pack discount_icon.svg" alt="icon">
+                                                                </i>
+                                                                <span class="drop-txt">
+                                                                    Enjoy 2% discount when you purchase full carton.
+                                                                </span>
+                                                            </div>
+                                                            <span class="drop-txt">
+                                                                * Price excludes VOC and VAT.
+                                                            </span>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3 mb-sm-4 mb-xl-0 col-sm-4 col-xl-1">
+                                                <input type="hidden" name="ItemCode" class="hide_itemcode_selected">
+                                                <input type="hidden" name="ItemPortalReferenceNumber" class="hide_itemportalreferencenumber" value="AQLO9B">
+                                                <input type="text" class="form-control hide_itemcode_qty_selected" value="45">
+                                            </div>
+                                            <div class="col-12 col-md-12 col-xl-6">
+                                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-xl-between">
+                                                    <button type="button" class="btn btn_orange me-3 mb-3 mb-sm-0 me-md-4  me-xl-0">Add to cart</button>
+                                                    <button type="button" class="btn btn_orange_ng me-3 mb-3 mb-sm-0 me-md-4 me-xl-0">VIEW MORE DETAILS</button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#removeFromWishlist" class="btn btn_orange text-dark mb-3 mb-sm-0 bg-white px-0 border-0 text-decoration-underline">Remove from Wishlist</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="tab-pane fade" id="Hygiene-Club" role="tabpanel"
                     aria-labelledby="Hygiene-Club-tab" tabindex="0">
@@ -4276,8 +4583,50 @@
                 </div>
                 <div class="tab-pane fade" id="Security" role="tabpanel"
                     aria-labelledby="Security-tab" tabindex="0">
-                    <section>
-                        <h3 class="heading_3 product-title fw-bold text-center mb-0">Create Your Account</h3>
+                    <section class="pt-0">
+                        <div class="container-lg px-md-4 px-lg-0">
+                            <h3 class="heading_3 product-title fw-bold text-center mb-30">Security Settings</h3>
+                            <h4 class="heading_4 product-title fw-bold text-center mb-20">Change Password</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-30">
+                                        <label class="fs-5 mb-1" for="password1">Current password</label>
+                                        <div class="password-input position-relative">
+                                            <input type="password" id="password0" class="form-control" onblur="validatePassword('password0')" required>
+                                            <span id="toggle0" class="toggle-password" onclick="togglePasswordVisibility('password0', 'toggle0')">
+                                                <i class="fa-solid fa-eye-slash"></i>
+                                            </span>
+                                        </div>
+                                        <div id="password0-feedback" class="text-danger pt-2"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-30">
+                                        <label class="fs-5 mb-1" for="password1">New password</label>
+                                        <div class="password-input position-relative">
+                                            <input type="password" id="password1" class="form-control" onblur="validatePassword('password1')" required>
+                                            <span id="toggle1" class="toggle-password" onclick="togglePasswordVisibility('password1', 'toggle1')">
+                                                <i class="fa-solid fa-eye-slash"></i>
+                                            </span>
+                                        </div>
+                                        <div id="password1-feedback" class="text-danger pt-2"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-30">
+                                        <label class="fs-5 mb-1" for="password2">Confirm new password</label>
+                                        <div class="password-input position-relative">
+                                            <input type="password" id="password2" class="form-control" onblur="validatePassword('password2')" required>
+                                            <span id="toggle2" class="toggle-password" onclick="togglePasswordVisibility('password2', 'toggle2')">
+                                                <i class="fa-solid fa-eye-slash"></i>
+                                            </span>
+                                        </div>
+                                        <div id="password2-feedback" class="text-danger pt-2"></div>
+                                    </div>
+                                    <div class="col-12 text-center pt-2">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#changePassword" class="btn btn_orange">CHANGE PASSWORD</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     
                 </div>
@@ -4727,6 +5076,31 @@
             </div>
         </div>
     </div>
+    <!--Remove From Wishlist Alert Modal -->
+    <div class="modal w-o-h-c fade" id="removeFromWishlist" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 mb-20">
+                                    <h4 class="heading_4 mb-0 text-center">Are you sure you want to remove this product from your wishlist?</h4>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn_orange_ng me-3">YES</button>
+                                    <button type="button" class="btn btn_orange_ng" data-bs-dismiss="modal">NO</button>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Hygine Club Thankyou Modal -->
     <div class="modal w-o-h-c fade" id="thankyou_HC" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -4741,9 +5115,24 @@
             </div>
         </div>
     </div>
+    <!--Security Settings Chnage Password Modal -->
+    <div class="modal w-o-h-c fade" id="changePassword" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header py-0 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="heading_3 text-center mb-20 w-100">Your password has been changed successfully</h3>
+                    <h5 class="heading_5 fw-normal mb-0">Your password has been changed successfully. Remember to use your new password for future logins. For further assistance with your account, please <a class="text_orange" href="#">contact us.</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/intlTelInput.js"></script>
     <script>
         var inputs = document.getElementsByClassName("intlTel");
@@ -4856,6 +5245,86 @@
             cancelButton_4.addEventListener('click', function() {
                 userInvite.style.display = 'none';
                 topContent.style.display = 'block'
+            });
+        });
+    </script>
+     <script>
+        function validatePassword(inputId) {
+            var passwordInput = document.getElementById(inputId);
+            var feedbackElement = document.getElementById(inputId + '-feedback');
+            var password = passwordInput.value;
+
+            if (inputId === 'password1') {
+                var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,25}$/;
+
+                if (password.length === 0) {
+                    feedbackElement.textContent = '';
+                    return;
+                }
+
+                if (!passwordRegex.test(password)) {
+                    feedbackElement.textContent = "Password must contain 8-25 characters, including at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.";
+                } else {
+                    feedbackElement.textContent = '';
+                }
+            } else if (inputId === 'password2') {
+                var password1 = document.getElementById('password1').value;
+
+                if (password !== password1) {
+                    feedbackElement.textContent = "Passwords do not match.";
+                } else {
+                    feedbackElement.textContent = '';
+                }
+            }
+        }
+        
+        function togglePasswordVisibility(inputId, toggleId) {
+            var passwordInput = document.getElementById(inputId);
+            var toggleButton = document.getElementById(toggleId);
+        
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.innerHTML = '<i class="fa-solid fa-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            }
+        }
+        
+    </script>
+    <script>
+        function setupDropdown(dropdown) {
+            const selectitemcodes = dropdown.querySelectorAll('.selectitemcode');
+            const deliveryFormButton = dropdown.querySelector('.scelect_type_btn');
+    
+            selectitemcodes.forEach(item => {
+                item.addEventListener('click', () => {
+                    const packSize = item.dataset.deliveryform;
+                    const itemcode = item.dataset.itemcode;
+                    deliveryFormButton.textContent = itemcode + " - " + packSize;
+                });
+            });
+        }
+    
+        const dropdowns = document.querySelectorAll('.btn-group.w-100.df-drop');
+        dropdowns.forEach(setupDropdown);
+    </script>
+    <script>
+        const dropdownButtons = document.querySelectorAll('.dropdown-button');
+        const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+        dropdownButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                dropdownContents[index].classList.toggle('show-dropdown');
+            });
+        });
+
+        // Close the dropdowns when clicking outside of them
+        document.addEventListener('click', (event) => {
+            dropdownButtons.forEach((button, index) => {
+                if (!button.contains(event.target) && !dropdownContents[index].contains(event.target)) {
+                    dropdownContents[index].classList.remove('show-dropdown');
+                }
             });
         });
     </script>
