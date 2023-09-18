@@ -14,7 +14,7 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Dashbord</title>
-    <style>
+   <style>
         .dropdown-content label {
             display: block;
             padding: 8px 15px;
@@ -23,6 +23,18 @@
         }
         .form-check-input:checked + .catagoryList {
             color: #ff6600;
+        }
+        .intlTel::-webkit-input-placeholder{
+            color: #000;
+        }
+        .intlTel::-moz-placeholder{
+            color: #000;
+        }
+        .intlTel:-ms-input-placeholder{
+            color: #000;
+        }
+        .intlTel::-ms-input-placeholder{
+            color: #000;
         }
         .intlTel::placeholder{
             color: #000;
@@ -36,6 +48,8 @@
             position: absolute;
             top: 4px;
             right: 8px;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
             transition: 1s all;
         }
         .form-switch .form-check-input:checked + .default-form-check-label {
@@ -54,7 +68,7 @@
         .form-switch .form-check-input:focus {
             background-image: url(assets/images/circle.svg);
         }
-    </style>
+   </style>
 </head>
 
 <body class="about_occ account">
@@ -69,7 +83,7 @@
                 <div class="col-9 d-flex justify-content-end align-items-center resp-d-none">
                     <ul class="list-unstyled mb-0 d-flex mb-0">
                         <li class="menu-item px-2 border-end">
-                            <span class="menu_item_top d-none active"></span>
+                            <span class="menu_item_top d-none"></span>
                             <span class="menu_item_top">About Us </span>
                             <div class="submenu aboutUs" id="aboutUs">
                                 <div class="container-lg px-md-4 px-lg-0">
@@ -424,11 +438,111 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="menu-item px-2 border-end">
+                            <a href="shop.html" class="text-decoration-none menu_item_top active before_off">Shop</a>
+                        </li>
                         <li class="menu-item px-2">
                             <span class="menu_item_top navWishlistImg before_off p-0"></span>
                         </li>
-                        <li class="menu-item px-2">
-                            <span class="menu_item_top shopingCart before_off p-0"></span>
+                        <li class="menu-item px-2 position-relative">
+                            <span class="menu_item_top shopingCart before_off p-0 position-relative">
+                                <span class="cart_number">5</span>
+                            </span>
+                            <div class="cardItem_nav">
+                                <div class="navContent">
+                                    <div style="box-shadow: 0px 1px 4px 0px #6b6b6b;">
+                                        <h3 class="px-3 py-2 heading_3 mb-0 text-dark">Cart</h3>
+                                    </div>
+                                    <div class="cart-product-wrapper">
+                                        <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                            <div  class="d-flex">
+                                                <div class="productImg me-2">
+                                                    <img width="150px" src="assets/images/online-shop/Product-Images/DENTIRO Light_250ml_bottle_500px.jpg" alt="">
+                                                </div>
+                                                <div class="userData">
+                                                    <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                                    <h5 class="heading_5 mb-2 fw-normal">250 ml bottle (CH-031005)</h5>
+                                                    <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                                    <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                                </div>
+                                            </div>
+                                            <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                                <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                            <div  class="d-flex">
+                                                <div class="productImg me-2">
+                                                    <img width="150px" src="assets/images/online-shop/Product-Images/CH-011100_DENTIRO_Zero 1 litre sprayer bottle.png" alt="">
+                                                </div>
+                                                <div class="userData">
+                                                    <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                                    <h5 class="heading_5 mb-2 fw-normal">1 litre bottle (CH-031013)</h5>
+                                                    <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                                    <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                                </div>
+                                            </div>
+                                            <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                                <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                            <div  class="d-flex">
+                                                <div class="productImg me-2">
+                                                    <img width="150px" src="assets/images/online-shop/Product-Images/CH-011104_DENTIRO Zero 5 litre bottle with handle_500px.png" alt="">
+                                                </div>
+                                                <div class="userData">
+                                                    <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                                    <h5 class="heading_5 mb-2 fw-normal">5 litre canister (CH-031025)</h5>
+                                                    <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                                    <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                                </div>
+                                            </div>
+                                            <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                                <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                            </div>
+                                        </div>                                     
+                                    </div>
+                                    <div class="cart-item-price px-3 py-3" style="background-color: #f1f1f1;">
+                                        <h5 class="heading_5 mb-2 mt-1">Order Summary</h5>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Subtotal (2 Item(s))</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">522.00 CHF</h5></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Full carton discount</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">-10.44 CHF</h5></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Wednesday discount</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">- 26.1 CHF</h5></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Hygiene club discount</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">9.50 CHF</h5></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Promo code discount</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">- 23.79 CHF</h5></div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">VOC</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">43.06 CHF</h5></div>
+                                        </div>
+                                        <div class="row border-bottom pb-2" style="border-color: #c1c1c1 !important;">
+                                            <div class="col-7"><h5 class="heading_5 fw-normal mb-0">VAT</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">42.71 CHF</h5></div>
+                                        </div>
+                                        <div class="row mt-2" style="border-color: #c1c1c1 !important;">
+                                            <div class="col-7"><h5 class="heading_5 mb-0">Total</h5></div>
+                                            <div class="col-5"><h5 class="heading_5 mb-0 text-end">537.94 CHF</h5></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-30 mb-30">
+                                        <a href="#" class="btn btn_orange">PROCEED TO CHECKOUT</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="menu-item px-2 position-relative">
                             <span class="menu_item_top UserProfile loginReg before_off p-0 "></span>
@@ -1868,12 +1982,107 @@
                         </div>
                     </div>
                 </div>
-                <a class="position-relative" href="#">
-                    <div
-                        style="background-image: url(assets/images/shopping-cart.svg); width: 28px; height: 24px; background-repeat: no-repeat; background-size: contain;">
+                <div class="position-relative">
+                    <div class="shopingCart position-relative"
+                        style="background-image: url(assets/images/shopping-cart.svg); width: 24px; height: 24px; background-repeat: no-repeat; background-size: contain; margin-bottom: -6px;">
+                        <span class="cart_number">5</span>
                     </div>
-                    <span>0</span>
-                </a>
+                    <div class="cardItem_nav">
+                        <div class="navContent">
+                            <div style="box-shadow: 0px 1px 4px 0px #6b6b6b;">
+                                <h3 class="px-3 py-2 heading_3 mb-0 text-dark">Cart</h3>
+                            </div>
+                            <div class="cart-product-wrapper">
+                                <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                    <div  class="d-flex">
+                                        <div class="productImg me-2">
+                                            <img width="150px" src="assets/images/online-shop/Product-Images/DENTIRO Light_250ml_bottle_500px.jpg" alt="">
+                                        </div>
+                                        <div class="userData">
+                                            <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                            <h5 class="heading_5 mb-2 fw-normal">250 ml bottle (CH-031005)</h5>
+                                            <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                            <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                        </div>
+                                    </div>
+                                    <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                        <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                    <div  class="d-flex">
+                                        <div class="productImg me-2">
+                                            <img width="150px" src="assets/images/online-shop/Product-Images/CH-011100_DENTIRO_Zero 1 litre sprayer bottle.png" alt="">
+                                        </div>
+                                        <div class="userData">
+                                            <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                            <h5 class="heading_5 mb-2 fw-normal">1 litre bottle (CH-031013)</h5>
+                                            <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                            <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                        </div>
+                                    </div>
+                                    <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                        <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="d-flex px-2 py-1 border-bottom justify-content-between">
+                                    <div  class="d-flex">
+                                        <div class="productImg me-2">
+                                            <img width="150px" src="assets/images/online-shop/Product-Images/CH-011104_DENTIRO Zero 5 litre bottle with handle_500px.png" alt="">
+                                        </div>
+                                        <div class="userData">
+                                            <h5 class="heading_5 mb-2">DENTIRO<sup>®</sup> <span class="fw-normal">Light</span> </h5>
+                                            <h5 class="heading_5 mb-2 fw-normal">5 litre canister (CH-031025)</h5>
+                                            <div class="mb-2" style="max-width: 80px;"><input class="form-control" type="number" value="40"></div>
+                                            <h5 class="heading_5 mb-0">225.00 CHF</h5>
+                                        </div>
+                                    </div>
+                                    <div class="deleteIcon d-flex justify-content-center align-items-center">
+                                        <button class="btn p-0 border-0" type="button"><img src="assets/images/online-shop/Icons/Delete_black.svg" alt=""></button>
+                                    </div>
+                                </div>                                     
+                            </div>
+                            <div class="cart-item-price px-3 py-3" style="background-color: #f1f1f1;">
+                                <h5 class="heading_5 mb-2 mt-1">Order Summary</h5>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Subtotal (2 Item(s))</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">522.00 CHF</h5></div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Full carton discount</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">-10.44 CHF</h5></div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Wednesday discount</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">- 26.1 CHF</h5></div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Hygiene club discount</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">9.50 CHF</h5></div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">Promo code discount</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">- 23.79 CHF</h5></div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">VOC</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">43.06 CHF</h5></div>
+                                </div>
+                                <div class="row border-bottom pb-2" style="border-color: #c1c1c1 !important;">
+                                    <div class="col-7"><h5 class="heading_5 fw-normal mb-0">VAT</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 fw-normal mb-0 text-end">42.71 CHF</h5></div>
+                                </div>
+                                <div class="row mt-2" style="border-color: #c1c1c1 !important;">
+                                    <div class="col-7"><h5 class="heading_5 mb-0">Total</h5></div>
+                                    <div class="col-5"><h5 class="heading_5 mb-0 text-end">537.94 CHF</h5></div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-30 mb-30">
+                                <button class="btn btn_orange">PROCEED TO CHECKOUT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="mobile-menu">
                 <div class="barnd-nav">
@@ -4199,7 +4408,7 @@
                                         <input class="form-control border-0 px-4" type="text" placeholder="Product category" style="background-color: #fff;" disabled="">
                                         <div class="icon_wrap h-100">
                                             <i class="filtericon border-start">
-                                                <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
+                                                <img width="25" src="assets/images/arrow-grey.svg" alt="">
                                             </i>
                                         </div>
                                         <div class="dropdown-content" id="checkboxContainer2.3">
@@ -4215,7 +4424,7 @@
                                         <input class="form-control border-0 px-4" type="text" placeholder="Product subategory" style="background-color: #fff;" disabled="">
                                         <div class="icon_wrap h-100">
                                             <i class="filtericon border-start">
-                                                <img width="25" src="../assets/images/FAQ/faq-filter.svg" alt="">
+                                                <img width="25" src="assets/images/arrow-grey.svg" alt="">
                                             </i>
                                         </div>
                                         <div class="dropdown-content" id="checkboxContainer2.3">
@@ -5152,30 +5361,45 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            function toggleNav(trigger, nav, otherNav) {
+                trigger.forEach(function(elem) {
+                    elem.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        nav.forEach(function(navElem) {
+                            navElem.classList.toggle('show');
+                        });
+                        otherNav.forEach(function(otherNavElem) {
+                            otherNavElem.classList.remove('show');
+                        });
+                    });
+                });
+            }
+
             var UserProfiles = document.querySelectorAll('.UserProfile');
             var dashbord_nav = document.querySelectorAll('.dashbord_nav');
 
-            UserProfiles.forEach(function(UserProfile) {
-                UserProfile.addEventListener('click', function(event) {
-                    event.stopPropagation();
-                    dashbord_nav.forEach(function(nav) {
-                        nav.classList.toggle('show');
-                    });
-                });
-            });
+            var shopingCart = document.querySelectorAll('.shopingCart');
+            var cardItem_nav = document.querySelectorAll('.cardItem_nav');
+
+            toggleNav(UserProfiles, dashbord_nav, cardItem_nav);
+            toggleNav(shopingCart, cardItem_nav, dashbord_nav);
 
             document.addEventListener('click', function(event) {
                 var clickedOutside = true;
 
-                dashbord_nav.forEach(function(nav) {
-                    if (nav.contains(event.target)) {
-                        clickedOutside = false;
-                    }
+                [dashbord_nav, cardItem_nav].forEach(function(nav) {
+                    nav.forEach(function(navElem) {
+                        if (navElem.contains(event.target)) {
+                            clickedOutside = false;
+                        }
+                    });
                 });
 
                 if (clickedOutside) {
-                    dashbord_nav.forEach(function(nav) {
-                        nav.classList.remove('show');
+                    [dashbord_nav, cardItem_nav].forEach(function(nav) {
+                        nav.forEach(function(navElem) {
+                            navElem.classList.remove('show');
+                        });
                     });
                 }
             });
