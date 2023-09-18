@@ -2601,6 +2601,7 @@ tr.selectitemcode:hover>* {
 }
 ul#invoice_info_tab {
   column-gap: 50px;
+  row-gap: 12px;
 }
 .active .radioBtnStyle>div {
   background: #ff6600;
