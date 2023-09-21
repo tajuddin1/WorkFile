@@ -1862,6 +1862,10 @@ button.review_btn {
   gap: 5px;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.2s all;
+}
+.delivery-forms label.label-content:hover{
+  color: #ff6600;
 }
 .delivery-forms input {
   display: none;
@@ -1872,6 +1876,7 @@ button.review_btn {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0s all;
 }
 .image-background.btnBg1{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_black.svg);
@@ -1888,6 +1893,22 @@ button.review_btn {
 .image-background.btnBg6{
   background-image: url(../../assets/images/Product-Images/Documents//More\ documents_black.svg);
 }
+.label-content:hover .btnBg1{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
+}
+.label-content:hover .btnBg2{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/1\ litre_bottle_orange.svg);
+}
+.label-content:hover .btnBg3{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/5\ litre_canister_orange.svg);
+}
+.label-content:hover .btnBg4, .label-content:hover .btnBg5{
+  background-image: url(../../assets/images/Product-Images/Documents/Download_orange.svg);
+}
+.label-content:hover .btnBg6{
+  background-image: url(../../assets/images/Product-Images/Documents/More\ documents_orange.svg);
+}
+
 .btnSelect1:checked+ .label-content .btnBg1{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
 }
@@ -1903,6 +1924,7 @@ button.review_btn {
 .btnSelect6:checked+ .label-content .btnBg6{
   background-image: url(../../assets/images/Product-Images/Documents/More\ documents_orange.svg);
 }
+
 .btnSelect:checked+.label-content{
   color: #ff6600;
 }
@@ -2194,7 +2216,7 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid gray;
-  gap: 20px;
+  gap: 15px;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
