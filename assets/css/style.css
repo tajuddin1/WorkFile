@@ -2432,7 +2432,7 @@ tr.selectitemcode:hover>* {
   width: 30px;
 }
 .col-12.discount-info-wrapper .discount-info-container {
-  width: calc(100% - 66px);
+  width: calc(100% - 64px);
 }
 .right-slide-padding{
   padding: 25px;
@@ -2620,7 +2620,7 @@ p.required_fields {
     padding: 20px;
   }
   .col-12.discount-info-wrapper .discount-info-container{
-    width: calc(100% - 37px);
+    width: calc(100% - 40px);
   }
   .discount-info-container table tr td {
     font-size: 18px !important;
