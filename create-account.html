@@ -3305,9 +3305,9 @@
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
                     <div class="container-lg ps-md-4 ps-lg-0">
-                        <div class="overlay_content">
-                            <h1 class="mb-3 mb-md-4">Create an Account <br> and Enjoy Numerous Benefits</h1>
-                            <p class="mb-4 mb-xl-5">At OROCLEAN, we're committed to providing you with more than just exceptional disinfectant products. With your account, you gain access to a world of benefits that enhance your experience and keep you informed about our products and services.</p>
+                        <div class="overlay_content"> 
+                            <h1 class="mb-3 mb-md-4">Sign Up for Exclusive<br> Benefits!</h1>
+                            <p class="mb-4 mb-xl-5">At OROCLEAN, we go beyond exceptional disinfectant products. Your account grants you access to exclusive benefits, keeping you informed about our services and products.</p>
                         </div>
                     </div>
                 </div>
@@ -3408,13 +3408,15 @@
                                         <div class="tooltiptext">Providing this information is entirely optional, and you are not obligated to answer. Your responses help us ensure that our services and communications are inclusive and relevant to all individuals.</div>
                                     </div>
                                 </label>
-                                <select class="form-select" name="" id="">
-                                    <option value="" style="display: none;"></option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Non-binary">Non-binary</option>
-                                    <option value="Prefer not to say">Prefer not to say</option>
-                                </select>
+                                <div class="btn-group w-100 df-drop gender">
+                                    <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu p-0 rounded-0">
+                                        <li class="selectitemcode border-bottom"> Male</li>
+                                        <li class="selectitemcode border-bottom"> Female</li>
+                                        <li class="selectitemcode border-bottom"> Non-binary</li>
+                                        <li class="selectitemcode"> Prefer not to say</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-6 mt-20">
                                 <label class="heading_5 fw-normal mb-1 position-relative">
@@ -3446,7 +3448,7 @@
                                         <i class="fa-solid fa-eye-slash"></i>
                                     </span>
                                 </div>
-                                <div id="password1-feedback" class="text-danger pt-2"></div>
+                                <div id="password1-feedback" class="text_orange pt-2"></div>
                             </div>
                             <div class="col-12 col-lg-6 mb-0">
                                 <label class="heading_5 fw-normal mb-1" for="password2">Confirm password</label>
@@ -3456,10 +3458,11 @@
                                         <i class="fa-solid fa-eye-slash"></i>
                                     </span>
                                 </div>
-                                <div id="password2-feedback" class="text-danger pt-2"></div>
+                                <div id="password2-feedback" class="text_orange pt-2"></div>
                             </div>
                         </div>
                         <div  class="text-center mt-20 mb-20">
+                            <p class="text-end text_orange required_fields">* Required fields</p>
                             <div class="mb-20 ack_chk d-flex align-items-center justify-content-center">
                                 <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
                                 <label for="accept" class="d-inline-block">By creating an account, I accept the <a class="text_orange" href="#">Terms of Use</a> and <a class="text_orange" href="#">Privacy Policy</a></label>
@@ -3874,7 +3877,8 @@
     </div>
 
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/intlTelInput.js"></script>
     <script>
         var inputs = document.getElementsByClassName("intlTel");
@@ -3992,6 +3996,22 @@
                 confirmationMessage.style.display = 'none';
             });
         });
+    </script>
+    <script>
+        function setupDropdown(dropdown) {
+            const selectitemcodes = dropdown.querySelectorAll('.selectitemcode');
+            const deliveryFormButton = dropdown.querySelector('.scelect_type_btn');
+    
+            selectitemcodes.forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.innerHTML;
+                    deliveryFormButton.textContent = content;
+                });
+            });
+        }
+    
+        const dropdowns = document.querySelectorAll('.btn-group.w-100.df-drop');
+        dropdowns.forEach(setupDropdown);
     </script>
     
 </body>
