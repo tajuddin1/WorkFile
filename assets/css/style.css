@@ -277,6 +277,9 @@ button.video-control {
 section {
   padding: 45px 0;
 }
+.s-p{
+  padding: 45px 0;
+}
 /* .section_2 h2{
     font-size: 42px;
     font-weight: 600;
@@ -1729,8 +1732,8 @@ button.review_btn {
 .product-quantity-title span {
   font-size: 16px;
 }
-.image-background.product-gloves{
-  background-image: url(../../assets/images/Product-Images/gloves/);
+.image-background.gloves_icon{
+  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_black.svg);
 }
 .image-background.btnBg1{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_black.svg);
@@ -1746,6 +1749,9 @@ button.review_btn {
 }
 .image-background.btnBg6{
   background-image: url(../../assets/images/Product-Images/Documents//More\ documents_black.svg);
+}
+.label-content:hover .gloves_icon{
+  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
 }
 .label-content:hover .btnBg1{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
@@ -1763,6 +1769,9 @@ button.review_btn {
   background-image: url(../../assets/images/Product-Images/Documents/More\ documents_orange.svg);
 }
 
+.btnSelect:checked+ .label-content .gloves_icon{
+  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
+}
 .btnSelect1:checked+ .label-content .btnBg1{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
 }
@@ -2619,6 +2628,9 @@ p.required_fields {
 .mb-less{
   margin-bottom: 12px !important;
 }
+.dristributor-location{
+  display: none;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 992px){
@@ -2914,6 +2926,9 @@ p.required_fields {
     margin-left: auto;
   }
   section {
+    padding: 40px 0;
+  }
+  .s-p{
     padding: 40px 0;
   }
   h2.heading_2 br {
@@ -3776,6 +3791,9 @@ p.required_fields {
     margin-bottom: 15px;
   }
   section {
+    padding: 20px 0;
+  }
+  .s-p{
     padding: 20px 0;
   }
   .mb-30 {
