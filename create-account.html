@@ -14,7 +14,33 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Create Account</title>
+    <style>
+        button.btn.form-control.border.dropdown-toggle.w-100.bg-white.text-start.scelect_type_btn:before {
+            content: '';
+            position: absolute;
+            border-top: .3em solid #ff6600;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            top: 50%;
+            right: 7px;
+            transform: translate(-7px, -50%);
+        }
+        @media screen and (max-width:400px){
+            .bg_wrap.account-page{
+                background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_400px_x_300px.svg) !important;
+            }
+            .about_occ .overlay_content {
+                margin-top: auto;
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: flex-end;
+            }
+        }
 
+    </style>
 </head>
 
 <body class="about_occ contact">
@@ -44,7 +70,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1"
+                                                                <a class="sub_menu_item"
                                                                     href="about-us/about-occ/our-story.html">
                                                                     <div>Our Story</div>
                                                                 </a>
@@ -96,7 +122,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1"
+                                                                <a class="sub_menu_item"
                                                                     href="about-us/join-our-team/why-work-for-us.html">
                                                                     <div>Why Work for Us</div>
                                                                 </a>
@@ -123,7 +149,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1"
+                                                                <a class="sub_menu_item"
                                                                     href="about-us/distributor/find-a-distributor.html">
                                                                     <div>Find a Distributor</div>
                                                                 </a>
@@ -163,7 +189,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1" href="products/disinfectants-and-cleaners/surface-disinfectants.html">
+                                                                <a class="sub_menu_item" href="products/disinfectants-and-cleaners/surface-disinfectants.html">
                                                                     <div>Surface Disinfectants</div>
                                                                 </a>
                                                             </li>
@@ -197,7 +223,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3   ">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1" href="#">
+                                                                <a class="sub_menu_item" href="products/medical-disposables/gloves.html">
                                                                     <div>Gloves</div>
                                                                 </a>
                                                             </li>
@@ -217,7 +243,7 @@
                                                         </div>
                                                         <ul class="list-unstyled mb-0 mt-3">
                                                             <li>
-                                                                <a class="sub_menu_item pb-1" href="#">
+                                                                <a class="sub_menu_item" href="#">
                                                                     <div>Dispensing Systems</div>
                                                                 </a>
                                                             </li>
@@ -3168,7 +3194,7 @@
                                         <div class="accordion-body px-0 py-2">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="py-2">
-                                                    <a class="text-decoration-none text-dark" href="#">
+                                                    <a class="text-decoration-none text-dark" href="products/medical-disposables/gloves.html">
                                                         <div>Gloves</div>
                                                     </a>
                                                 </li>
@@ -3299,7 +3325,7 @@
     <div class="main">
         <div class="container-fluid">
             <div class="row position-relative hero_section_wrapper">
-                <div class="bg_wrap p-0"
+                <div class="bg_wrap p-0 account-page"
                     style="background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_2560px_x_520px.svg);">
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
@@ -3307,7 +3333,7 @@
                     <div class="container-lg ps-md-4 ps-lg-0">
                         <div class="overlay_content"> 
                             <h1 class="mb-3 mb-md-4">Sign Up for Exclusive<br> Benefits!</h1>
-                            <p class="mb-4 mb-xl-5">At OROCLEAN, we go beyond exceptional disinfectant products. Your account grants you access to exclusive benefits, keeping you informed about our services and products.</p>
+                            <p class="mb-4 mb-xl-5">Explore your benefits, manage your account preferences, and stay informed about the latest market trends, our products and services.</p>
                         </div>
                     </div>
                 </div>
@@ -3461,8 +3487,8 @@
                                 <div id="password2-feedback" class="text_orange pt-2"></div>
                             </div>
                         </div>
-                        <div  class="text-center mt-20 mb-20">
-                            <p class="text-end text_orange required_fields">* Required fields</p>
+                        <div  class="text-center mt-0 mb-20">
+                            <p class="text-end text_orange required_fields mb-20">* Required fields</p>
                             <div class="mb-20 ack_chk d-flex align-items-center justify-content-center">
                                 <input class="form-check-input mt-0 me-3" type="checkbox" name="accept" id="accept">
                                 <label for="accept" class="d-inline-block">By creating an account, I accept the <a class="text_orange" href="#">Terms of Use</a> and <a class="text_orange" href="#">Privacy Policy</a></label>
@@ -3689,7 +3715,7 @@
                                         <div class="accordion-body px-0 py-2">
                                             <ul class="list-unstyled mb-0">
                                                 <li class="py-2">
-                                                    <a class="text-decoration-none text-dark" href="#">
+                                                    <a class="text-decoration-none text-dark" href="products/medical-disposables/gloves.html">
                                                         <div>Gloves</div>
                                                     </a>
                                                 </li>
