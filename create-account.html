@@ -3398,14 +3398,27 @@
                     <form onsubmit="submitForm(event)">
                         <div class="row mt-20">
                             <div class="col-12 col-lg-12">
-                                <label class="heading_5 fw-normal mb-1">Practice/Company<span style="color: #ff6600;">*</span></label>
+                                <label class="heading_5 fw-normal mb-1 position-relative">
+                                    Practice/Company<span style="color: #ff6600;">*</span>
+                                    <div class="tooltip">
+                                        <div class="tooltiptext">Practice/Company name including legal form.</div>
+                                    </div>
+                                </label>
                                 <input class="form-control d-block" type="text" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-4 mt-20">
                                 <label class="heading_5 fw-normal mb-1">Title</label>
-                                <input class="form-control d-block" type="text">
+                                <div class="btn-group w-100 df-drop gender">
+                                    <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu p-0 rounded-0">
+                                        <li class="selectitemcode border-bottom"> Dr.</li>
+                                        <li class="selectitemcode border-bottom"> Dr. Dr.</li>
+                                        <li class="selectitemcode border-bottom"> Prof.</li>
+                                        <li class="selectitemcode"> Prof. Dr.</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-4 mt-20">
                                 <label class="heading_5 fw-normal mb-1">First name<span style="color: #ff6600;">*</span></label>
@@ -3451,7 +3464,253 @@
                                         <div class="tooltiptext">We request your country information to improve your experience on our platform. Knowing your location helps us: <br>• Provide localized content and services <br>• Comply with regional regulations</div>
                                     </div>
                                 </label>
-                                <input class="form-control" type="text" required/>
+                                <div class="btn-group w-100 df-drop gender">
+                                    <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu p-0 rounded-0">
+                                        <li class="selectitemcode border-bottom" value="Afghanistan">Afghanistan</li>
+                                        <li class="selectitemcode border-bottom" value="Albania">Albania</li>
+                                        <li class="selectitemcode border-bottom" value="Algeria">Algeria</li>
+                                        <li class="selectitemcode border-bottom" value="Andorra">Andorra</li>
+                                        <li class="selectitemcode border-bottom" value="Angola">Angola</li>
+                                        <li class="selectitemcode border-bottom" value="Anguilla">Anguilla</li>
+                                        <li class="selectitemcode border-bottom" value="Antarctica">Antarctica</li>
+                                        <li class="selectitemcode border-bottom" value="Antigua and Barbuda">Antigua and Barbuda</li>
+                                        <li class="selectitemcode border-bottom" value="Argentina">Argentina</li>
+                                        <li class="selectitemcode border-bottom" value="Armenia">Armenia</li>
+                                        <li class="selectitemcode border-bottom" value="Aruba">Aruba</li>
+                                        <li class="selectitemcode border-bottom" value="Australia">Australia</li>
+                                        <li class="selectitemcode border-bottom" value="Austria">Austria</li>
+                                        <li class="selectitemcode border-bottom" value="Azerbaijan">Azerbaijan</li>
+                                        <li class="selectitemcode border-bottom" value="Bahamas">Bahamas</li>
+                                        <li class="selectitemcode border-bottom" value="Bahrain">Bahrain</li>
+                                        <li class="selectitemcode border-bottom" value="Bangladesh">Bangladesh</li>
+                                        <li class="selectitemcode border-bottom" value="Barbados">Barbados</li>
+                                        <li class="selectitemcode border-bottom" value="Belarus">Belarus</li>
+                                        <li class="selectitemcode border-bottom" value="Belgium">Belgium</li>
+                                        <li class="selectitemcode border-bottom" value="Bolivia">Bolivia</li>
+                                        <li class="selectitemcode border-bottom" value="Bosnia and Herzegovina">Bosnia and Herzegovina</li>
+                                        <li class="selectitemcode border-bottom" value="Botswana">Botswana</li>
+                                        <li class="selectitemcode border-bottom" value="Bouvet Island">Bouvet Island</li>
+                                        <li class="selectitemcode border-bottom" value="Brazil">Brazil</li>
+                                        <li class="selectitemcode border-bottom" value="British Indian Ocean Territory">British Indian Ocean Territory</li>
+                                        <li class="selectitemcode border-bottom" value="Brunei">Brunei</li>
+                                        <li class="selectitemcode border-bottom" value="Bulgaria">Bulgaria</li>
+                                        <li class="selectitemcode border-bottom" value="Burkina Faso">Burkina Faso</li>
+                                        <li class="selectitemcode border-bottom" value="Burundi">Burundi</li>
+                                        <li class="selectitemcode border-bottom" value="Cambodia">Cambodia</li>
+                                        <li class="selectitemcode border-bottom" value="Cameroon">Cameroon</li>
+                                        <li class="selectitemcode border-bottom" value="Canada">Canada</li>
+                                        <li class="selectitemcode border-bottom" value="Cape Verde">Cape Verde</li>
+                                        <li class="selectitemcode border-bottom" value="Cayman Islands">Cayman Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Central African Republic">Central African Republic</li>
+                                        <li class="selectitemcode border-bottom" value="Chad">Chad</li>
+                                        <li class="selectitemcode border-bottom" value="Chile">Chile</li>
+                                        <li class="selectitemcode border-bottom" value="China">China</li>
+                                        <li class="selectitemcode border-bottom" value="Christmas Island">Christmas Island</li>
+                                        <li class="selectitemcode border-bottom" value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Colombia">Colombia</li>
+                                        <li class="selectitemcode border-bottom" value="Comoros">Comoros</li>
+                                        <li class="selectitemcode border-bottom" value="Cook Islands">Cook Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Costa Rica">Costa Rica</li>
+                                        <li class="selectitemcode border-bottom" value="Côte d'Ivoire">Côte d'Ivoire</li>
+                                        <li class="selectitemcode border-bottom" value="Croatia">Croatia</li>
+                                        <li class="selectitemcode border-bottom" value="Cuba">Cuba</li>
+                                        <li class="selectitemcode border-bottom" value="Cyprus">Cyprus</li>
+                                        <li class="selectitemcode border-bottom" value="Czech Republic">Czech Republic</li>
+                                        <li class="selectitemcode border-bottom" value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                                        <li class="selectitemcode border-bottom" value="Denmark">Denmark</li>
+                                        <li class="selectitemcode border-bottom" value="Djibouti">Djibouti</li>
+                                        <li class="selectitemcode border-bottom" value="Dominica">Dominica</li>
+                                        <li class="selectitemcode border-bottom" value="Dominican Republic">Dominican Republic</li>
+                                        <li class="selectitemcode border-bottom" value="East Timor">East Timor</li>
+                                        <li class="selectitemcode border-bottom" value="Ecuador">Ecuador</li>
+                                        <li class="selectitemcode border-bottom" value="Egypt">Egypt</li>
+                                        <li class="selectitemcode border-bottom" value="El Salvador">El Salvador</li>
+                                        <li class="selectitemcode border-bottom" value="Equatorial Guinea">Equatorial Guinea</li>
+                                        <li class="selectitemcode border-bottom" value="Eritrea">Eritrea</li>
+                                        <li class="selectitemcode border-bottom" value="Estonia">Estonia</li>
+                                        <li class="selectitemcode border-bottom" value="Ethiopia">Ethiopia</li>
+                                        <li class="selectitemcode border-bottom" value="Falkland Islands">Falkland Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Faroe Islands">Faroe Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Fiji">Fiji</li>
+                                        <li class="selectitemcode border-bottom" value="Finland">Finland</li>
+                                        <li class="selectitemcode border-bottom" value="France">France</li>
+                                        <li class="selectitemcode border-bottom" value="French Guiana">French Guiana</li>
+                                        <li class="selectitemcode border-bottom" value="French Polynesia">French Polynesia</li>
+                                        <li class="selectitemcode border-bottom" value="French Southern Territories">French Southern Territories</li>
+                                        <li class="selectitemcode border-bottom" value="Gabon">Gabon</li>
+                                        <li class="selectitemcode border-bottom" value="Gambia">Gambia</li>
+                                        <li class="selectitemcode border-bottom" value="Georgia">Georgia</li>
+                                        <li class="selectitemcode border-bottom" value="Germany">Germany</li>
+                                        <li class="selectitemcode border-bottom" value="Ghana">Ghana</li>
+                                        <li class="selectitemcode border-bottom" value="Gibraltar">Gibraltar</li>
+                                        <li class="selectitemcode border-bottom" value="Global">Global</li>
+                                        <li class="selectitemcode border-bottom" value="Greece">Greece</li>
+                                        <li class="selectitemcode border-bottom" value="Greenland">Greenland</li>
+                                        <li class="selectitemcode border-bottom" value="Grenada">Grenada</li>
+                                        <li class="selectitemcode border-bottom" value="Guadeloupe">Guadeloupe</li>
+                                        <li class="selectitemcode border-bottom" value="Guam">Guam</li>
+                                        <li class="selectitemcode border-bottom" value="Guatemala">Guatemala</li>
+                                        <li class="selectitemcode border-bottom" value="Guernsey">Guernsey</li>
+                                        <li class="selectitemcode border-bottom" value="Guinea">Guinea</li>
+                                        <li class="selectitemcode border-bottom" value="Guinea-Bissau">Guinea-Bissau</li>
+                                        <li class="selectitemcode border-bottom" value="Guyana">Guyana</li>
+                                        <li class="selectitemcode border-bottom" value="Haiti">Haiti</li>
+                                        <li class="selectitemcode border-bottom" value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Honduras">Honduras</li>
+                                        <li class="selectitemcode border-bottom" value="Hong Kong">Hong Kong</li>
+                                        <li class="selectitemcode border-bottom" value="Hungary">Hungary</li>
+                                        <li class="selectitemcode border-bottom" value="Iceland">Iceland</li>
+                                        <li class="selectitemcode border-bottom" value="India">India</li>
+                                        <li class="selectitemcode border-bottom" value="Indonesia">Indonesia</li>
+                                        <li class="selectitemcode border-bottom" value="International">International</li>
+                                        <li class="selectitemcode border-bottom" value="International-eu">International-eu</li>
+                                        <li class="selectitemcode border-bottom" value="Iran">Iran</li>
+                                        <li class="selectitemcode border-bottom" value="Iraq">Iraq</li>
+                                        <li class="selectitemcode border-bottom" value="Ireland">Ireland</li>
+                                        <li class="selectitemcode border-bottom" value="Isle of Man">Isle of Man</li>
+                                        <li class="selectitemcode border-bottom" value="Israel">Israel</li>
+                                        <li class="selectitemcode border-bottom" value="Italy">Italy</li>
+                                        <li class="selectitemcode border-bottom" value="Jamaica">Jamaica</li>
+                                        <li class="selectitemcode border-bottom" value="Japan">Japan</li>
+                                        <li class="selectitemcode border-bottom" value="Jersey">Jersey</li>
+                                        <li class="selectitemcode border-bottom" value="Jordan">Jordan</li>
+                                        <li class="selectitemcode border-bottom" value="Kazakhstan">Kazakhstan</li>
+                                        <li class="selectitemcode border-bottom" value="Kenya">Kenya</li>
+                                        <li class="selectitemcode border-bottom" value="Kiribati">Kiribati</li>
+                                        <li class="selectitemcode border-bottom" value="Kosovo">Kosovo</li>
+                                        <li class="selectitemcode border-bottom" value="Kuwait">Kuwait</li>
+                                        <li class="selectitemcode border-bottom" value="Kyrgyzstan">Kyrgyzstan</li>
+                                        <li class="selectitemcode border-bottom" value="Laos">Laos</li>
+                                        <li class="selectitemcode border-bottom" value="Latvia">Latvia</li>
+                                        <li class="selectitemcode border-bottom" value="Lebanon">Lebanon</li>
+                                        <li class="selectitemcode border-bottom" value="Lesotho">Lesotho</li>
+                                        <li class="selectitemcode border-bottom" value="Liberia">Liberia</li>
+                                        <li class="selectitemcode border-bottom" value="Libya">Libya</li>
+                                        <li class="selectitemcode border-bottom" value="Liechtenstein">Liechtenstein</li>
+                                        <li class="selectitemcode border-bottom" value="Lithuania">Lithuania</li>
+                                        <li class="selectitemcode border-bottom" value="Luxembourg">Luxembourg</li>
+                                        <li class="selectitemcode border-bottom" value="Macao">Macao</li>
+                                        <li class="selectitemcode border-bottom" value="Madagascar">Madagascar</li>
+                                        <li class="selectitemcode border-bottom" value="Malawi">Malawi</li>
+                                        <li class="selectitemcode border-bottom" value="Malaysia">Malaysia</li>
+                                        <li class="selectitemcode border-bottom" value="Maldives">Maldives</li>
+                                        <li class="selectitemcode border-bottom" value="Mali">Mali</li>
+                                        <li class="selectitemcode border-bottom" value="Malta">Malta</li>
+                                        <li class="selectitemcode border-bottom" value="Marshall Islands">Marshall Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Martinique">Martinique</li>
+                                        <li class="selectitemcode border-bottom" value="Mauritania">Mauritania</li>
+                                        <li class="selectitemcode border-bottom" value="Mauritius">Mauritius</li>
+                                        <li class="selectitemcode border-bottom" value="Mayotte">Mayotte</li>
+                                        <li class="selectitemcode border-bottom" value="Mexico">Mexico</li>
+                                        <li class="selectitemcode border-bottom" value="Micronesia">Micronesia</li>
+                                        <li class="selectitemcode border-bottom" value="Moldova">Moldova</li>
+                                        <li class="selectitemcode border-bottom" value="Monaco">Monaco</li>
+                                        <li class="selectitemcode border-bottom" value="Mongolia">Mongolia</li>
+                                        <li class="selectitemcode border-bottom" value="Montenegro">Montenegro</li>
+                                        <li class="selectitemcode border-bottom" value="Montserrat">Montserrat</li>
+                                        <li class="selectitemcode border-bottom" value="Morocco">Morocco</li>
+                                        <li class="selectitemcode border-bottom" value="Mozambique">Mozambique</li>
+                                        <li class="selectitemcode border-bottom" value="Myanmar">Myanmar</li>
+                                        <li class="selectitemcode border-bottom" value="Namibia">Namibia</li>
+                                        <li class="selectitemcode border-bottom" value="Nauru">Nauru</li>
+                                        <li class="selectitemcode border-bottom" value="Nepal">Nepal</li>
+                                        <li class="selectitemcode border-bottom" value="Netherlands">Netherlands</li>
+                                        <li class="selectitemcode border-bottom" value="Netherlands Antilles">Netherlands Antilles</li>
+                                        <li class="selectitemcode border-bottom" value="New Caledonia">New Caledonia</li>
+                                        <li class="selectitemcode border-bottom" value="New Zealand">New Zealand</li>
+                                        <li class="selectitemcode border-bottom" value="Nicaragua">Nicaragua</li>
+                                        <li class="selectitemcode border-bottom" value="Niger">Niger</li>
+                                        <li class="selectitemcode border-bottom" value="Nigeria">Nigeria</li>
+                                        <li class="selectitemcode border-bottom" value="Niue">Niue</li>
+                                        <li class="selectitemcode border-bottom" value="Norfolk Island">Norfolk Island</li>
+                                        <li class="selectitemcode border-bottom" value="North Korea">North Korea</li>
+                                        <li class="selectitemcode border-bottom" value="North Macedonia">North Macedonia</li>
+                                        <li class="selectitemcode border-bottom" value="Northern Mariana Islands">Northern Mariana Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Norway">Norway</li>
+                                        <li class="selectitemcode border-bottom" value="Oman">Oman</li>
+                                        <li class="selectitemcode border-bottom" value="Pakistan">Pakistan</li>
+                                        <li class="selectitemcode border-bottom" value="Palau">Palau</li>
+                                        <li class="selectitemcode border-bottom" value="Palestinian Territory">Palestinian Territory</li>
+                                        <li class="selectitemcode border-bottom" value="Panama">Panama</li>
+                                        <li class="selectitemcode border-bottom" value="Papua New Guinea">Papua New Guinea</li>
+                                        <li class="selectitemcode border-bottom" value="Paraguay">Paraguay</li>
+                                        <li class="selectitemcode border-bottom" value="Peru">Peru</li>
+                                        <li class="selectitemcode border-bottom" value="Philippines">Philippines</li>
+                                        <li class="selectitemcode border-bottom" value="Pitcairn">Pitcairn</li>
+                                        <li class="selectitemcode border-bottom" value="Poland">Poland</li>
+                                        <li class="selectitemcode border-bottom" value="Portugal">Portugal</li>
+                                        <li class="selectitemcode border-bottom" value="Puerto Rico">Puerto Rico</li>
+                                        <li class="selectitemcode border-bottom" value="Qatar">Qatar</li>
+                                        <li class="selectitemcode border-bottom" value="Republic of Congo">Republic of Congo</li>
+                                        <li class="selectitemcode border-bottom" value="Réunion">Réunion</li>
+                                        <li class="selectitemcode border-bottom" value="Romania">Romania</li>
+                                        <li class="selectitemcode border-bottom" value="Russia">Russia</li>
+                                        <li class="selectitemcode border-bottom" value="Rwanda">Rwanda</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Barthélemy">Saint Barthélemy</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Kitts and Nevis">Saint Kitts and Nevis</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Lucia">Saint Lucia</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Martin">Saint Martin</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</li>
+                                        <li class="selectitemcode border-bottom" value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</li>
+                                        <li class="selectitemcode border-bottom" value="Samoa">Samoa</li>
+                                        <li class="selectitemcode border-bottom" value="San Marino">San Marino</li>
+                                        <li class="selectitemcode border-bottom" value="Sao Tome and Principe">Sao Tome and Principe</li>
+                                        <li class="selectitemcode border-bottom" value="Saudi Arabia">Saudi Arabia</li>
+                                        <li class="selectitemcode border-bottom" value="Senegal">Senegal</li>
+                                        <li class="selectitemcode border-bottom" value="Serbia">Serbia</li>
+                                        <li class="selectitemcode border-bottom" value="Seychelles">Seychelles</li>
+                                        <li class="selectitemcode border-bottom" value="Sierra Leone">Sierra Leone</li>
+                                        <li class="selectitemcode border-bottom" value="Singapore">Singapore</li>
+                                        <li class="selectitemcode border-bottom" value="Slovakia">Slovakia</li>
+                                        <li class="selectitemcode border-bottom" value="Slovenia">Slovenia</li>
+                                        <li class="selectitemcode border-bottom" value="Solomon Islands">Solomon Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Somalia">Somalia</li>
+                                        <li class="selectitemcode border-bottom" value="South Africa">South Africa</li>
+                                        <li class="selectitemcode border-bottom" value="South Korea">South Korea</li>
+                                        <li class="selectitemcode border-bottom" value="Spain">Spain</li>
+                                        <li class="selectitemcode border-bottom" value="Sri Lanka">Sri Lanka</li>
+                                        <li class="selectitemcode border-bottom" value="Sudan">Sudan</li>
+                                        <li class="selectitemcode border-bottom" value="Suriname">Suriname</li>
+                                        <li class="selectitemcode border-bottom" value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</li>
+                                        <li class="selectitemcode border-bottom" value="Swaziland">Swaziland</li>
+                                        <li class="selectitemcode border-bottom" value="Sweden">Sweden</li>
+                                        <li class="selectitemcode border-bottom" value="Switzerland">Switzerland</li>
+                                        <li class="selectitemcode border-bottom" value="Syria">Syria</li>
+                                        <li class="selectitemcode border-bottom" value="Taiwan">Taiwan</li>
+                                        <li class="selectitemcode border-bottom" value="Tajikistan">Tajikistan</li>
+                                        <li class="selectitemcode border-bottom" value="Tanzania">Tanzania</li>
+                                        <li class="selectitemcode border-bottom" value="Thailand">Thailand</li>
+                                        <li class="selectitemcode border-bottom" value="Togo">Togo</li>
+                                        <li class="selectitemcode border-bottom" value="Tokelau">Tokelau</li>
+                                        <li class="selectitemcode border-bottom" value="Tonga">Tonga</li>
+                                        <li class="selectitemcode border-bottom" value="Trinidad and Tobago">Trinidad and Tobago</li>
+                                        <li class="selectitemcode border-bottom" value="Tunisia">Tunisia</li>
+                                        <li class="selectitemcode border-bottom" value="Turkey">Turkey</li>
+                                        <li class="selectitemcode border-bottom" value="Turkmenistan">Turkmenistan</li>
+                                        <li class="selectitemcode border-bottom" value="Turks and Caicos Islands">Turks and Caicos Islands</li>
+                                        <li class="selectitemcode border-bottom" value="Tuvalu">Tuvalu</li>
+                                        <li class="selectitemcode border-bottom" value="Uganda">Uganda</li>
+                                        <li class="selectitemcode border-bottom" value="Ukraine">Ukraine</li>
+                                        <li class="selectitemcode border-bottom" value="United Arab Emirates">United Arab Emirates</li>
+                                        <li class="selectitemcode border-bottom" value="United Kingdom">United Kingdom</li>
+                                        <li class="selectitemcode border-bottom" value="United States of America">United States of America</li>
+                                        <li class="selectitemcode border-bottom" value="Uruguay">Uruguay</li>
+                                        <li class="selectitemcode border-bottom" value="Uzbekistan">Uzbekistan</li>
+                                        <li class="selectitemcode border-bottom" value="Vanuatu">Vanuatu</li>
+                                        <li class="selectitemcode border-bottom" value="Vatican City (Holy See)">Vatican City (Holy See)</li>
+                                        <li class="selectitemcode border-bottom" value="Venezuela">Venezuela</li>
+                                        <li class="selectitemcode border-bottom" value="Vietnam">Vietnam</li>
+                                        <li class="selectitemcode border-bottom" value="Virgin Islands, British">Virgin Islands, British</li>
+                                        <li class="selectitemcode border-bottom" value="Virgin Islands, U.S.">Virgin Islands, U.S.</li>
+                                        <li class="selectitemcode border-bottom" value="Wallis and Futuna">Wallis and Futuna</li>
+                                        <li class="selectitemcode border-bottom" value="Western Sahara">Western Sahara</li>
+                                        <li class="selectitemcode border-bottom" value="Yemen">Yemen</li>
+                                        <li class="selectitemcode border-bottom" value="Zambia">Zambia</li>
+                                        <li class="selectitemcode border-bottom" value="Zimbabwe">Zimbabwe</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -3467,7 +3726,12 @@
                         </div>
                         <div class="row mt-20">
                             <div class="col-12 col-lg-6 mb-20">
-                                <label class="heading_5 fw-normal mb-1" for="password1">Password</label>
+                                <label class="heading_5 fw-normal mb-1 position-relative" for="password1">
+                                    Password<span style="color: #ff6600;">*</span>
+                                    <div class="tooltip">
+                                        <div class="tooltiptext">Password must contain 8-25 characters, including at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.</div>
+                                    </div>
+                                </label>
                                 <div class="password-input position-relative">
                                     <input type="password" id="password1" class="form-control" onblur="validatePassword('password1')" required>
                                     <span id="toggle1" class="toggle-password" onclick="togglePasswordVisibility('password1', 'toggle1')">
@@ -3477,7 +3741,7 @@
                                 <div id="password1-feedback" class="text_orange pt-2"></div>
                             </div>
                             <div class="col-12 col-lg-6 mb-0">
-                                <label class="heading_5 fw-normal mb-1" for="password2">Confirm password</label>
+                                <label class="heading_5 fw-normal mb-1" for="password2">Confirm password<span style="color: #ff6600;">*</span></label>
                                 <div class="password-input position-relative">
                                     <input type="password" id="password2" class="form-control" onblur="validatePassword('password2')" required>
                                     <span id="toggle2" class="toggle-password" onclick="togglePasswordVisibility('password2', 'toggle2')">
