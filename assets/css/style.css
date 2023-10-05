@@ -1818,12 +1818,13 @@ button.tab-btn {
   padding: 0 2%;
   background-color: transparent;
   border:0px;
-  border-bottom: 3px solid transparent;
+  border-bottom: none;
   color: #000;
   transition: all 0.4s;
 }
-.button.tab-btn h3{
+button.tab-btn h3{
   color: #000;
+  border-bottom: 3px solid transparent;
 }
 button.tab-btn.active h3{
   color: #ff6600 !important;
@@ -2725,6 +2726,9 @@ p.required_fields {
   .slider-container {
     max-width: 400px;
   }
+  .thumbnail-images {
+    max-height: 400px;
+  }
   .thumbnail-image {
     width: 70px;
     height: 70px;
@@ -2990,6 +2994,9 @@ p.required_fields {
   }
   .slider-container {
     max-width: 300px;
+  }
+  .thumbnail-images {
+    max-height: 300px;
   }
   .thumbnail-image {
     width: 60px;
@@ -3517,6 +3524,12 @@ p.required_fields {
   .slider-container {
     max-width: 500px;
   }
+  .thumbnail-images {
+    max-height: 500px;
+  }
+  .image-slider {
+    margin-bottom: 20px;
+  }
   .thumbnail-image {
     width: 80px;
     height: 80px;
@@ -3755,6 +3768,9 @@ p.required_fields {
   .slider-container {
     max-width: 300px;
   }
+  .thumbnail-images {
+    max-height: 300px;
+  }
   .thumbnail-image {
     width: 60px;
     height: 60px;
@@ -3762,13 +3778,8 @@ p.required_fields {
   .thumbnail-images {
     gap: 5px;
   }
-  
   button.tab-btn {
     padding: 0 8px;
-    border-bottom: 2px solid transparent;
-  }
-  button.tab-btn.active {
-    border-bottom: 2px solid #ff6600;
   }
   h3.product-title {
     font-size: 22px;
@@ -4386,6 +4397,9 @@ p.required_fields {
   }
   .slider-container {
     max-width: 250px;
+  }
+  .thumbnail-images {
+    max-height: 250px;
   }
   .thumbnail-image {
     width: 60px;

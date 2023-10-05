@@ -60,6 +60,20 @@
         .form-switch .form-check-input:focus {
             background-image: url(assets/images/circle.svg);
         }
+
+        @media screen and (max-width:520px){
+            .bg_wrap.account-page{
+                background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_400px_x_300px.svg) !important;
+            }
+            .about_occ .overlay_content {
+                margin-top: auto;
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: flex-end;
+            }
+        }
     </style>
 </head>
 
@@ -3382,7 +3396,7 @@
     <div class="main">
         <div class="container-fluid">
             <div class="row position-relative hero_section_wrapper">
-                <div class="bg_wrap p-0"
+                <div class="bg_wrap account-page p-0"
                     style="background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_2560px_x_520px.svg);">
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
