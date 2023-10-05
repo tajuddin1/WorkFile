@@ -13,7 +13,21 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>FAQs</title>
+    <style>
 
+        .faq_tabs .accordion-item .accordion-button.accordionSubButton:focus {
+            z-index: 3;
+            border-color: 0;
+            outline: 0;
+            box-shadow: none;
+        }
+        .accordion-button.accordionSubButton:not(.collapsed) {
+            color: #000000;
+            background-color: #ffffff;
+            box-shadow: none;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
 </head>
 
 <body class="resourses">
@@ -3291,7 +3305,7 @@
                     style="background-image: none;">
                     <div class="container-lg ps-md-4 ps-lg-0">
                         <div class="overlay_content">
-                            <h1 class="mb-3 mb-md-4">Frequently Asked<br> Questions<span style="color: #ff6600;">.</span>
+                            <h1 class="mb-3 mb-md-4">Frequently Asked<br> Questions (FAQs)<span style="color: #ff6600;">.</span>
                             </h1>
                             <p class="mb-4 mb-xl-5">Explore our FAQ section designed to tackle your most common question.</p>
                         </div>
@@ -3781,31 +3795,148 @@
                                 <div id="disinfectants-collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#accordion-disinfectants">
                                     <div class="accordion-body">
-                                        <ul class="list-unstyled p-0">
-                                            <li class="mb-3 active">
-                                                <div class="question">Question 1</div>
-                                                <div class="answer">
-                                                    <h5 class="heading_5 fw-normal m-0">Answer</h5>
+                                        <div class="accordion accordion-flush px-4" id="accordionFlushExample1">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  <div class="question bg-white p-0">ASEPTOPRINT<sup>®</sup> <span class="fw-normal">Liquid</span></div>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                                <div class="accordion-body">
+                                                    <div class="accordion accordion-flush px-4" id="item1">
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question1.1" aria-expanded="false" aria-controls="question1.1">
+                                                              <div class="question bg-white p-0">Question 1</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question1.1" class="accordion-collapse collapse" data-bs-parent="#item1">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question1.2" aria-expanded="false" aria-controls="question1.2">
+                                                              <div class="question bg-white p-0">Question 2</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question1.2" class="accordion-collapse collapse" data-bs-parent="#item1">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question1.3" aria-expanded="false" aria-controls="question1.3">
+                                                              <div class="question bg-white p-0">Question 3</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question1.3" class="accordion-collapse collapse" data-bs-parent="#item1">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </li>
-                                            <li class="mb-3">
-                                                <div class="question">Question 2</div>
-                                                <div class="answer">
-                                                    <h5 class="heading_5 fw-normal m-0">Answer</h5>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                  <div class="question bg-white p-0">ASEPTOPRINT<sup>®</sup> <span class="fw-normal">Spray</span></div>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                                <div class="accordion-body">
+                                                    <div class="accordion accordion-flush px-4" id="item2">
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question2.1" aria-expanded="false" aria-controls="question2.1">
+                                                              <div class="question bg-white p-0">Question 1</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question2.1" class="accordion-collapse collapse" data-bs-parent="#item2">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question2.2" aria-expanded="false" aria-controls="question2.2">
+                                                              <div class="question bg-white p-0">Question 2</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question2.2" class="accordion-collapse collapse" data-bs-parent="#item2">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                          <h2 class="accordion-header">
+                                                            <button class="accordion-button accordionSubButton collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question2.3" aria-expanded="false" aria-controls="question2.3">
+                                                              <div class="question bg-white p-0">Question 3</div>
+                                                            </button>
+                                                          </h2>
+                                                          <div id="question2.3" class="accordion-collapse collapse" data-bs-parent="#item2">
+                                                            <div class="accordion-body px-4 py-2" style="background-color: #e8e8e8;">
+                                                                <div class="answer p-0">
+                                                                    <h5 class="heading_5 fw-normal m-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat itaque, quaerat maiores odit necessitatibus dicta facilis consequatur quos maxime exercitationem corporis unde quae a! Laborum magnam porro placeat vitae.</h5>
+                                                                    <h5 class="heading_5 fw-normal m-0">
+                                                                        <a class="text-decoration-none" href="#">
+                                                                            Learn More
+                                                                        </a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </li>
-                                            <li class="pb-3">
-                                                <div class="question">Question 3</div>
-                                                <div class="answer">
-                                                    <h5 class="heading_5 fw-normal m-0">Answer</h5>
-                                                    <h5 class="heading_5 fw-normal m-0">
-                                                        <a class="text-decoration-none" href="#">
-                                                            Learn More
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                              </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -1337,6 +1337,11 @@ select.form-select {
   -webkit-transform: none;
   transform: none;
 }
+.faq_tabs .accordion-item .accordion-button.accordionSubButton:not(.collapsed)::after {
+  background-image: url(../images/FAQ/faq-minus-gray.svg);
+  -webkit-transform: none;
+  transform: none;
+}
 .faq_tabs .accordion-item .accordion-button:not(.collapsed) .img_icon_show {
   display: none;
 }
