@@ -3566,7 +3566,7 @@ p.required_fields {
   ol.main-list.mb-0 {
     padding-left: 25px;
   }
-  h5.heading_5.fw-normal.mb-20> .d-flex> .ps-4 {
+  h5.heading_5.fw-normal> .d-flex> .ps-4 {
     padding-left: 10px !important;
   }
 }
@@ -3574,7 +3574,7 @@ p.required_fields {
   .mb-20.mb-less {
     margin-bottom: 5px !important;
   }
-  h5.heading_5.fw-normal.mb-20> .d-flex> .ps-4 {
+  h5.heading_5.fw-normal> .d-flex> .ps-4 {
     padding-left: 5px !important;
   }
   .main-list>li {
