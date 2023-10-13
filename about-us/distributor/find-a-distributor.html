@@ -99,6 +99,17 @@
         /* .from_content form label {
             font-size: 18px;
         } */
+        button.btn.form-control.border.dropdown-toggle.w-100.bg-white.text-start.scelect_type_btn:before {
+            content: '';
+            position: absolute;
+            border-top: .3em solid #ff6600;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            top: 50%;
+            right: 7px;
+            transform: translate(-7px, -50%);
+        }
         @media screen and (max-width:590px) {
             .from_content form label {
                 font-size: 12px !important;
@@ -3437,76 +3448,78 @@
                     select your country from the drop down menu or select a region and then your country.</p>
                 <div class="row">
                     <div class="col-12 col-lg-5 px-2 px-lg-1  mb-4 mb-lg-0">
-                        <select name="country" class="form-select">
-                            <option>Please select your country</option>
-                            <option value="AL">Albania</option>
-                            <option value="AO">Angola</option>
-                            <option value="AM">Armenia</option>
-                            <option value="AT">Austria</option>
-                            <option value="AZ">Azerbaijan</option>
-                            <option value="BE">Belgium</option>
-                            <option value="BA">Bosnia and Herzegovina</option>
-                            <option value="BA,CH">Bosnia and Herzegovina,Switzerland</option>
-                            <option value="BN">Brunei</option>
-                            <option value="BG">Bulgaria</option>
-                            <option value="KH">Cambodia</option>
-                            <option value="CL">Chile</option>
-                            <option value="HR">Croatia</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="CZ">Czech Republic</option>
-                            <option value="EE">Estonia</option>
-                            <option value="FI">Finland</option>
-                            <option value="FR">France</option>
-                            <option value="DE">Germany</option>
-                            <option value="GR">Greece</option>
-                            <option value="GP">Guadeloupe</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="HU">Hungary</option>
-                            <option value="IS">Iceland</option>
-                            <option value="IN">India</option>
-                            <option value="IR">Iran</option>
-                            <option value="IQ">Iraq</option>
-                            <option value="IE">Ireland</option>
-                            <option value="IL">Israel</option>
-                            <option value="IT">Italy</option>
-                            <option value="JP">Japan</option>
-                            <option value="JO">Jordan</option>
-                            <option value="KE">Kenya</option>
-                            <option value="RK">Kosovo</option>
-                            <option value="KW">Kuwait</option>
-                            <option value="LV">Latvia</option>
-                            <option value="LB">Lebanon</option>
-                            <option value="LY">Libya</option>
-                            <option value="CH,LI">Liechtenstein,Switzerland</option>
-                            <option value="MY">Malaysia</option>
-                            <option value="MT">Malta</option>
-                            <option value="MD">Moldova</option>
-                            <option value="ME">Montenegro</option>
-                            <option value="MA">Morocco</option>
-                            <option value="NL">Netherlands</option>
-                            <option value="NZ">New Zealand</option>
-                            <option value="MK">North Macedonia</option>
-                            <option value="NO">Norway</option>
-                            <option value="PL">Poland</option>
-                            <option value="PT">Portugal</option>
-                            <option value="QA">Qatar</option>
-                            <option value="RO">Romania</option>
-                            <option value="RU">Russia</option>
-                            <option value="RS">Serbia</option>
-                            <option value="SG">Singapore</option>
-                            <option value="SK">Slovakia</option>
-                            <option value="SI">Slovenia</option>
-                            <option value="KP">South Korea</option>
-                            <option value="SE">Sweden</option>
-                            <option value="CH">Switzerland</option>
-                            <option value="TW">Taiwan</option>
-                            <option value="TH">Thailand</option>
-                            <option value="TR">Turkey</option>
-                            <option value="UA">Ukraine</option>
-                            <option value="AE">United Arab Emirates</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="VN">Vietnam</option>
-                        </select>
+                        <div class="btn-group w-100 df-drop gender">
+                            <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false">Please select your country</button>
+                            <ul class="dropdown-menu p-0 rounded-0">
+                                <li class="selectitemcode border-bottom" value="AL">Albania</li>
+                                <li class="selectitemcode border-bottom" value="AO">Angola</li>
+                                <li class="selectitemcode border-bottom" value="AM">Armenia</li>
+                                <li class="selectitemcode border-bottom" value="AT">Austria</li>
+                                <li class="selectitemcode border-bottom" value="AZ">Azerbaijan</li>
+                                <li class="selectitemcode border-bottom" value="BE">Belgium</li>
+                                <li class="selectitemcode border-bottom" value="BA">Bosnia and Herzegovina</li>
+                                <li class="selectitemcode border-bottom" value="BA,CH">Bosnia and Herzegovina,Switzerland</li>
+                                <li class="selectitemcode border-bottom" value="BN">Brunei</li>
+                                <li class="selectitemcode border-bottom" value="BG">Bulgaria</li>
+                                <li class="selectitemcode border-bottom" value="KH">Cambodia</li>
+                                <li class="selectitemcode border-bottom" value="CL">Chile</li>
+                                <li class="selectitemcode border-bottom" value="HR">Croatia</li>
+                                <li class="selectitemcode border-bottom" value="CY">Cyprus</li>
+                                <li class="selectitemcode border-bottom" value="CZ">Czech Republic</li>
+                                <li class="selectitemcode border-bottom" value="EE">Estonia</li>
+                                <li class="selectitemcode border-bottom" value="FI">Finland</li>
+                                <li class="selectitemcode border-bottom" value="FR">France</li>
+                                <li class="selectitemcode border-bottom" value="DE">Germany</li>
+                                <li class="selectitemcode border-bottom" value="GR">Greece</li>
+                                <li class="selectitemcode border-bottom" value="GP">Guadeloupe</li>
+                                <li class="selectitemcode border-bottom" value="HK">Hong Kong</li>
+                                <li class="selectitemcode border-bottom" value="HU">Hungary</li>
+                                <li class="selectitemcode border-bottom" value="IS">Iceland</li>
+                                <li class="selectitemcode border-bottom" value="IN">India</li>
+                                <li class="selectitemcode border-bottom" value="IR">Iran</li>
+                                <li class="selectitemcode border-bottom" value="IQ">Iraq</li>
+                                <li class="selectitemcode border-bottom" value="IE">Ireland</li>
+                                <li class="selectitemcode border-bottom" value="IL">Israel</li>
+                                <li class="selectitemcode border-bottom" value="IT">Italy</li>
+                                <li class="selectitemcode border-bottom" value="JP">Japan</li>
+                                <li class="selectitemcode border-bottom" value="JO">Jordan</li>
+                                <li class="selectitemcode border-bottom" value="KE">Kenya</li>
+                                <li class="selectitemcode border-bottom" value="RK">Kosovo</li>
+                                <li class="selectitemcode border-bottom" value="KW">Kuwait</li>
+                                <li class="selectitemcode border-bottom" value="LV">Latvia</li>
+                                <li class="selectitemcode border-bottom" value="LB">Lebanon</li>
+                                <li class="selectitemcode border-bottom" value="LY">Libya</li>
+                                <li class="selectitemcode border-bottom" value="CH,LI">Liechtenstein,Switzerland</li>
+                                <li class="selectitemcode border-bottom" value="MY">Malaysia</li>
+                                <li class="selectitemcode border-bottom" value="MT">Malta</li>
+                                <li class="selectitemcode border-bottom" value="MD">Moldova</li>
+                                <li class="selectitemcode border-bottom" value="ME">Montenegro</li>
+                                <li class="selectitemcode border-bottom" value="MA">Morocco</li>
+                                <li class="selectitemcode border-bottom" value="NL">Netherlands</li>
+                                <li class="selectitemcode border-bottom" value="NZ">New Zealand</li>
+                                <li class="selectitemcode border-bottom" value="MK">North Macedonia</li>
+                                <li class="selectitemcode border-bottom" value="NO">Norway</li>
+                                <li class="selectitemcode border-bottom" value="PL">Poland</li>
+                                <li class="selectitemcode border-bottom" value="PT">Portugal</li>
+                                <li class="selectitemcode border-bottom" value="QA">Qatar</li>
+                                <li class="selectitemcode border-bottom" value="RO">Romania</li>
+                                <li class="selectitemcode border-bottom" value="RU">Russia</li>
+                                <li class="selectitemcode border-bottom" value="RS">Serbia</li>
+                                <li class="selectitemcode border-bottom" value="SG">Singapore</li>
+                                <li class="selectitemcode border-bottom" value="SK">Slovakia</li>
+                                <li class="selectitemcode border-bottom" value="SI">Slovenia</li>
+                                <li class="selectitemcode border-bottom" value="KP">South Korea</li>
+                                <li class="selectitemcode border-bottom" value="SE">Sweden</li>
+                                <li class="selectitemcode border-bottom" value="CH">Switzerland</li>
+                                <li class="selectitemcode border-bottom" value="TW">Taiwan</li>
+                                <li class="selectitemcode border-bottom" value="TH">Thailand</li>
+                                <li class="selectitemcode border-bottom" value="TR">Turkey</li>
+                                <li class="selectitemcode border-bottom" value="UA">Ukraine</li>
+                                <li class="selectitemcode border-bottom" value="AE">United Arab Emirates</li>
+                                <li class="selectitemcode border-bottom" value="GB">United Kingdom</li>
+                                <li class="selectitemcode" value="VN">Vietnam</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center map_svg_wrapper" style="position: relative; width: 100%;">
@@ -4173,7 +4186,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <h5 class="heading_5 fw-normal mb-20">
-                                        Phone Number: <span>+60 (0)3 5122 7588</span> <br>
+                                        Phone Number: <span class="text-decoration-none" style="color: #009dff;">+60 (0)3 5122 7588</span> <br>
                                         Website: <a class="text-decoration-none text-dark" href="https://www.abcdental.ch/">www.abcdental.ch</a><br>
                                     </h5>
                                     <button type="button" data-bs-toggle="modal" data-bs-target="#send_email" class="btn btn_orange_ng">SEND AN EMAIL</button>
@@ -4197,7 +4210,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <h5 class="heading_5 fw-normal mb-20">
-                                        Phone Number: +60 (0)3 5122 7588 <br>
+                                        Phone Number: <span class="text-decoration-none" style="color: #009dff;">+60 (0)3 5122 7588</span> <br>
                                         Website: <a class="text-decoration-none text-dark" href="https://www.amanda-nails.ch/">www.amanda-nails.ch</a><br>
                                     </h5>
                                     <button type="button" data-bs-toggle="modal" data-bs-target="#send_email" class="btn btn_orange_ng">SEND AN EMAIL</button>
@@ -4221,7 +4234,7 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <h5 class="heading_5 fw-normal mb-20">
-                                        Phone Number: +60 (0)3 5122 7588 <br>
+                                        Phone Number: <span class="text-decoration-none" style="color: #009dff;">+60 (0)3 5122 7588</span> <br>
                                         Website: <a class="text-decoration-none text-dark" href="https://curaden-dentaldepot.ch/">www.curaden-dentaldepot.ch</a><br>
                                     </h5>
                                     <button type="button" data-bs-toggle="modal" data-bs-target="#send_email" class="btn btn_orange_ng">SEND AN EMAIL</button>
@@ -4662,7 +4675,7 @@
         </div>
     </div>
     <script src="../../assets/js/custom.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/intlTelInput.js"></script>
     <script>
         var inputs = document.getElementsByClassName("intlTel");
@@ -4680,7 +4693,22 @@
             });
         });
     </script>
-
+    <script>
+        function setupDropdown(dropdown) {
+            const selectitemcodes = dropdown.querySelectorAll('.selectitemcode');
+            const deliveryFormButton = dropdown.querySelector('.scelect_type_btn');
+    
+            selectitemcodes.forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.innerHTML;
+                    deliveryFormButton.textContent = content;
+                });
+            });
+        }
+    
+        const dropdowns = document.querySelectorAll('.btn-group.w-100.df-drop');
+        dropdowns.forEach(setupDropdown);
+    </script>
     <script>
         document.querySelectorAll('.land').forEach(function(element) {
             element.addEventListener('click', function() {

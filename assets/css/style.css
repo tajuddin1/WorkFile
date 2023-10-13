@@ -2470,6 +2470,25 @@ tr.selectitemcode:hover>* {
   padding-left: 15px;
   flex: 1;
 }
+ul.dropdown-menu.p-0.rounded-0.show {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+ul.dropdown-menu.p-0.rounded-0.show::-webkit-scrollbar {
+  width: 7px;
+}
+
+ul.dropdown-menu.p-0.rounded-0.show::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+ul.dropdown-menu.p-0.rounded-0.show::-webkit-scrollbar-thumb {
+  background: #b4b4b4; 
+}
+
+ul.dropdown-menu.p-0.rounded-0.show::-webkit-scrollbar-thumb:hover {
+  background: #ff6600; 
+}
 .quantity-txt{
   font-size: 20px;
 }
@@ -2479,7 +2498,7 @@ tr.selectitemcode:hover>* {
   margin-bottom: 2px;
 }
 .btn_removeitemcode img {
-  width: 30px;
+  width: 25px;
 }
 .col-12.discount-info-wrapper .discount-info-container {
   width: calc(100% - 64px);
@@ -2602,11 +2621,13 @@ p.required_fields {
   font-size: 18px !important;
 }
 .df-drop.gender ul li.selectitemcode {
-  padding: 7px 10px;
+  padding: 7px 17px;
   font-size: 20px;
+  cursor: pointer;
 }
 .df-drop.gender ul li.selectitemcode:hover {
  background-color: #f1f1f1;
+ color: #ff6600;
 }
 .nav_DropDown.resp-mobile .accordion-button:not(.collapsed) {
   box-shadow: none;
@@ -3348,7 +3369,7 @@ p.required_fields {
 
   .form-control {
     font-size: 16px;
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    padding: 0.27rem 2.25rem 0.27rem 0.75rem;
   }
   .heading_3 {
     font-size: 24px;
@@ -3387,6 +3408,9 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 767px) {
+  .map-container {
+    margin: 20px auto 0 !important;
+  }
   .df-drop.gender ul li.selectitemcode {
     padding: 6px 10px;
     font-size: 16px;
@@ -3571,6 +3595,12 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 590px) {
+  .map-container {
+    margin: 0px auto 0 !important;
+  }
+  img.actionImg {
+    width: 18px;
+}
   .mb-20.mb-less {
     margin-bottom: 5px !important;
   }
@@ -3918,7 +3948,11 @@ p.required_fields {
   }
   .iti__flag-box,
   .iti__country-name {
-    font-size: 16px;
+    font-size: 14px !important;
+  }
+  .iti__dial-code {
+    color: #999;
+    font-size: 16px !important;
   }
   input.btn.btn-light.py-2.fw-medium {
     font-size: 14px;
@@ -4451,7 +4485,13 @@ p.required_fields {
     top: 56px;
   }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 390px) {
+  .overlay_content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media only screen and (max-width: 360px) {
   .cardItem_nav {
     width: 300px;
     top: 40px;

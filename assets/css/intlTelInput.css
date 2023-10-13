@@ -50,7 +50,7 @@
 }
 .iti__arrow--up {
   border-top: none;
-  border-bottom: 7px solid #555;
+  border-bottom: 7px solid #ff6600;
 }
 .iti__country-list {
   position: absolute;
@@ -62,9 +62,25 @@
   background-color: white;
   border: 1px solid #ccc;
   white-space: nowrap;
-  max-height: 200px;
+  max-height: 250px;
+  min-width: 250px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+}
+.iti__country-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.iti__country-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.iti__country-list::-webkit-scrollbar-thumb {
+  background: #b4b4b4; 
+}
+
+.iti__country-list::-webkit-scrollbar-thumb:hover {
+  background: #ff6600; 
 }
 .iti__country-list--dropup {
   bottom: 100%;
@@ -79,16 +95,17 @@
   display: inline-block;
   width: 20px;
 }
-.iti__divider {
+/* .iti__divider {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #ccc;
-}
+} */
 .iti__country {
   display: flex;
   align-items: center;
-  padding: 7px 10px;
+  padding: 7px 17px;
   outline: none;
+  border-bottom: 1px solid #f1f1f1;
 }
 .iti__dial-code {
   color: #999;
@@ -96,6 +113,7 @@
 }
 .iti__country.iti__highlight {
   background-color: rgba(0, 0, 0, 0.05);
+  color: #ff6600;
 }
 .iti__flag-box, .iti__country-name {
   margin-right: 6px;

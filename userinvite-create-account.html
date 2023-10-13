@@ -15,9 +15,25 @@
     <script src="https://kit.fontawesome.com/b704cf9298.js" crossorigin="anonymous"></script>
     <title>Create Account</title>
     <style>
-        @media screen and (max-width:520px){
+        button.btn.form-control.border.dropdown-toggle.w-100.bg-white.text-start.scelect_type_btn:before {
+            content: '';
+            position: absolute;
+            border-top: .3em solid #ff6600;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            top: 50%;
+            right: 7px;
+            transform: translate(-7px, -50%);
+        }
+        @media screen and (max-width:1024px){
             .bg_wrap.account-page{
-                background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_400px_x_300px.svg) !important;
+                background-image: url(assets/images/account/Page_banners/OROCLEAN-Account/OROCLEAN\ Account_1024px_x_330px.svg) !important;
+            }
+        }
+        @media screen and (max-width:590px){
+            .bg_wrap.account-page{
+                background-image: url(assets/images/account/Page_banners/OROCLEAN-Account/OROCLEAN\ Account_600px_x_330px.svg) !important;
             }
             .about_occ .overlay_content {
                 margin-top: auto;
@@ -26,6 +42,11 @@
                 flex-direction: column;
                 height: 100%;
                 justify-content: flex-end;
+            }
+        }
+        @media screen and (max-width:450px){
+            .bg_wrap.account-page{
+                background-image: url(assets/images/account/Page_banners/OROCLEAN-Account/OROCLEAN\ Account_400px_x_300px.svg) !important;
             }
         }
     </style>
@@ -3314,7 +3335,7 @@
         <div class="container-fluid">
             <div class="row position-relative hero_section_wrapper">
                 <div class="bg_wrap account-page p-0"
-                    style="background-image: url(assets/images/account/Page_banners/OROCLEAN_Account/OROCLEAN\ Account_2560px_x_520px.svg);">
+                    style="background-image: url(assets/images/account/Page_banners/OROCLEAN-Account/OROCLEAN\ Account_2560px_x_520px.svg);">
                 </div>
                 <div class="video_overlay_content_wrap d-flex" id="video_overly_content"
                     style="background-image: none;">
@@ -3334,7 +3355,15 @@
                         <div class="row">
                             <div class="col-12 col-lg-4 mt-20">
                                 <label class="heading_5 fw-normal mb-1">Title</label>
-                                <input class="form-control d-block" type="text">
+                                <div class="btn-group w-100 df-drop gender">
+                                    <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu p-0 rounded-0">
+                                        <li class="selectitemcode border-bottom"> Dr.</li>
+                                        <li class="selectitemcode border-bottom"> Dr. Dr.</li>
+                                        <li class="selectitemcode border-bottom"> Prof.</li>
+                                        <li class="selectitemcode"> Prof. Dr.</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-4 mt-20">
                                 <label class="heading_5 fw-normal mb-1">First name<span style="color: #ff6600;">*</span></label>
@@ -3353,13 +3382,15 @@
                                         <div class="tooltiptext">Providing this information is entirely optional, and you are not obligated to answer. Your responses help us ensure that our services and communications are inclusive and relevant to all individuals.</div>
                                     </div>
                                 </label>
-                                <select class="form-select" name="" id="">
-                                    <option value="" style="display: none;"></option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Non-binary">Non-binary</option>
-                                    <option value="Prefer not to say">Prefer not to say</option>
-                                </select>
+                                <div class="btn-group w-100 df-drop gender">
+                                    <button type="button" class="btn form-control border dropdown-toggle w-100 bg-white  text-start scelect_type_btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu p-0 rounded-0">
+                                        <li class="selectitemcode border-bottom"> Male</li>
+                                        <li class="selectitemcode border-bottom"> Female</li>
+                                        <li class="selectitemcode border-bottom"> Non-binary</li>
+                                        <li class="selectitemcode"> Prefer not to say</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-6 mt-20">
                                 <label class="heading_5 fw-normal mb-1">Phone number<span style="color: #ff6600;">*</span></label>
@@ -3802,7 +3833,8 @@
     </div>
 
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/intlTelInput.js"></script>
     <script>
         var inputs = document.getElementsByClassName("intlTel");
@@ -3819,6 +3851,22 @@
                 showFlags: true,
             });
         });
+    </script>
+    <script>
+        function setupDropdown(dropdown) {
+            const selectitemcodes = dropdown.querySelectorAll('.selectitemcode');
+            const deliveryFormButton = dropdown.querySelector('.scelect_type_btn');
+    
+            selectitemcodes.forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.innerHTML;
+                    deliveryFormButton.textContent = content;
+                });
+            });
+        }
+    
+        const dropdowns = document.querySelectorAll('.btn-group.w-100.df-drop');
+        dropdowns.forEach(setupDropdown);
     </script>
     <script>
         const tooltip = document.querySelector('.tooltip');
