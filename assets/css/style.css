@@ -164,7 +164,7 @@ nav#navbar {
   top: -36px;
 }
 .overlay_content h1 {
-  font-size: 70px;
+  font-size: 69px;
   font-weight: 600;
   line-height: 70px;
   color: #fff;
@@ -1025,13 +1025,13 @@ section.counter_sec {
     font-weight: 600;
     margin-bottom: 20px;
 } */
-.about_occ .overlay_content {
-  max-width: 765px;
+ .overlay_content {
+  max-width: 55%;
   margin-top: 90px;
 }
-.about_occ .overlay_content p {
+/* .about_occ .overlay_content p {
   max-width: 765px;
-}
+} */
 .about_occ .content_Slide h3 {
   padding: 0px;
   color: #000000;
@@ -2712,6 +2712,10 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .overlay_content h1 {
+    font-size: 62px;
+  }
+
   .right-slide-padding{
     padding: 20px;
   }
@@ -2782,6 +2786,10 @@ p.required_fields {
 @media only screen and (max-width: 1024px) {
   .product-gloves .delivery-forms .form-group {
     width: auto !important;
+  }
+  .overlay_content p {
+    font-size: 24px;
+    line-height: 30px;
   }
   .product-quantity-title span {
     font-size: 14px;
@@ -2873,8 +2881,8 @@ p.required_fields {
   .overlay_content {
     margin-top: 52px;
   }
-  .about_occ .overlay_content {
-    max-width: unset;
+  .overlay_content {
+    /* max-width: unset; */
     margin-top: 50px;
   }
   .bg_wrap {
@@ -3004,6 +3012,17 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 990px) {
+  .overlay_content{
+    margin-top: 45px;
+  }
+  .overlay_content {
+    max-width: unset;
+  }
+  .overlay_content h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
   .dropdown {
     display: block;
   }
@@ -3048,6 +3067,7 @@ p.required_fields {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 840px) {
   .deleteIcon img {
     width: 26px !important;
@@ -4347,6 +4367,9 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 430px) {
+  .br-block-sm{
+    display: block !important;
+    }
   .df-drop.gender ul li.selectitemcode {
     padding: 5px 10px;
     font-size: 14px;
@@ -4484,9 +4507,7 @@ p.required_fields {
   .menu_item_wrapper.fitMenu {
     top: 56px;
   }
-}
-@media only screen and (max-width: 390px) {
-  .overlay_content h1 {
+ .overlay_content h1 {
     font-size: 28px;
     line-height: 34px;
   }
