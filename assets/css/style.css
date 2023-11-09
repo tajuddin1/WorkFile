@@ -1629,7 +1629,7 @@ h2.heading_2.tag {
   background-color: #006747;
   color: #fff !important;
   display: inline-block;
-  padding: 4px 30px;
+  padding: 4px 25px;
   margin-bottom: 5px !important;
 }
 .products-grid {
@@ -1756,54 +1756,147 @@ button.review_btn {
 .product-quantity-title span {
   font-size: 16px;
 }
+
+/* Delivery Form Icon Main */
 .image-background.gloves_icon{
   background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_black.svg);
 }
-.image-background.btnBg1{
+.image-background.stopcock{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Black/stopcock_black.svg);
+}
+.image-background.bottle_100ml{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Black/100ml_Bottle\ with\ Cap_black.svg);
+}
+.image-background.bottle_250ml{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_black.svg);
 }
-.image-background.btnBg2{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/1-litre_bottle_black.svg);
+.image-background.bottle_500ml_pump{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Black/500ml_bottle_black.svg);
 }
-.image-background.btnBg3{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/5\ litre_canister_black.svg);
+.image-background.bottle_500ml_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Black/500ml_EURO_bottle_black.svg);
 }
+.image-background.bottle_1l_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Black/1Litre_EURO_bottle_black.svg);
+}
+.image-background.bottle_1l_refill{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Black/1Litre_Refill\ Cartridge_black.svg);
+}
+.image-background.bottle_1l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Black/1-litre_bottle-with-handle_black.svg);
+}
+.image-background.bottle_2l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Black/2-litre_bottle-with-handle_black.svg);
+}
+.image-background.flip_top_1ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Black/1-litre_bottle-with-flip-top-cap_black.svg);
+}
+.image-background.canister_5ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Black/5-litre_canister_black.svg); 
+}
+
+/* Delivery Form Icon Hover */
+.label-content:hover .gloves_icon{
+  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
+}
+/* .label-content:hover .gloves_s{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ S_black.svg);
+}
+.label-content:hover .gloves_m{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ M_black.svg);
+}
+.label-content:hover .gloves_l{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ L_black.svg);
+}
+.label-content:hover .gloves_xl{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ XL_black.svg);
+} */
+.label-content:hover .stopcock{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Orange/stopcock_orange.svg);
+}
+.label-content:hover .bottle_100ml{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/100ml_Bottle\ with\ Cap_orange.svg);
+}
+.label-content:hover .bottle_250ml{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
+}
+.label-content:hover .bottle_500ml_pump{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/500ml_bottle_orange.svg);
+}
+.label-content:hover .bottle_500ml_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/500ml_EURO_bottle_orange.svg);
+}
+.label-content:hover .bottle_1l_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/1Litre_EURO_bottle_orange.svg);
+}
+.label-content:hover .bottle_1l_refill{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/1Litre_Refill\ Cartridge_orange.svg);
+}
+.label-content:hover .bottle_1l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/1-litre_bottle-with-handle_orange.svg);
+}
+.label-content:hover .bottle_2l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/2-litre_bottle-with-handle_orange.svg);
+}
+.label-content:hover .flip_top_1ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/1-litre_bottle-with-flip-top-cap_orange.svg);
+}
+.label-content:hover .canister_5ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/5-litre_canister_orange.svg);
+}
+
+/* Delivery Form Icon Active */
+.btnSelect:checked+ .label-content .gloves_icon{
+  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
+}
+.btnSelect_stopcock:checked+ .label-content .stopcock{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Orange/stopcock_orange.svg);
+}
+.btnSelect100ml:checked+ .label-content .bottle_100ml{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/100ml_Bottle\ with\ Cap_orange.svg);
+}
+.btnSelect250ml:checked+ .label-content .bottle_250ml{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
+}
+.btnSelect500ml_pump:checked+ .label-content .bottle_500ml_pump{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/500ml_bottle_orange.svg);
+}
+.btnSelect500ml_euro:checked+ .label-content .bottle_500ml_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/500ml_EURO_bottle_orange.svg);
+}
+.btnSelect1l_euro:checked+ .label-content .bottle_1l_euro{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/1Litre_EURO_bottle_orange.svg);
+}
+.btnSelect1l_refill:checked+ .label-content .bottle_1l_refill{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Hands-bottles/Orange/1Litre_Refill\ Cartridge_orange.svg);
+}
+.btnSelect1l_handle:checked+ .label-content .bottle_1l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/1-litre_bottle-with-handle_orange.svg);
+}
+.btnSelect2l_handle:checked+ .label-content .bottle_2l_handle{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/2-litre_bottle-with-handle_orange.svg);
+}
+.btnSelect1ltr_ft:checked+ .label-content .flip_top_1ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/1-litre_bottle-with-flip-top-cap_orange.svg);
+}
+.btnSelect5ltr:checked+ .label-content .canister_5ltr{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Bottles&Canister/Orange/5-litre_canister_orange.svg);
+}
+
+
+
+/* Documents Icon */
 .image-background.btnBg4, .image-background.btnBg5{
   background-image: url(../../assets/images/Product-Images/Documents/Download_black.svg);
 }
 .image-background.btnBg6{
   background-image: url(../../assets/images/Product-Images/Documents//More\ documents_black.svg);
 }
-.label-content:hover .gloves_icon{
-  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
-}
-.label-content:hover .btnBg1{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
-}
-.label-content:hover .btnBg2{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/1\ litre_bottle_orange.svg);
-}
-.label-content:hover .btnBg3{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/5\ litre_canister_orange.svg);
-}
 .label-content:hover .btnBg4, .label-content:hover .btnBg5{
   background-image: url(../../assets/images/Product-Images/Documents/Download_orange.svg);
 }
 .label-content:hover .btnBg6{
   background-image: url(../../assets/images/Product-Images/Documents/More\ documents_orange.svg);
-}
-
-.btnSelect:checked+ .label-content .gloves_icon{
-  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
-}
-.btnSelect1:checked+ .label-content .btnBg1{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/250ml_bottle_orange.svg);
-}
-.btnSelect2:checked+ .label-content .btnBg2{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/1\ litre_bottle_orange.svg);
-}
-.btnSelect3:checked+ .label-content .btnBg3{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/5\ litre_canister_orange.svg);
 }
 .btnSelect4:checked+ .label-content .btnBg4, .btnSelect5:checked+ .label-content .btnBg5{
   background-image: url(../../assets/images/Product-Images/Documents/Download_orange.svg);
@@ -1989,9 +2082,9 @@ button.tab-btn h3.heading_3 {
 }
 .d-flex.delivery-forms {
   flex-wrap: wrap;
-  -webkit-gap: 10px;
-  gap: 10px;
-  justify-content: space-between;
+  -webkit-gap: 15px;
+  gap: 15px;
+  justify-content: start;
 }
 .btn-check+.btn:hover {
   color: #fff;
@@ -2679,6 +2772,27 @@ p.required_fields {
 }
 .dropdown-content label.form-check-label:hover {
   background: #f1f1f1;
+}
+table.dosing-table td{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.dosing-table td.w-20 {
+  width: 20%;
+}
+
+.dosing-table td.w-25 {
+  width: 25%;
+}
+
+.dosing-table td.w-10 {
+  width: 10%;
+}
+.dosing-icon-wrap {
+  width: 42px;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -3428,6 +3542,12 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 767px) {
+  table.dosing-table td {
+    font-size: 16px;
+  }
+  .dosing-icon-wrap {
+    width: 20px;
+  }
   .map-container {
     margin: 20px auto 0 !important;
   }
@@ -3615,12 +3735,18 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 590px) {
+  table.dosing-table td {
+    font-size: 14px;
+  }
+  .dosing-icon-wrap {
+    width: 15px;
+  }
   .map-container {
     margin: 0px auto 0 !important;
   }
   img.actionImg {
     width: 18px;
-}
+  }
   .mb-20.mb-less {
     margin-bottom: 5px !important;
   }
@@ -4365,6 +4491,9 @@ p.required_fields {
   p.required_fields {
     font-size: 14px !important;
   }
+  span.d-block.text-end {
+    width: 80px !important;
+  }
 }
 @media only screen and (max-width: 430px) {
   .br-block-sm{
@@ -4438,6 +4567,9 @@ p.required_fields {
   }
 }
 @media only screen and (max-width: 390px) { 
+  .breadcrumbs a, .breadcrumbs span {
+    font-size: 10px;
+  }
   .cart-product-wrapper {
     max-height: 230px;
   }
