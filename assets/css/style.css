@@ -1661,9 +1661,9 @@ button.review_btn {
 }
 .image-slider {
   display: flex;
-  flex-direction: column;
   align-items: start;
   flex-direction: row;
+  position: relative;
 }
 .main-image-container {
   width: 100%;
@@ -1720,6 +1720,11 @@ button.review_btn {
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
+.more-button {
+  position: absolute;
+  bottom: -25px;
+  left: 33px;
+}
 .Wishlist{
   display: block;
   width: 25px;
@@ -1758,8 +1763,17 @@ button.review_btn {
 }
 
 /* Delivery Form Icon Main */
-.image-background.gloves_icon{
-  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_black.svg);
+.image-background.gloves_s{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ S_black.svg);
+}
+.image-background.gloves_m{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ M_black.svg);
+}
+.image-background.gloves_l{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ L_black.svg);
+}
+.image-background.gloves_xl{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ XL_black.svg);
 }
 .image-background.stopcock{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Black/stopcock_black.svg);
@@ -1799,18 +1813,18 @@ button.review_btn {
 .label-content:hover .gloves_icon{
   background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
 }
-/* .label-content:hover .gloves_s{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ S_black.svg);
+.label-content:hover .gloves_s{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ S_orange.svg);
 }
 .label-content:hover .gloves_m{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ M_black.svg);
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ M_orange.svg);
 }
 .label-content:hover .gloves_l{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ L_black.svg);
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ L_orange.svg);
 }
 .label-content:hover .gloves_xl{
-  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Black/Glove_Size\ XL_black.svg);
-} */
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ XL_orange.svg);
+}
 .label-content:hover .stopcock{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Orange/stopcock_orange.svg);
 }
@@ -1846,8 +1860,17 @@ button.review_btn {
 }
 
 /* Delivery Form Icon Active */
-.btnSelect:checked+ .label-content .gloves_icon{
-  background-image: url(../../assets/images/Product-Images/gloves/Glove_Icon_orange.svg);
+.btnSelect_s:checked+ .label-content .gloves_s{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ S_orange.svg);
+}
+.btnSelect_m:checked+ .label-content .gloves_m{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ M_orange.svg);
+}
+.btnSelect_l:checked+ .label-content .gloves_l{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ L_orange.svg);
+}
+.btnSelect_xl:checked+ .label-content .gloves_xl{
+  background-image: url(../../assets/images/Product-Images/Delivery-Forms/Gloves/Orange/Glove_Size\ XL_orange.svg);
 }
 .btnSelect_stopcock:checked+ .label-content .stopcock{
   background-image: url(../../assets/images/Product-Images/Delivery-Forms/Stopcock/Orange/stopcock_orange.svg);
@@ -2166,14 +2189,19 @@ span.menu_item_top.loginReg.before_off.p-0.active {
 }
 .iconCard{
   display: flex;
-  border: 1px solid gray;
+  border: 1px solid #ebebeb;
   gap: 15px;
   transition: 0.3s all;
 }
-
+.iconCard.related {
+  border: 1px solid gray;
+}
+.iconCard.related .icon_slide {
+  background-color: gray;
+}
 .iconCard:hover{
   display: flex;
-  border: 1px solid #ff6600;
+  border: 1px solid #ff6600 !important;
 }
 .promo .iconCard{
   display: flex;
@@ -2187,7 +2215,7 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: #ebebeb;
   transition: 0.3s all;
 }
 .promo .icon_slide {
@@ -2206,7 +2234,7 @@ span.menu_item_top.loginReg.before_off.p-0.active {
   border: 0;
 }
 .iconCard:hover .icon_slide{
-  background-color: #ff6600;
+  background-color: #ff6600 !important;
 }
 
 .w-o-h-c .modal-header {
@@ -3157,6 +3185,10 @@ table.dosing-table td{
   .thumbnail-images {
     max-height: 300px;
   }
+  .more-button {
+    bottom: -18px;
+    left: 20px;
+  }
   .thumbnail-image {
     width: 60px;
     height: 60px;
@@ -3703,6 +3735,10 @@ table.dosing-table td{
     width: 80px;
     height: 80px;
   }
+  .more-button {
+    bottom: -25px;
+    left: 33px;
+  }
   .product-badge {
     font-size: 18px !important;
 }
@@ -3955,6 +3991,10 @@ table.dosing-table td{
   .thumbnail-image {
     width: 60px;
     height: 60px;
+  }
+  .more-button {
+    bottom: -18px;
+    left: 20px;
   }
   .thumbnail-images {
     gap: 5px;

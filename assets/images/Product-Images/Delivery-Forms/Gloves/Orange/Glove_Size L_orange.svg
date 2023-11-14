@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
 	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
 	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
@@ -14,8 +14,8 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FF6600;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
+	.st0{fill:#FFFFFF;stroke:#FF6600;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FF6600;}
 </style>
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
@@ -25,30 +25,6 @@
 </metadata>
 <rect x="5" y="52.3" class="st0" width="190" height="95"/>
 <g>
-	<g>
-		<rect x="27.8" y="52.7" class="st1" width="3.9" height="4.9"/>
-	</g>
-	<g>
-		<path class="st1" d="M31.7,133.3h-3.9v-9.5h3.9V133.3z M31.7,114.4h-3.9v-9.5h3.9V114.4z M31.7,95.5h-3.9V86h3.9V95.5z M31.7,76.5
-			h-3.9v-9.5h3.9V76.5z"/>
-	</g>
-	<g>
-		<rect x="27.8" y="142.8" class="st1" width="3.9" height="4.9"/>
-	</g>
-</g>
-<g>
-	<g>
-		<rect x="168.3" y="52.3" class="st1" width="3.9" height="4.9"/>
-	</g>
-	<g>
-		<path class="st1" d="M172.2,132.9h-3.9v-9.5h3.9V132.9z M172.2,114h-3.9v-9.5h3.9V114z M172.2,95.1h-3.9v-9.5h3.9V95.1z
-			 M172.2,76.2h-3.9v-9.5h3.9V76.2z"/>
-	</g>
-	<g>
-		<rect x="168.3" y="142.4" class="st1" width="3.9" height="4.9"/>
-	</g>
-</g>
-<g>
-	<path class="st1" d="M82.4,73.1h14.5v41.8h20.7v12.1H82.4V73.1z"/>
+	<path class="st1" d="M82.4,73.1h14.5v41.8h20.7V127H82.4V73.1z"/>
 </g>
 </svg>
