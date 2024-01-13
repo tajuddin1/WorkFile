@@ -1507,8 +1507,9 @@ h5.heading_5 a {
 }
 .dropdown-button {
   background: #fff;
-  /* gap: 10px; */
+  position: relative;
 }
+
 .dropdown-content label {
   display: block;
   padding: 8px 16px;
@@ -3157,6 +3158,7 @@ table.dosing-table td{
       -ms-transform: translate(-7px, -50%);
           transform: translate(-7px, -50%);
 }
+
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 992px){
@@ -4199,8 +4201,27 @@ table.dosing-table td{
   .dropdown-button input.form-control {
     font-size: 14px;
   }
+  .table.download-center td p{
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .country-flag {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+  }
 }
 @media only screen and (max-width: 590px) {
+
+  .icon_wrap.h-100.upper-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    width: 36px;
+  }
   .download-center.filterable-table td,
   .download-center.filterable-table th{
     font-size: 14px;
@@ -5030,7 +5051,8 @@ table.dosing-table td{
             justify-content: center;
   }
   .dropdown-button input.form-control {
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
+    padding-right: 25px !important;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -5103,10 +5125,12 @@ table.dosing-table td{
   .rating_list {
     width: 100%;
   }
+
 }
 @media only screen and (max-width: 391px) { 
   .dropdown-button input.form-control {
-    width: calc(100% - 64px);
+    width: calc(100% - 30px);
+    padding-right: 15px !important;
   }
   .dropdown-button label.form-check-label{
     font-size: 13px;
@@ -5132,8 +5156,13 @@ table.dosing-table td{
   .icon_wrap.h-100 {
     width: 32px;
   }
+
+.icon_wrap.h-100.upper-icon {
+    width: 32px;
+}
   .dropdown-content {
     top: 35px;
+    min-width: 140px;
   }
   .breadcrumbs a, .breadcrumbs span {
     font-size: 10px;
@@ -5224,6 +5253,6 @@ table.dosing-table td{
   }
 
   .icon_wrap i {
-    padding: 8px 5px;
+    padding: 0px 5px;
   }
 }
