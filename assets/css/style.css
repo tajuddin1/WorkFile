@@ -25,7 +25,7 @@ p{
   z-index: 0;
 }
 a:hover {
-  color: #ff6600 !important;
+  color: #ff6600;
 }
 ul#myTab li a,
 .langlink a,
@@ -854,7 +854,7 @@ section.counter_sec {
   margin-bottom: 0;
 }
 .card_wrap {
-  min-height: 300px;
+  /* min-height: 300px; */
   box-shadow: 0 0 0 1px #ff6600;
 }
 .download-list li {
@@ -988,7 +988,6 @@ section.counter_sec {
   font-size: 22px;
   line-height: 26px;
 }
-
 .about_occ .section_2 p {
   /* margin-top: 20px; */
   font-size: 20px;
@@ -1398,7 +1397,7 @@ h5.heading_5 a {
 }
 .dropdown-button {
   background: #fff;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .dropdown-content label {
   display: block;
@@ -1406,6 +1405,15 @@ h5.heading_5 a {
 }
 .dropdown-content.show-dropdown {
   display: block;
+}
+
+.dropdown-button input.form-control {
+  color: #595c5f;
+  font-size: 16px;
+}
+
+.dropdown-button input.form-control:focus {
+  color: #595c5f;
 }
 
 label.form-check-label {
@@ -2741,12 +2749,18 @@ a.d-flex.align-items-center.heading_5.fw-normal.mb-0.text-decoration-none:hover 
 p.required_fields {
   font-size: 18px !important;
 }
-.df-drop.gender ul li.selectitemcode {
+.df-drop ul li.selectitemcode {
   padding: 7px 17px;
   font-size: 20px;
   cursor: pointer;
 }
-.df-drop.gender ul li.selectitemcode:hover {
+.df-drop ul li.select-search-bar {
+  padding: 7px 17px;
+}
+.df-drop ul li.select-search-bar input {
+  font-size: 18px;
+}
+.df-drop ul li.selectitemcode:hover {
  background-color: #f1f1f1;
  color: #ff6600;
 }
@@ -2821,6 +2835,18 @@ table.dosing-table td{
 }
 .dosing-icon-wrap {
   width: 42px;
+}
+
+.btn.form-control.border.dropdown-toggle.w-100.bg-white.text-start.scelect_type_btn:before {
+  content: '';
+  position: absolute;
+  border-top: .3em solid #ff6600;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  top: 50%;
+  right: 7px;
+  transform: translate(-7px, -50%);
 }
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -2939,9 +2965,15 @@ table.dosing-table td{
   .product-quantity-title {
     line-height: 20px;
   }
-  .df-drop.gender ul li.selectitemcode {
+  .df-drop ul li.selectitemcode {
     padding: 7px 10px;
     font-size: 18px;
+  }
+  .df-drop ul li.select-search-bar {
+    padding: 7px 10px;
+  }
+  .df-drop ul li.select-search-bar input {
+    font-size: 16px;
   }
   .btn_removeitemcode img {
     width: 30px;
@@ -3533,10 +3565,10 @@ table.dosing-table td{
         margin-bottom: 5px;
     } */
 
-  .form-control {
-    font-size: 16px;
-    padding: 0.27rem 2.25rem 0.27rem 0.75rem;
-  }
+    .form-control, .form-select {
+      font-size: 16px;
+      padding: 5px 12px;
+    }
   .heading_3 {
     font-size: 24px;
     font-weight: 600;
@@ -3586,6 +3618,12 @@ table.dosing-table td{
   .df-drop.gender ul li.selectitemcode {
     padding: 6px 10px;
     font-size: 16px;
+  }
+  .df-drop ul li.select-search-bar {
+    padding: 6px 10px;
+  }
+  .df-drop ul li.select-search-bar input {
+    font-size: 14px;
   }
   .deleteIcon img {
     width: 24px !important;
@@ -3769,8 +3807,31 @@ table.dosing-table td{
   h5.heading_5.fw-normal> .d-flex> .ps-4 {
     padding-left: 10px !important;
   }
+
+  .dropdown-button input.form-control {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 590px) {
+  .download-center.filterable-table td,
+  .download-center.filterable-table th{
+    font-size: 14px;
+  }
+  .row.filter-nav {
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .row.filter-nav .col-6.col-md-3 {
+    padding: 0;
+    width: 49% !important;
+  }
+  .icon_wrap i {
+    font-size: 22px;
+    padding: 8px 10px;
+    color: #595c5f;
+  }
   table.dosing-table td {
     font-size: 14px;
   }
@@ -4690,7 +4751,12 @@ table.dosing-table td{
     top: 40px;
     right: -62px;
   }
+
   .cart-product-wrapper {
     max-height: 200px;
+  }
+
+  .icon_wrap i {
+    padding: 8px 5px;
   }
 }
